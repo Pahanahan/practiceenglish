@@ -246,6 +246,28 @@ button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.lesson-learn__box-answer {
+  position: absolute;
+  bottom: -34px;
+  left: -51px;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.lesson-learn__box-answer__correct {
+  background-color: #3fbd69;
+}
+
+.lesson-learn__box-answer__incorrect {
+  background-color: #ee6565;
 }
 
 .lesson-learn__choice-item {
@@ -258,4 +280,19 @@ button {
   align-items: center;
   padding: 10px 0;
   margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.lesson-learn__choice-item--active {
+  background-color: #2254f7;
+}
+
+.lesson-learn__check {
+  width: 300px;
+  background-color: #0555e9;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 16px 0;
+  color: #fff;
 }
