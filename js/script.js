@@ -1,8 +1,8 @@
-const header = document.querySelector(".header");
+const lesson1 = document.querySelector(".begginer1-lesson__box1-learn");
 
 document
-  .querySelector(".lesson__button")
+  .querySelector(".begginer1-lesson__box1-start")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    body.style.backgroundcolor = "white";
+    lesson1.style.display = "flex";
   });

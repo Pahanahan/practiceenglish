@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   line-height: 1.2;
   background-color: #00bfff;
+  position: relative;
 }
 
 a {
@@ -188,4 +189,73 @@ button {
   align-items: center;
   border-radius: 20px;
   padding: 5px;
+}
+
+.lesson-learn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00bfff;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+}
+
+.lesson-learn__line {
+  width: 400px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #0a0a0a;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.lesson-learn__line-progress {
+  width: 40px;
+  height: 10px;
+  border: 2px solid #32b3e6;
+  border-radius: 5px;
+  background-color: #1a67f7;
+  position: absolute;
+  left: 0;
+}
+
+.lesson-learn__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lesson-learn__text {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.lesson-learn__text-ask {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.lesson-learn__box-choice {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lesson-learn__choice-item {
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 8px;
 }
