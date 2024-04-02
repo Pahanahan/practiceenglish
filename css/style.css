@@ -205,23 +205,20 @@ button {
   justify-content: center;
 }
 
-/* .lesson-learn__line {
-  width: 400px;
+.lesson-learn__line {
+  width: 220px;
   height: 10px;
   border-radius: 5px;
-  background-color: #0a0a0a;
+  background-color: #0f189c;
   margin-bottom: 20px;
-  position: relative;
-} */
+}
 
 .lesson-learn__line-progress {
   width: 20px;
   height: 10px;
-  border: 2px solid #32b3e6;
-  border-radius: 5px;
-  background-color: #1a67f7;
-  /* position: absolute;
-  left: 0; */
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: #209c0f;
 }
 
 .lesson-learn__line40px {
@@ -285,15 +282,15 @@ button {
 }
 
 .lesson-learn__box-answer,
-.lesson-learn__box-answer2, 
+.lesson-learn__box-answer2,
 .lesson-learn__box-answer3,
 .lesson-learn__box-answer4,
 .lesson-learn__box-answer5,
 .lesson-learn__box-answer6,
 .lesson-learn__box-answer7,
 .lesson-learn__box-answer8,
-.lesson-learn__box-answer9, 
-.lesson-learn__box-answer10, 
+.lesson-learn__box-answer9,
+.lesson-learn__box-answer10,
 .lesson-learn__box-answer11 {
   margin-top: 50px;
   width: 300px;
@@ -332,7 +329,7 @@ button {
   background-color: #2254f7;
 }
 
-.lesson-learn__check,  
+.lesson-learn__check,
 .lesson-learn__check2,
 .lesson-learn__check3,
 .lesson-learn__check4,
@@ -352,7 +349,7 @@ button {
   color: #fff;
 }
 
-.lesson-learn__next, 
+.lesson-learn__next,
 .lesson-learn__next2,
 .lesson-learn__next3,
 .lesson-learn__next4,
@@ -398,4 +395,19 @@ button {
 .lesson10,
 .lesson11 {
   display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }

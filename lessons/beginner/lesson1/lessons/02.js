@@ -79,30 +79,30 @@ const lesson11 = document.querySelector(".lesson11");
 const lesson12 = document.querySelector(".lesson12");
 
 const currentAnswers = [
-  "really",
-  "we",
-  "can",
-  "it",
-  "help",
-  "me",
-  "they",
-  "learn",
-  "you",
-  "work",
-  "English",
+  "говорить",
+  "город",
+  "онлайн",
+  "Украина",
+  "в",
+  "мой",
+  "хотеть",
+  "нравиться",
+  "украинец",
+  "я",
+  "учиться",
 ];
 
-const audio01 = new Audio("audio01/really.wav");
-const audio02 = new Audio("audio01/we.wav");
-const audio03 = new Audio("audio01/can.wav");
-const audio04 = new Audio("audio01/it.wav");
-const audio05 = new Audio("audio01/help.wav");
-const audio06 = new Audio("audio01/me.wav");
-const audio07 = new Audio("audio01/they.wav");
-const audio08 = new Audio("audio01/learn.wav");
-const audio09 = new Audio("audio01/you.wav");
-const audio10 = new Audio("audio01/work.wav");
-const audio11 = new Audio("audio01/english.wav");
+const audio01 = new Audio("audio02/speak.wav");
+const audio02 = new Audio("audio02/city.wav");
+const audio03 = new Audio("audio02/online.wav");
+const audio04 = new Audio("audio02/ukraine.wav");
+const audio05 = new Audio("audio02/in.wav");
+const audio06 = new Audio("audio02/my.wav");
+const audio07 = new Audio("audio02/want.wav");
+const audio08 = new Audio("audio02/like.wav");
+const audio09 = new Audio("audio02/ukrainian.wav");
+const audio10 = new Audio("audio02/i.wav");
+const audio11 = new Audio("audio02/study.wav");
 
 let rightAnswers = 0;
 
@@ -110,7 +110,7 @@ let choiceItemCheck = "";
 
 let allRightOrNotAnswers001 = false;
 
-let beginner01 = [];
+let beginner01 = [1];
 
 choiceItems.forEach((btn, index) => {
   btn.onclick = function () {
@@ -449,12 +449,11 @@ function answerCheck11(index) {
       nextLessonBack.style.display = "flex";
       audio11.play();
     }
- 
-    
+
     if (rightAnswers === 11) {
       allRightOrNotAnswers001 = true;
-      if (beginner01.length === 0) {
-        beginner01.push(1);
+      if (beginner01.length === 1) {
+        beginner01.push(2);
         saveToLocalStorage();
       }
     }
