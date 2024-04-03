@@ -110,7 +110,7 @@ let choiceItemCheck = "";
 
 let allRightOrNotAnswers001 = false;
 
-let beginner01 = [1];
+let beginner01 = JSON.parse(localStorage.getItem('beginner01'));
 
 choiceItems.forEach((btn, index) => {
   btn.onclick = function () {

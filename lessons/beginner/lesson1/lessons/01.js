@@ -110,7 +110,12 @@ let choiceItemCheck = "";
 
 let allRightOrNotAnswers001 = false;
 
-let beginner01 = [];
+let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
+
+if (beginner01) {
+} else {
+  beginner01 = [];
+}
 
 choiceItems.forEach((btn, index) => {
   btn.onclick = function () {
@@ -449,8 +454,7 @@ function answerCheck11(index) {
       nextLessonBack.style.display = "flex";
       audio11.play();
     }
- 
-    
+
     if (rightAnswers === 11) {
       allRightOrNotAnswers001 = true;
       if (beginner01.length === 0) {
