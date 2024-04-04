@@ -13,17 +13,21 @@ const lessonImage3 = document.querySelector(".lesson__image03");
 
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
 
-if (beginner01[0] === 1) {
+if (beginner01 === null) {
+  beginner01 = [];
+} else if (beginner01 !== null) {
+  if (beginner01[0] === 1) {
     begginerLessonStart2.setAttribute(
       "href",
       "/lessons/beginner/lesson1/lessons/02.html"
     );
     lessonImage2.setAttribute("src", "/img/start.png");
   }
-if (beginner01[1] === 2) {
+  if (beginner01[1] === 2) {
     begginerLessonStart3.setAttribute(
       "href",
       "/lessons/beginner/lesson1/lessons/03.html"
     );
     lessonImage3.setAttribute("src", "/img/start.png");
   }
+}
