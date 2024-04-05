@@ -7,9 +7,13 @@ const begginerLessonStart2 = document.querySelector(
 const begginerLessonStart3 = document.querySelector(
   ".begginer1-lesson__box3-start"
 );
+const begginerLessonStart4 = document.querySelector(
+  ".begginer1-lesson__box4-start"
+);
 const lessonImage1 = document.querySelector(".lesson__image01");
 const lessonImage2 = document.querySelector(".lesson__image02");
 const lessonImage3 = document.querySelector(".lesson__image03");
+const lessonImage4 = document.querySelector(".lesson__image04");
 
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
 
@@ -29,5 +33,12 @@ if (beginner01 === null) {
       "/lessons/beginner/lesson1/lessons/03.html"
     );
     lessonImage3.setAttribute("src", "/img/start.png");
+  }
+  if (beginner01[2] === 3) {
+    begginerLessonStart4.setAttribute(
+      "href",
+      "/lessons/beginner/lesson1/lessons/04.html"
+    );
+    lessonImage4.setAttribute("src", "/img/start.png");
   }
 }

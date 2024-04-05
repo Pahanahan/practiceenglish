@@ -164,38 +164,38 @@ function answerCheck(
   }
 }
 
-function answerCheck11(
-  index,
-  checkAnswer,
-  answerCorrectOrIncorrect,
-  next,
-  audio,
-) {
-  if (choiceItemCheck !== "") {
-    checkAnswer.disabled = true;
-    if (choiceItemCheck === currentAnswers[index]) {
-      answerCorrectOrIncorrect.textContent = "Правильно!";
-      answerCorrectOrIncorrect.classList.add(
-        "lesson-learn__box-answer__correct"
-      );
-      checkAnswer.style.display = "none";
-      console.log(checkAnswer);
-      next.style.display = "block";
-      console.log(next);
-      rightAnswers++;
-      audio.play();
-    } else {
-      answerCorrectOrIncorrect.textContent = "Неправильный ответ!";
-      answerCorrectOrIncorrect.classList.add(
-        "lesson-learn__box-answer__incorrect"
-      );
-      checkAnswer.style.display = "none";
-      next.style.display = "block";
-      console.log(next);
-      audio.play();
-    }
-  }
-}
+// function answerCheck11(
+//   index,
+//   checkAnswer,
+//   answerCorrectOrIncorrect,
+//   next,
+//   audio,
+// ) {
+//   if (choiceItemCheck !== "") {
+//     checkAnswer.disabled = true;
+//     if (choiceItemCheck === currentAnswers[index]) {
+//       answerCorrectOrIncorrect.textContent = "Правильно!";
+//       answerCorrectOrIncorrect.classList.add(
+//         "lesson-learn__box-answer__correct"
+//       );
+//       checkAnswer.style.display = "none";
+//       console.log(checkAnswer);
+//       next.style.display = "block";
+//       console.log(next);
+//       rightAnswers++;
+//       audio.play();
+//     } else {
+//       answerCorrectOrIncorrect.textContent = "Неправильный ответ!";
+//       answerCorrectOrIncorrect.classList.add(
+//         "lesson-learn__box-answer__incorrect"
+//       );
+//       checkAnswer.style.display = "none";
+//       next.style.display = "block";
+//       console.log(next);
+//       audio.play();
+//     }
+//   }
+// }
 
 checkAnswer.addEventListener("click", function () {
   answerCheck(
@@ -327,339 +327,3 @@ checkAnswer11.addEventListener("click", function () {
 const saveToLocalStorage = function () {
   localStorage.setItem("beginner01", JSON.stringify(beginner01));
 };
-
-// function answerCheck(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect.textContent = "Правильно!";
-//       answerCorrectOrIncorrect.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer.style.display = "none";
-//       nextLesson.style.display = "block";
-//       rightAnswers++;
-//       audio01.play();
-//     } else {
-//       answerCorrectOrIncorrect.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer.style.display = "none";
-//       nextLesson.style.display = "block";
-//       audio01.play();
-//     }
-
-//     nextLesson.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson01.style.display = "none";
-//       lesson02.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck2(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer2.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect2.textContent = "Правильно!";
-//       answerCorrectOrIncorrect2.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer2.style.display = "none";
-//       nextLesson2.style.display = "block";
-//       rightAnswers++;
-//       audio02.play();
-//     } else {
-//       answerCorrectOrIncorrect2.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect2.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer2.style.display = "none";
-//       nextLesson2.style.display = "block";
-//       audio02.play();
-//     }
-
-//     nextLesson2.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson02.style.display = "none";
-//       lesson03.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck3(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer3.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect3.textContent = "Правильно!";
-//       answerCorrectOrIncorrect3.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer3.style.display = "none";
-//       nextLesson3.style.display = "block";
-//       rightAnswers++;
-//       audio03.play();
-//     } else {
-//       answerCorrectOrIncorrect3.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect3.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer3.style.display = "none";
-//       nextLesson3.style.display = "block";
-//       audio03.play();
-//     }
-
-//     nextLesson3.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson03.style.display = "none";
-//       lesson04.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck4(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer4.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect4.textContent = "Правильно!";
-//       answerCorrectOrIncorrect4.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer4.style.display = "none";
-//       nextLesson4.style.display = "block";
-//       rightAnswers++;
-//       audio04.play();
-//     } else {
-//       answerCorrectOrIncorrect4.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect4.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer4.style.display = "none";
-//       nextLesson4.style.display = "block";
-//       audio04.play();
-//     }
-
-//     nextLesson4.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson04.style.display = "none";
-//       lesson05.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck5(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer5.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect5.textContent = "Правильно!";
-//       answerCorrectOrIncorrect5.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer5.style.display = "none";
-//       nextLesson5.style.display = "block";
-//       rightAnswers++;
-//       audio05.play();
-//     } else {
-//       answerCorrectOrIncorrect5.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect5.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer5.style.display = "none";
-//       nextLesson5.style.display = "block";
-//       audio05.play();
-//     }
-
-//     nextLesson5.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson05.style.display = "none";
-//       lesson06.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck6(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer6.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect6.textContent = "Правильно!";
-//       answerCorrectOrIncorrect6.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer6.style.display = "none";
-//       nextLesson6.style.display = "block";
-//       rightAnswers++;
-//       audio06.play();
-//     } else {
-//       answerCorrectOrIncorrect6.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect6.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer6.style.display = "none";
-//       nextLesson6.style.display = "block";
-//       audio06.play();
-//     }
-
-//     nextLesson6.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson06.style.display = "none";
-//       lesson07.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck7(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer7.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect7.textContent = "Правильно!";
-//       answerCorrectOrIncorrect7.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer7.style.display = "none";
-//       nextLesson7.style.display = "block";
-//       rightAnswers++;
-//       audio07.play();
-//     } else {
-//       answerCorrectOrIncorrect7.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect7.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer7.style.display = "none";
-//       nextLesson7.style.display = "block";
-//       audio07.play();
-//     }
-
-//     nextLesson7.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson07.style.display = "none";
-//       lesson08.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck8(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer8.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect8.textContent = "Правильно!";
-//       answerCorrectOrIncorrect8.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer8.style.display = "none";
-//       nextLesson8.style.display = "block";
-//       rightAnswers++;
-//       audio08.play();
-//     } else {
-//       answerCorrectOrIncorrect8.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect8.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer8.style.display = "none";
-//       nextLesson8.style.display = "block";
-//       audio08.play();
-//     }
-
-//     nextLesson8.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson08.style.display = "none";
-//       lesson09.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck9(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer9.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect9.textContent = "Правильно!";
-//       answerCorrectOrIncorrect9.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer9.style.display = "none";
-//       nextLesson9.style.display = "block";
-//       rightAnswers++;
-//       audio09.play();
-//     } else {
-//       answerCorrectOrIncorrect9.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect9.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer9.style.display = "none";
-//       nextLesson9.style.display = "block";
-//       audio09.play();
-//     }
-
-//     nextLesson9.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson09.style.display = "none";
-//       lesson10.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck10(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer10.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect10.textContent = "Правильно!";
-//       answerCorrectOrIncorrect10.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer10.style.display = "none";
-//       nextLesson10.style.display = "block";
-//       rightAnswers++;
-//       audio10.play();
-//     } else {
-//       answerCorrectOrIncorrect10.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect10.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer10.style.display = "none";
-//       nextLesson10.style.display = "block";
-//       audio10.play();
-//     }
-
-//     nextLesson10.addEventListener("click", function () {
-//       choiceItemCheck = "";
-//       lesson10.style.display = "none";
-//       lesson11.style.display = "flex";
-//     });
-//   }
-// }
-
-// function answerCheck11(index) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer11.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect11.textContent = "Правильно!";
-//       answerCorrectOrIncorrect11.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer11.style.display = "none";
-//       nextLessonBack.style.display = "flex";
-//       rightAnswers++;
-//       audio11.play();
-//     } else {
-//       answerCorrectOrIncorrect11.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect11.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer11.style.display = "none";
-//       nextLessonBack.style.display = "flex";
-//       audio11.play();
-//     }
-
-//     if (rightAnswers === 11) {
-//       allRightOrNotAnswers001 = true;
-//       if (beginner01.length === 1) {
-//         beginner01.push(2);
-//         saveToLocalStorage();
-//       }
-//     }
-//   }
-// }
-
-// const saveToLocalStorage = function () {
-//   localStorage.setItem("beginner01", JSON.stringify(beginner01));
-// };

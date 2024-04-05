@@ -2,11 +2,27 @@ const lesson01 = document.querySelector(".lesson01");
 const lesson02 = document.querySelector(".lesson02");
 const lesson03 = document.querySelector(".lesson03");
 
-const stringChoice = document.querySelector(".lesson-learn__box-str");
-const stringChoice2 = document.querySelector(".lesson-learn__box-str2");
-const stringChoice3 = document.querySelector(".lesson-learn__box-str3");
-const stringChoice4 = document.querySelector(".lesson-learn__box-str4");
-const stringChoice5 = document.querySelector(".lesson-learn__box-str5");
+const boxLessonsGrid = document.querySelector(".lesson-learn__grid");
+const boxLessonsGrid2 = document.querySelector(".lesson-learn__grid2");
+const boxLessonsGrid3 = document.querySelector(".lesson-learn__grid3");
+
+const boxLessonsGridView = document.querySelector(
+  ".lesson-learn__grid-unvisible"
+);
+const boxLessonsGridView2 = document.querySelector(
+  ".lesson-learn__grid-unvisible2"
+);
+const boxLessonsGridView3 = document.querySelector(
+  ".lesson-learn__grid-unvisible3"
+);
+
+const boxLessonsStrings = document.querySelector(".lesson-learn__box-strings");
+const boxLessonsStrings2 = document.querySelector(
+  ".lesson-learn__box-strings2"
+);
+const boxLessonsStrings3 = document.querySelector(
+  ".lesson-learn__box-strings3"
+);
 
 const itemPast = document.querySelector(".lesson-learn__grid-item-past");
 const itemPast2 = document.querySelector(".lesson-learn__grid-item-past2");
@@ -14,26 +30,65 @@ const itemPast3 = document.querySelector(".lesson-learn__grid-item-past3");
 const itemPast4 = document.querySelector(".lesson-learn__grid-item-past4");
 const itemPast5 = document.querySelector(".lesson-learn__grid-item-past5");
 
-const answersArray = ['Нью-Йорк', 'результат', 'видеть','место', 'программа',]
+const itemPast6 = document.querySelector(".lesson-learn__grid-item-past6");
+const itemPast7 = document.querySelector(".lesson-learn__grid-item-past7");
+const itemPast8 = document.querySelector(".lesson-learn__grid-item-past8");
+const itemPast9 = document.querySelector(".lesson-learn__grid-item-past9");
+const itemPast10 = document.querySelector(".lesson-learn__grid-item-past10");
 
-const boxLessonsGrid = document.querySelector(".lesson-learn__grid");
-const boxLessonsGridView = document.querySelector(
-  ".lesson-learn__grid-unvisible"
-);
-const boxLessonsStrings = document.querySelector(".lesson-learn__box-strings");
+const itemPast11 = document.querySelector(".lesson-learn__grid-item-past11");
+const itemPast12 = document.querySelector(".lesson-learn__grid-item-past12");
+const itemPast13 = document.querySelector(".lesson-learn__grid-item-past13");
+const itemPast14 = document.querySelector(".lesson-learn__grid-item-past14");
+const itemPast15 = document.querySelector(".lesson-learn__grid-item-past15");
+
+const stringChoice = document.querySelector(".lesson-learn__box-str");
+const stringChoice2 = document.querySelector(".lesson-learn__box-str2");
+const stringChoice3 = document.querySelector(".lesson-learn__box-str3");
+const stringChoice4 = document.querySelector(".lesson-learn__box-str4");
+const stringChoice5 = document.querySelector(".lesson-learn__box-str5");
+
+const stringChoice6 = document.querySelector(".lesson-learn__box-str6");
+const stringChoice7 = document.querySelector(".lesson-learn__box-str7");
+const stringChoice8 = document.querySelector(".lesson-learn__box-str8");
+const stringChoice9 = document.querySelector(".lesson-learn__box-str9");
+const stringChoice10 = document.querySelector(".lesson-learn__box-str10");
+
+const stringChoice11 = document.querySelector(".lesson-learn__box-str11");
+const stringChoice12 = document.querySelector(".lesson-learn__box-str12");
+const stringChoice13 = document.querySelector(".lesson-learn__box-str13");
+const stringChoice14 = document.querySelector(".lesson-learn__box-str14");
+const stringChoice15 = document.querySelector(".lesson-learn__box-str15");
 
 const mixBtn = document.querySelector(".lesson-learn__mix");
+const mixBtn2 = document.querySelector(".lesson-learn__mix2");
+const mixBtn3 = document.querySelector(".lesson-learn__mix3");
 const checkStr = document.querySelector(".lesson-learn__check-str");
+const checkStr2 = document.querySelector(".lesson-learn__check-str2");
+const checkStr3 = document.querySelector(".lesson-learn__check-str3");
+const nextBtn = document.querySelector(".lesson-learn__next");
+const nextBtn2 = document.querySelector(".lesson-learn__next2");
+const nextBtn3 = document.querySelector(".lesson-learn__next3");
 
-mixBtn.addEventListener("click", mixStrings);
+const helpText = document.querySelector(".lesson-learn__text");
 
-function mixStrings() {
-  boxLessonsGrid.style.display = "none";
-  boxLessonsGridView.style.display = "grid";
-  boxLessonsStrings.style.display = "flex";
-  mixBtn.style.display = "none";
-  checkStr.style.display = "block";
-}
+const answersArray = [
+  "Нью-Йорк",
+  "результат",
+  "видеть",
+  "место",
+  "программа",
+  "этот",
+  "понимать",
+  "очень",
+  "видео",
+  "хорошо",
+  "и",
+  "страна",
+  "знать",
+  "урок",
+  "жить",
+];
 
 const stringChoices = [
   stringChoice,
@@ -42,39 +97,67 @@ const stringChoices = [
   stringChoice4,
   stringChoice5,
 ];
+const stringChoices2 = [
+  stringChoice6,
+  stringChoice7,
+  stringChoice8,
+  stringChoice9,
+  stringChoice10,
+];
+const stringChoices3 = [
+  stringChoice11,
+  stringChoice12,
+  stringChoice13,
+  stringChoice14,
+  stringChoice15,
+];
 
-const itemsPast = [itemPast, itemPast2, itemPast3, itemPast4, itemPast5];
+const itemsArrayPast = [itemPast, itemPast2, itemPast3, itemPast4, itemPast5];
+const itemsArrayPast2 = [
+  itemPast6,
+  itemPast7,
+  itemPast8,
+  itemPast9,
+  itemPast10,
+];
+const itemsArrayPast3 = [
+  itemPast11,
+  itemPast12,
+  itemPast13,
+  itemPast14,
+  itemPast15,
+];
 
-let currentIndex = 0; // Начальный индекс
+let rightAnswers = 0;
 
-stringChoices.forEach((stringChoice, index) => {
-  stringChoice.addEventListener("click", function () {
-    itemsPast[currentIndex].textContent = stringChoice.innerText;
-    currentIndex = currentIndex + 1;
-  });
-});
+let currentIndex = 0;
 
-stringChoice.addEventListener("click", function () {
-  stringChoice.style.display = "none";
-});
+let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
 
-stringChoice2.addEventListener("click", function () {
-  stringChoice2.style.display = "none";
-});
+function mixStrings(gridBlock, gridBlockView, blockStrings, mixBtn, checkStr) {
+  gridBlock.style.display = "none";
+  gridBlockView.style.display = "grid";
+  blockStrings.style.display = "flex";
+  mixBtn.style.display = "none";
+  checkStr.style.display = "block";
+  helpText.innerText = "Соотнесите слова с верным переводом";
+}
 
-stringChoice3.addEventListener("click", function () {
-  stringChoice3.style.display = "none";
-});
-
-stringChoice4.addEventListener("click", function () {
-  stringChoice4.style.display = "none";
-});
-
-stringChoice5.addEventListener("click", function () {
-  stringChoice5.style.display = "none";
-});
-
-checkStr.addEventListener("click", function () {
+function checkStringsRightOrNot(
+  itemsPast,
+  itemPast,
+  itemPast2,
+  itemPast3,
+  itemPast4,
+  itemPast5,
+  checkStr,
+  nextBtn,
+  num,
+  num2,
+  num3,
+  num4,
+  num5
+) {
   let currentItemPastValue = 0;
   for (const itemPast of itemsPast) {
     if (itemPast.innerText.length > 0) {
@@ -82,30 +165,180 @@ checkStr.addEventListener("click", function () {
     }
   }
   if (currentItemPastValue === 5) {
-    if (itemPast.innerText === answersArray[0]) {
+    if (itemPast.innerText === answersArray[num]) {
       itemPast.style.backgroundColor = "#13b113";
+      rightAnswers++;
     } else {
-      itemPast.style.backgroundColor = "#db5353"
+      itemPast.style.backgroundColor = "#db5353";
     }
-    if (itemPast2.innerText === answersArray[1]) {
+    if (itemPast2.innerText === answersArray[num2]) {
       itemPast2.style.backgroundColor = "#13b113";
+      rightAnswers++;
     } else {
-      itemPast2.style.backgroundColor = "#db5353"
+      itemPast2.style.backgroundColor = "#db5353";
     }
-    if (itemPast3.innerText === answersArray[2]) {
+    if (itemPast3.innerText === answersArray[num3]) {
       itemPast3.style.backgroundColor = "#13b113";
+      rightAnswers++;
     } else {
-      itemPast3.style.backgroundColor = "#db5353"
+      itemPast3.style.backgroundColor = "#db5353";
     }
-    if (itemPast4.innerText === answersArray[3]) {
+    if (itemPast4.innerText === answersArray[num4]) {
       itemPast4.style.backgroundColor = "#13b113";
+      rightAnswers++;
     } else {
-      itemPast4.style.backgroundColor = "#db5353"
+      itemPast4.style.backgroundColor = "#db5353";
     }
-    if (itemPast5.innerText === answersArray[4]) {
+    if (itemPast5.innerText === answersArray[num5]) {
       itemPast5.style.backgroundColor = "#13b113";
+      rightAnswers++;
     } else {
-      itemPast5.style.backgroundColor = "#db5353"
+      itemPast5.style.backgroundColor = "#db5353";
     }
+    checkStr.style.display = "none";
+    nextBtn.style.display = "block";
   }
+}
+
+function nextLesson(lesson1, lesson2) {
+  lesson1.style.display = "none";
+  lesson2.style.display = "block";
+}
+
+mixBtn.addEventListener("click", function () {
+  mixStrings(
+    boxLessonsGrid,
+    boxLessonsGridView,
+    boxLessonsStrings,
+    mixBtn,
+    checkStr
+  );
+
+  stringChoices.forEach((stringChoiceItem) => {
+    stringChoiceItem.addEventListener("click", function () {
+      itemsArrayPast[currentIndex].textContent = stringChoiceItem.innerText;
+      currentIndex++;
+    });
+  });
+  for (const string of stringChoices) {
+    string.addEventListener("click", function () {
+      string.style.display = "none";
+    });
+  }
+
+  checkStr.addEventListener("click", function () {
+    checkStringsRightOrNot(
+      itemsArrayPast,
+      itemPast,
+      itemPast2,
+      itemPast3,
+      itemPast4,
+      itemPast5,
+      checkStr,
+      nextBtn,
+      0,
+      1,
+      2,
+      3,
+      4
+    );
+    nextBtn.addEventListener("click", function () {
+      nextLesson(lesson01, lesson02);
+      currentIndex = 0;
+    });
+  });
 });
+
+mixBtn2.addEventListener("click", function () {
+  mixStrings(
+    boxLessonsGrid2,
+    boxLessonsGridView2,
+    boxLessonsStrings2,
+    mixBtn2,
+    checkStr2
+  );
+
+  stringChoices2.forEach((stringChoiceItem) => {
+    stringChoiceItem.addEventListener("click", function () {
+      itemsArrayPast2[currentIndex].textContent = stringChoiceItem.innerText;
+      currentIndex++;
+    });
+  });
+  for (const string of stringChoices2) {
+    string.addEventListener("click", function () {
+      string.style.display = "none";
+    });
+  }
+
+  checkStr2.addEventListener("click", function () {
+    checkStringsRightOrNot(
+      itemsArrayPast2,
+      itemPast6,
+      itemPast7,
+      itemPast8,
+      itemPast9,
+      itemPast10,
+      checkStr2,
+      nextBtn2,
+      5,
+      6,
+      7,
+      8,
+      9
+    );
+    nextBtn2.addEventListener("click", function () {
+      nextLesson(lesson02, lesson03);
+      currentIndex = 0;
+    });
+  });
+});
+
+mixBtn3.addEventListener("click", function () {
+  mixStrings(
+    boxLessonsGrid3,
+    boxLessonsGridView3,
+    boxLessonsStrings3,
+    mixBtn3,
+    checkStr3
+  );
+
+  stringChoices3.forEach((stringChoiceItem) => {
+    stringChoiceItem.addEventListener("click", function () {
+      itemsArrayPast3[currentIndex].textContent = stringChoiceItem.innerText;
+      currentIndex++;
+    });
+  });
+  for (const string of stringChoices3) {
+    string.addEventListener("click", function () {
+      string.style.display = "none";
+    });
+  }
+
+  checkStr3.addEventListener("click", function () {
+    checkStringsRightOrNot(
+      itemsArrayPast3,
+      itemPast11,
+      itemPast12,
+      itemPast13,
+      itemPast14,
+      itemPast15,
+      checkStr3,
+      nextBtn3,
+      10,
+      11,
+      12,
+      13,
+      14
+    );
+    if (rightAnswers === 15) {
+      if (beginner01.length === 2) {
+        beginner01.push(3);
+        saveToLocalStorage();
+      }
+    }
+  });
+});
+
+const saveToLocalStorage = function () {
+  localStorage.setItem("beginner01", JSON.stringify(beginner01));
+};

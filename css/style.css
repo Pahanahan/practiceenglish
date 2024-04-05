@@ -251,9 +251,6 @@ button {
 .lesson-learn__line220px {
   width: 220px;
 }
-.lesson-learn__line240px {
-  width: 240px;
-}
 
 .lesson-learn__box {
   display: flex;
@@ -431,14 +428,18 @@ button {
   display: none;
 }
 
-.lesson-learn__grid {
+.lesson-learn__grid, 
+.lesson-learn__grid2, 
+.lesson-learn__grid3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 20px;
 }
 
-.lesson-learn__grid-unvisible {
+.lesson-learn__grid-unvisible, 
+.lesson-learn__grid-unvisible2, 
+.lesson-learn__grid-unvisible3 {
   display: none;
   grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -462,7 +463,17 @@ button {
 .lesson-learn__grid-item-past2,
 .lesson-learn__grid-item-past3,
 .lesson-learn__grid-item-past4,
-.lesson-learn__grid-item-past5 {
+.lesson-learn__grid-item-past5, 
+.lesson-learn__grid-item-past6, 
+.lesson-learn__grid-item-past7, 
+.lesson-learn__grid-item-past8, 
+.lesson-learn__grid-item-past9, 
+.lesson-learn__grid-item-past10, 
+.lesson-learn__grid-item-past11, 
+.lesson-learn__grid-item-past12, 
+.lesson-learn__grid-item-past13, 
+.lesson-learn__grid-item-past14, 
+.lesson-learn__grid-item-past15 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -475,7 +486,9 @@ button {
   /* cursor: pointer; */
 }
 
-.lesson-learn__box-strings {
+.lesson-learn__box-strings,
+.lesson-learn__box-strings2,
+.lesson-learn__box-strings3 {
   display: none;
   justify-content: center;
   flex-wrap: wrap;
@@ -489,7 +502,17 @@ button {
 .lesson-learn__box-str2,
 .lesson-learn__box-str3, 
 .lesson-learn__box-str4,
-.lesson-learn__box-str5 {
+.lesson-learn__box-str5,
+.lesson-learn__box-str6,
+.lesson-learn__box-str7,
+.lesson-learn__box-str8,
+.lesson-learn__box-str9,
+.lesson-learn__box-str10,
+.lesson-learn__box-str11,
+.lesson-learn__box-str12,
+.lesson-learn__box-str13,
+.lesson-learn__box-str14,
+.lesson-learn__box-str15 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -507,11 +530,23 @@ button {
 .lesson-learn__box-str2:hover,
 .lesson-learn__box-str3:hover, 
 .lesson-learn__box-str4:hover,
-.lesson-learn__box-str5:hover {
+.lesson-learn__box-str5:hover,
+.lesson-learn__box-str6:hover,
+.lesson-learn__box-str7:hover,
+.lesson-learn__box-str8:hover,
+.lesson-learn__box-str9:hover,
+.lesson-learn__box-str10:hover,
+.lesson-learn__box-str11:hover,
+.lesson-learn__box-str12:hover,
+.lesson-learn__box-str13:hover,
+.lesson-learn__box-str14:hover,
+.lesson-learn__box-str15:hover {
   background-color: #2671fc;
 }
 
-.lesson-learn__mix {
+.lesson-learn__mix,
+.lesson-learn__mix2,
+.lesson-learn__mix3 {
   width: 300px;
   background-color: #0555e9;
   border: none;
@@ -521,7 +556,15 @@ button {
   color: #fff;
 }
 
-.lesson-learn__check-str {
+.lesson-learn__mix:hover,
+.lesson-learn__mix2:hover,
+.lesson-learn__mix3:hover {
+  background-color: #2c72f5;
+} 
+
+.lesson-learn__check-str,
+.lesson-learn__check-str2,
+.lesson-learn__check-str3 {
   display: none;
   width: 300px;
   background-color: #0555e9;
@@ -530,6 +573,10 @@ button {
   font-size: 20px;
   padding: 16px 0;
   color: #fff;
+}
+
+.lesson-learn__back-link {
+  padding-left: 121px;
 }
 
 /* Fading animation */
