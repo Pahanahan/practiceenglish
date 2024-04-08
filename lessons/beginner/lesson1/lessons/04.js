@@ -117,6 +117,10 @@ const stringsArray7 = [
   stringChoice27,
 ];
 
+const stringsArrays = [stringsArray, stringsArray2, stringsArray3, stringsArray4, stringsArray5, stringsArray6, stringsArray7];
+
+const boxLessonsStringsArray = [boxLessonsStrings, boxLessonsStrings2, boxLessonsStrings3, boxLessonsStrings4, boxLessonsStrings5, boxLessonsStrings6, boxLessonsStrings7];
+
 const audio01 = new Audio("audio04/i_understand_you.wav");
 const audio02 = new Audio("audio04/they_live_in_this_country.wav");
 const audio03 = new Audio("audio04/i_travel_every_year.wav");
@@ -139,6 +143,18 @@ let rightAnswers = 0;
 
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
 
+for (let i = 0; i < stringsArrays.length; i++) {
+  const stringsArray = stringsArrays[i];
+  const boxLessonsStrings = boxLessonsStringsArray[i];
+
+  stringsArray.forEach((stringChoice) => {
+    stringChoice.addEventListener("click", function () {
+      pasteInPhrase(boxLessonsStrings, stringChoice);
+    });
+  });
+}
+
+
 function pasteInPhrase(boxLessonsStrings, stringChoice) {
   boxLessonsStrings.textContent += " ";
   boxLessonsStrings.textContent += stringChoice.innerText;
@@ -152,14 +168,14 @@ function checkPhrases(
   index,
   answerRightOrNot,
   nextLesson,
-  audio
+  audio,
 ) {
-  if (boxLessonsStrings.textContent.length === 0) {
-    lessonCheck.disabled = true;
-    // нужно доработать не всегда работает кнопка
-  } else {
-    lessonCheck.disabled = false;
-    // надо доработать не убирается disabled
+  if (boxLessonsStrings.textContent.length > 0) {
+  //   lessonCheck.disabled = true;
+  //   // нужно доработать не всегда работает кнопка
+  // } else {
+  //   lessonCheck.disabled = false;
+  //   // надо доработать не убирается disabled
 
     if (boxLessonsStrings.textContent.trim() === answersArray[index]) {
       lessonCheck.style.display = "none";
@@ -185,42 +201,6 @@ function lessonNext(lesson1, lesson2) {
   lesson2.style.display = "flex";
 }
 
-stringsArray.forEach((stringChoice) => {
-  stringChoice.addEventListener("click", function () {
-    pasteInPhrase(boxLessonsStrings, stringChoice);
-  });
-});
-stringsArray2.forEach((stringChoice) => {
-  stringChoice.addEventListener("click", function () {
-    pasteInPhrase(boxLessonsStrings2, stringChoice);
-  });
-});
-stringsArray3.forEach((stringChoice) => {
-  stringChoice.addEventListener("click", function () {
-    pasteInPhrase(boxLessonsStrings3, stringChoice);
-  });
-});
-stringsArray4.forEach((stringChoice) => {
-  stringChoice.addEventListener("click", function () {
-    pasteInPhrase(boxLessonsStrings4, stringChoice);
-  });
-});
-stringsArray5.forEach((stringChoice) => {
-  stringChoice.addEventListener("click", function () {
-    pasteInPhrase(boxLessonsStrings5, stringChoice);
-  });
-});
-stringsArray6.forEach((stringChoice) => {
-  stringChoice.addEventListener("click", function () {
-    pasteInPhrase(boxLessonsStrings6, stringChoice);
-  });
-});
-stringsArray7.forEach((stringChoice) => {
-  stringChoice.addEventListener("click", function () {
-    pasteInPhrase(boxLessonsStrings7, stringChoice);
-  });
-});
-
 checkPhrase.addEventListener("click", function () {
   checkPhrases(
     boxLessonsStrings,
@@ -228,7 +208,7 @@ checkPhrase.addEventListener("click", function () {
     0,
     answerRightOrNot,
     nextBtn,
-    audio01
+    audio01,
   );
 });
 
@@ -243,7 +223,7 @@ checkPhrase2.addEventListener("click", function () {
     1,
     answerRightOrNot2,
     nextBtn2,
-    audio02
+    audio02,
   );
 });
 
@@ -331,3 +311,47 @@ checkPhrase7.addEventListener("click", function () {
 const saveToLocalStorage = function () {
   localStorage.setItem("beginner01", JSON.stringify(beginner01));
 };
+
+// function addWordToPhrase (stringsArray, boxLessonsStrings) {
+//   stringsArray.forEach((stringChoice) => {
+//     stringChoice.addEventListener("click", function () {
+//       pasteInPhrase(boxLessonsStrings, stringChoice);
+//     });
+//   });
+// }
+
+// stringsArray.forEach((stringChoice) => {
+//   stringChoice.addEventListener("click", function () {
+//     pasteInPhrase(boxLessonsStrings, stringChoice);
+//   });
+// });
+// stringsArray2.forEach((stringChoice) => {
+//   stringChoice.addEventListener("click", function () {
+//     pasteInPhrase(boxLessonsStrings2, stringChoice);
+//   });
+// });
+// stringsArray3.forEach((stringChoice) => {
+//   stringChoice.addEventListener("click", function () {
+//     pasteInPhrase(boxLessonsStrings3, stringChoice);
+//   });
+// });
+// stringsArray4.forEach((stringChoice) => {
+//   stringChoice.addEventListener("click", function () {
+//     pasteInPhrase(boxLessonsStrings4, stringChoice);
+//   });
+// });
+// stringsArray5.forEach((stringChoice) => {
+//   stringChoice.addEventListener("click", function () {
+//     pasteInPhrase(boxLessonsStrings5, stringChoice);
+//   });
+// });
+// stringsArray6.forEach((stringChoice) => {
+//   stringChoice.addEventListener("click", function () {
+//     pasteInPhrase(boxLessonsStrings6, stringChoice);
+//   });
+// });
+// stringsArray7.forEach((stringChoice) => {
+//   stringChoice.addEventListener("click", function () {
+//     pasteInPhrase(boxLessonsStrings7, stringChoice);
+//   });
+// });

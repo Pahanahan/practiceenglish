@@ -63,22 +63,21 @@ button {
 }
 
 .header__progress-block {
-  background-color: blue;
+  background-color: #209c0f;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 15px; */
   width: 70px;
   height: 70px;
   margin-right: 20px;
   border-radius: 50%;
-  border: 2px solid #080808;
+  border: 2px solid #0044ff;
 }
 
 .header__progress-percent {
   font-size: 20px;
   font-weight: 700;
-  color: #d8d8d8;
+  color: #ffffff;
 }
 
 .header__progress-text {
@@ -153,7 +152,12 @@ button {
   cursor: pointer;
 }
 
-.lesson__complete {
+.lesson__complete1,
+.lesson__complete2,
+.lesson__complete3,
+.lesson__complete4,
+.lesson__complete5,
+.lesson__complete6 {
   background-color: #fab433;
   display: flex;
   justify-content: center;
@@ -224,11 +228,17 @@ button {
 .lesson-learn__line40px {
   width: 40px;
 }
+.lesson-learn__line50px {
+  width: 50px;
+}
 .lesson-learn__line60px {
   width: 60px;
 }
 .lesson-learn__line80px {
   width: 80px;
+}
+.lesson-learn__line90px {
+  width: 90px;
 }
 .lesson-learn__line100px {
   width: 100px;
@@ -239,11 +249,17 @@ button {
 .lesson-learn__line140px {
   width: 140px;
 }
+.lesson-learn__line150px {
+  width: 160px;
+}
 .lesson-learn__line160px {
   width: 160px;
 }
 .lesson-learn__line180px {
   width: 180px;
+}
+.lesson-learn__line190px {
+  width: 190px;
 }
 .lesson-learn__line200px {
   width: 200px;
@@ -275,7 +291,6 @@ button {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  /* position: relative; */
 }
 
 .lesson-learn__box-answer,
@@ -288,7 +303,11 @@ button {
 .lesson-learn__box-answer8,
 .lesson-learn__box-answer9,
 .lesson-learn__box-answer10,
-.lesson-learn__box-answer11 {
+.lesson-learn__box-answer11,
+.lesson-learn__box-answer12,
+.lesson-learn__box-answer13,
+.lesson-learn__box-answer14,
+.lesson-learn__box-answer15 {
   margin-top: 50px;
   width: 300px;
   height: 100px;
@@ -342,7 +361,11 @@ button {
 .lesson-learn__check8,
 .lesson-learn__check9,
 .lesson-learn__check10,
-.lesson-learn__check11 {
+.lesson-learn__check11,
+.lesson-learn__check12,
+.lesson-learn__check13,
+.lesson-learn__check14,
+.lesson-learn__check15 {
   width: 300px;
   background-color: #0555e9;
   border: none;
@@ -362,7 +385,11 @@ button {
 .lesson-learn__check8:hover,
 .lesson-learn__check9:hover,
 .lesson-learn__check10:hover,
-.lesson-learn__check11:hover {
+.lesson-learn__check11:hover,
+.lesson-learn__check12:hover,
+.lesson-learn__check13:hover,
+.lesson-learn__check14:hover,
+.lesson-learn__check15:hover {
   background-color: #2c72f5;
 }
 
@@ -376,7 +403,11 @@ button {
 .lesson-learn__next8,
 .lesson-learn__next9,
 .lesson-learn__next10,
-.lesson-learn__next11 {
+.lesson-learn__next11,
+.lesson-learn__next12,
+.lesson-learn__next13,
+.lesson-learn__next14,
+.lesson-learn__next15 {
   width: 300px;
   background-color: #0555e9;
   border: none;
@@ -402,18 +433,8 @@ button {
   text-align: center;
 }
 
-.lesson-learn__next:hover,
-.lesson-learn__next2:hover,
-.lesson-learn__next3:hover,
-.lesson-learn__next4:hover,
-.lesson-learn__next5:hover,
-.lesson-learn__next6:hover,
-.lesson-learn__next7:hover,
-.lesson-learn__next8:hover,
-.lesson-learn__next9:hover,
-.lesson-learn__next10:hover,
-.lesson-learn__next11:hover,
-.lesson-learn__next-back:hover {
+[class^="lesson-learn__next"]:hover,
+[class^="lesson-learn__next-back"]:hover {
   background-color: #2671fc;
 }
 
@@ -426,7 +447,11 @@ button {
 .lesson08,
 .lesson09,
 .lesson10,
-.lesson11 {
+.lesson11,
+.lesson12,
+.lesson13,
+.lesson14,
+.lesson15 {
   display: none;
 }
 
@@ -458,7 +483,6 @@ button {
   align-items: center;
   height: 40px;
   margin-bottom: 8px;
-  /* cursor: pointer; */
 }
 
 .lesson-learn__grid-item-past,
@@ -512,7 +536,79 @@ button {
 .lesson-learn__box-str12,
 .lesson-learn__box-str13,
 .lesson-learn__box-str14,
-.lesson-learn__box-str15 {
+.lesson-learn__box-str15,
+.lesson-learn__box-str16,
+.lesson-learn__box-str17,
+.lesson-learn__box-str18,
+.lesson-learn__box-str19,
+.lesson-learn__box-str20,
+.lesson-learn__box-str21,
+.lesson-learn__box-str22,
+.lesson-learn__box-str23,
+.lesson-learn__box-str24,
+.lesson-learn__box-str25,
+.lesson-learn__box-str26,
+.lesson-learn__box-str27,
+.lesson-learn__box-str28,
+.lesson-learn__box-str29,
+.lesson-learn__box-str30,
+.lesson-learn__box-str31,
+.lesson-learn__box-str32,
+.lesson-learn__box-str33,
+.lesson-learn__box-str34,
+.lesson-learn__box-str35,
+.lesson-learn__box-str36,
+.lesson-learn__box-str37,
+.lesson-learn__box-str38,
+.lesson-learn__box-str39,
+.lesson-learn__box-str40,
+.lesson-learn__box-str41,
+.lesson-learn__box-str42,
+.lesson-learn__box-str43,
+.lesson-learn__box-str44,
+.lesson-learn__box-str45,
+.lesson-learn__box-str46,
+.lesson-learn__box-str47,
+.lesson-learn__box-str48,
+.lesson-learn__box-str49,
+.lesson-learn__box-str50,
+.lesson-learn__box-str51,
+.lesson-learn__box-str52,
+.lesson-learn__box-str53,
+.lesson-learn__box-str54,
+.lesson-learn__box-str55,
+.lesson-learn__box-str56,
+.lesson-learn__box-str57,
+.lesson-learn__box-str58,
+.lesson-learn__box-str59,
+.lesson-learn__box-str60,
+.lesson-learn__box-str61,
+.lesson-learn__box-str62,
+.lesson-learn__box-str63,
+.lesson-learn__box-str64,
+.lesson-learn__box-str65,
+.lesson-learn__box-str66,
+.lesson-learn__box-str67,
+.lesson-learn__box-str68,
+.lesson-learn__box-str69,
+.lesson-learn__box-str70,
+.lesson-learn__box-str71,
+.lesson-learn__box-str72,
+.lesson-learn__box-str73,
+.lesson-learn__box-str74,
+.lesson-learn__box-str75,
+.lesson-learn__box-str76,
+.lesson-learn__box-str77,
+.lesson-learn__box-str78,
+.lesson-learn__box-str79,
+.lesson-learn__box-str80,
+.lesson-learn__box-str81,
+.lesson-learn__box-str82,
+.lesson-learn__box-str83,
+.lesson-learn__box-str84,
+.lesson-learn__box-str85,
+.lesson-learn__box-str86,
+.lesson-learn__box-str87 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -540,9 +636,86 @@ button {
 .lesson-learn__box-str12:hover,
 .lesson-learn__box-str13:hover,
 .lesson-learn__box-str14:hover,
-.lesson-learn__box-str15:hover {
+.lesson-learn__box-str15:hover,
+.lesson-learn__box-str16:hover,
+.lesson-learn__box-str17:hover,
+.lesson-learn__box-str18:hover,
+.lesson-learn__box-str19:hover,
+.lesson-learn__box-str20:hover,
+.lesson-learn__box-str21:hover,
+.lesson-learn__box-str22:hover,
+.lesson-learn__box-str23:hover,
+.lesson-learn__box-str24:hover,
+.lesson-learn__box-str25:hover,
+.lesson-learn__box-str26:hover,
+.lesson-learn__box-str27:hover,
+.lesson-learn__box-str28:hover,
+.lesson-learn__box-str29:hover,
+.lesson-learn__box-str30:hover,
+.lesson-learn__box-str31:hover,
+.lesson-learn__box-str32:hover,
+.lesson-learn__box-str33:hover,
+.lesson-learn__box-str34:hover,
+.lesson-learn__box-str35:hover,
+.lesson-learn__box-str36:hover,
+.lesson-learn__box-str37:hover,
+.lesson-learn__box-str38:hover,
+.lesson-learn__box-str39:hover,
+.lesson-learn__box-str40:hover,
+.lesson-learn__box-str41:hover,
+.lesson-learn__box-str42:hover,
+.lesson-learn__box-str43:hover,
+.lesson-learn__box-str44:hover,
+.lesson-learn__box-str45:hover,
+.lesson-learn__box-str46:hover,
+.lesson-learn__box-str47:hover,
+.lesson-learn__box-str48:hover,
+.lesson-learn__box-str49:hover,
+.lesson-learn__box-str50:hover,
+.lesson-learn__box-str51:hover,
+.lesson-learn__box-str52:hover,
+.lesson-learn__box-str53:hover,
+.lesson-learn__box-str54:hover,
+.lesson-learn__box-str55:hover,
+.lesson-learn__box-str56:hover,
+.lesson-learn__box-str57:hover,
+.lesson-learn__box-str58:hover,
+.lesson-learn__box-str59:hover,
+.lesson-learn__box-str60:hover,
+.lesson-learn__box-str61:hover,
+.lesson-learn__box-str62:hover,
+.lesson-learn__box-str63:hover,
+.lesson-learn__box-str64:hover,
+.lesson-learn__box-str65:hover,
+.lesson-learn__box-str66:hover,
+.lesson-learn__box-str67:hover,
+.lesson-learn__box-str68:hover,
+.lesson-learn__box-str69:hover,
+.lesson-learn__box-str70:hover,
+.lesson-learn__box-str71:hover,
+.lesson-learn__box-str72:hover,
+.lesson-learn__box-str73:hover,
+.lesson-learn__box-str74:hover,
+.lesson-learn__box-str75:hover,
+.lesson-learn__box-str76:hover,
+.lesson-learn__box-str77:hover,
+.lesson-learn__box-str78:hover,
+.lesson-learn__box-str79:hover,
+.lesson-learn__box-str80:hover,
+.lesson-learn__box-str81:hover,
+.lesson-learn__box-str82:hover,
+.lesson-learn__box-str83:hover,
+.lesson-learn__box-str84:hover,
+.lesson-learn__box-str85:hover,
+.lesson-learn__box-str86:hover,
+.lesson-learn__box-str87:hover {
   background-color: #2671fc;
 }
+
+
+/* [class^="lesson-learn__box-str"]:hover {
+  background-color: #2671fc;
+} */
 
 .lesson-learn__mix,
 .lesson-learn__mix2,
@@ -619,7 +792,15 @@ button {
 .lesson-learn__block-strings4,
 .lesson-learn__block-strings5,
 .lesson-learn__block-strings6,
-.lesson-learn__block-strings7 {
+.lesson-learn__block-strings7,
+.lesson-learn__block-strings8,
+.lesson-learn__block-strings9,
+.lesson-learn__block-strings10,
+.lesson-learn__block-strings11,
+.lesson-learn__block-strings12,
+.lesson-learn__block-strings13,
+.lesson-learn__block-strings14,
+.lesson-learn__block-strings15 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -658,7 +839,67 @@ button {
 .lesson-learn__block-str24,
 .lesson-learn__block-str25,
 .lesson-learn__block-str26,
-.lesson-learn__block-str27 {
+.lesson-learn__block-str27,
+.lesson-learn__block-str28,
+.lesson-learn__block-str29,
+.lesson-learn__block-str30,
+.lesson-learn__block-str31,
+.lesson-learn__block-str32,
+.lesson-learn__block-str33,
+.lesson-learn__block-str34,
+.lesson-learn__block-str35,
+.lesson-learn__block-str36,
+.lesson-learn__block-str37,
+.lesson-learn__block-str38,
+.lesson-learn__block-str39,
+.lesson-learn__block-str40,
+.lesson-learn__block-str41,
+.lesson-learn__block-str42,
+.lesson-learn__block-str43,
+.lesson-learn__block-str44,
+.lesson-learn__block-str45,
+.lesson-learn__block-str46,
+.lesson-learn__block-str47,
+.lesson-learn__block-str48,
+.lesson-learn__block-str49,
+.lesson-learn__block-str50,
+.lesson-learn__block-str51,
+.lesson-learn__block-str52,
+.lesson-learn__block-str53,
+.lesson-learn__block-str54,
+.lesson-learn__block-str55,
+.lesson-learn__block-str56,
+.lesson-learn__block-str57,
+.lesson-learn__block-str58,
+.lesson-learn__block-str59,
+.lesson-learn__block-str60,
+.lesson-learn__block-str61,
+.lesson-learn__block-str62,
+.lesson-learn__block-str63,
+.lesson-learn__block-str64,
+.lesson-learn__block-str65,
+.lesson-learn__block-str66,
+.lesson-learn__block-str67,
+.lesson-learn__block-str68,
+.lesson-learn__block-str69,
+.lesson-learn__block-str70,
+.lesson-learn__block-str71,
+.lesson-learn__block-str72,
+.lesson-learn__block-str73,
+.lesson-learn__block-str74,
+.lesson-learn__block-str75,
+.lesson-learn__block-str76,
+.lesson-learn__block-str77,
+.lesson-learn__block-str78,
+.lesson-learn__block-str79,
+.lesson-learn__block-str80,
+.lesson-learn__block-str81,
+.lesson-learn__block-str82,
+.lesson-learn__block-str83,
+.lesson-learn__block-str84,
+.lesson-learn__block-str85,
+.lesson-learn__block-str86,
+.lesson-learn__block-str87 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -674,31 +915,90 @@ button {
 
 .lesson-learn__block-str:hover,
 .lesson-learn__block-str2:hover,
-.lesson-learn__block-str3:hover, 
-.lesson-learn__block-str4:hover, 
-.lesson-learn__block-str5:hover, 
-.lesson-learn__block-str6:hover, 
-.lesson-learn__block-str7:hover, 
-.lesson-learn__block-str8:hover, 
-.lesson-learn__block-str9:hover, 
-.lesson-learn__block-str10:hover, 
-.lesson-learn__block-str11:hover, 
-.lesson-learn__block-str12:hover, 
-.lesson-learn__block-str13:hover, 
-.lesson-learn__block-str14:hover, 
-.lesson-learn__block-str15:hover, 
-.lesson-learn__block-str16:hover, 
-.lesson-learn__block-str17:hover, 
-.lesson-learn__block-str18:hover, 
-.lesson-learn__block-str19:hover, 
-.lesson-learn__block-str20:hover, 
-.lesson-learn__block-str21:hover, 
-.lesson-learn__block-str22:hover, 
-.lesson-learn__block-str23:hover, 
-.lesson-learn__block-str24:hover, 
-.lesson-learn__block-str25:hover, 
-.lesson-learn__block-str26:hover, 
-.lesson-learn__block-str27:hover {
+.lesson-learn__block-str3:hover,
+.lesson-learn__block-str4:hover,
+.lesson-learn__block-str5:hover,
+.lesson-learn__block-str6:hover,
+.lesson-learn__block-str7:hover,
+.lesson-learn__block-str8:hover,
+.lesson-learn__block-str9:hover,
+.lesson-learn__block-str10:hover,
+.lesson-learn__block-str11:hover,
+.lesson-learn__block-str12:hover,
+.lesson-learn__block-str13:hover,
+.lesson-learn__block-str14:hover,
+.lesson-learn__block-str15:hover,
+.lesson-learn__block-str16:hover,
+.lesson-learn__block-str17:hover,
+.lesson-learn__block-str18:hover,
+.lesson-learn__block-str19:hover,
+.lesson-learn__block-str20:hover,
+.lesson-learn__block-str21:hover,
+.lesson-learn__block-str22:hover,
+.lesson-learn__block-str23:hover,
+.lesson-learn__block-str24:hover,
+.lesson-learn__block-str25:hover,
+.lesson-learn__block-str26:hover,
+.lesson-learn__block-str27:hover,
+.lesson-learn__block-str28:hover,
+.lesson-learn__block-str29:hover,
+.lesson-learn__block-str30:hover,
+.lesson-learn__block-str31:hover,
+.lesson-learn__block-str32:hover,
+.lesson-learn__block-str33:hover,
+.lesson-learn__block-str34:hover,
+.lesson-learn__block-str35:hover,
+.lesson-learn__block-str36:hover,
+.lesson-learn__block-str37:hover,
+.lesson-learn__block-str38:hover,
+.lesson-learn__block-str39:hover,
+.lesson-learn__block-str40:hover,
+.lesson-learn__block-str41:hover,
+.lesson-learn__block-str42:hover,
+.lesson-learn__block-str43:hover,
+.lesson-learn__block-str44:hover,
+.lesson-learn__block-str45:hover,
+.lesson-learn__block-str46:hover,
+.lesson-learn__block-str47:hover,
+.lesson-learn__block-str48:hover,
+.lesson-learn__block-str49:hover,
+.lesson-learn__block-str50:hover,
+.lesson-learn__block-str51:hover,
+.lesson-learn__block-str52:hover,
+.lesson-learn__block-str53:hover,
+.lesson-learn__block-str54:hover,
+.lesson-learn__block-str55:hover,
+.lesson-learn__block-str56:hover,
+.lesson-learn__block-str57:hover,
+.lesson-learn__block-str58:hover,
+.lesson-learn__block-str59:hover,
+.lesson-learn__block-str60:hover,
+.lesson-learn__block-str61:hover,
+.lesson-learn__block-str62:hover,
+.lesson-learn__block-str63:hover,
+.lesson-learn__block-str64:hover,
+.lesson-learn__block-str65:hover,
+.lesson-learn__block-str66:hover,
+.lesson-learn__block-str67:hover,
+.lesson-learn__block-str68:hover,
+.lesson-learn__block-str69:hover,
+.lesson-learn__block-str71:hover
+.lesson-learn__block-str72:hover
+.lesson-learn__block-str73:hover
+.lesson-learn__block-str74:hover
+.lesson-learn__block-str75:hover
+.lesson-learn__block-str76:hover
+.lesson-learn__block-str77:hover
+.lesson-learn__block-str78:hover
+.lesson-learn__block-str79:hover
+.lesson-learn__block-str80:hover
+.lesson-learn__block-str81:hover
+.lesson-learn__block-str82:hover
+.lesson-learn__block-str83:hover
+.lesson-learn__block-str84:hover
+.lesson-learn__block-str85:hover
+.lesson-learn__block-str86:hover
+.lesson-learn__block-str87:hover {
   opacity: 0.8;
 }
 
