@@ -24,6 +24,10 @@ const boxLessonsStrings3 = document.querySelector(
   ".lesson-learn__box-strings3"
 );
 
+const answerRightOrNot = document.querySelector(".lesson-learn__box-answer");
+const answerRightOrNot2 = document.querySelector(".lesson-learn__box-answer2");
+const answerRightOrNot3 = document.querySelector(".lesson-learn__box-answer3");
+
 const itemPast = document.querySelector(".lesson-learn__grid-item-past");
 const itemPast2 = document.querySelector(".lesson-learn__grid-item-past2");
 const itemPast3 = document.querySelector(".lesson-learn__grid-item-past3");
@@ -156,9 +160,11 @@ function checkStringsRightOrNot(
   num2,
   num3,
   num4,
-  num5
+  num5,
+  answerRightOrNot
 ) {
   let currentItemPastValue = 0;
+  let answerCorrect = 0;
   for (const itemPast of itemsPast) {
     if (itemPast.innerText.length > 0) {
       currentItemPastValue++;
@@ -167,34 +173,50 @@ function checkStringsRightOrNot(
   if (currentItemPastValue === 5) {
     if (itemPast.innerText === answersArray[num]) {
       itemPast.style.backgroundColor = "#13b113";
+      answerCorrect++;
       rightAnswers++;
     } else {
       itemPast.style.backgroundColor = "#db5353";
     }
     if (itemPast2.innerText === answersArray[num2]) {
       itemPast2.style.backgroundColor = "#13b113";
+      answerCorrect++;
       rightAnswers++;
     } else {
       itemPast2.style.backgroundColor = "#db5353";
     }
     if (itemPast3.innerText === answersArray[num3]) {
       itemPast3.style.backgroundColor = "#13b113";
+      answerCorrect++;
       rightAnswers++;
     } else {
       itemPast3.style.backgroundColor = "#db5353";
     }
     if (itemPast4.innerText === answersArray[num4]) {
       itemPast4.style.backgroundColor = "#13b113";
+      answerCorrect++;
       rightAnswers++;
     } else {
       itemPast4.style.backgroundColor = "#db5353";
     }
     if (itemPast5.innerText === answersArray[num5]) {
       itemPast5.style.backgroundColor = "#13b113";
+      answerCorrect++;
       rightAnswers++;
     } else {
       itemPast5.style.backgroundColor = "#db5353";
     }
+    if (answerCorrect === 5) {
+      answerRightOrNot.classList.add('lesson-learn__box-answer__correct');
+      answerRightOrNot.textContent = 'Правильно!'
+    } else if (answerCorrect > 0) {
+      answerRightOrNot.classList.add('lesson-learn__box-answer__incorrect');
+      answerRightOrNot.textContent = 'Вы допустили ошибку!'
+    } else if (answerCorrect === 0) {
+      answerRightOrNot.classList.add('lesson-learn__box-answer__incorrect');
+      answerRightOrNot.textContent = 'Ни одного правильного ответа!'
+    }
+    answerRightOrNot.style.display = 'flex';
     checkStr.style.display = "none";
     nextBtn.style.display = "block";
   }
@@ -240,7 +262,8 @@ mixBtn.addEventListener("click", function () {
       1,
       2,
       3,
-      4
+      4,
+      answerRightOrNot
     );
     nextBtn.addEventListener("click", function () {
       nextLesson(lesson01, lesson02);
@@ -284,7 +307,8 @@ mixBtn2.addEventListener("click", function () {
       6,
       7,
       8,
-      9
+      9,
+      answerRightOrNot2
     );
     nextBtn2.addEventListener("click", function () {
       nextLesson(lesson02, lesson03);
@@ -328,7 +352,8 @@ mixBtn3.addEventListener("click", function () {
       11,
       12,
       13,
-      14
+      14,
+      answerRightOrNot3
     );
     if (rightAnswers === 15) {
       if (beginner01.length === 2) {
