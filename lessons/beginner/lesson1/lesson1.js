@@ -18,12 +18,21 @@ const begginerLessonStart5 = document.querySelector(
 const begginerLessonStart6 = document.querySelector(
   ".begginer1-lesson__box6-start"
 );
+const begginerLessonStart7 = document.querySelector(
+  ".begginer1-lesson__box7-start"
+);
+const begginerLessonStart8 = document.querySelector(
+  ".begginer1-lesson__box8-start"
+);
+
 const lessonImage1 = document.querySelector(".lesson__image01");
 const lessonImage2 = document.querySelector(".lesson__image02");
 const lessonImage3 = document.querySelector(".lesson__image03");
 const lessonImage4 = document.querySelector(".lesson__image04");
 const lessonImage5 = document.querySelector(".lesson__image05");
 const lessonImage6 = document.querySelector(".lesson__image06");
+const lessonImage7 = document.querySelector(".lesson__image07");
+const lessonImage8 = document.querySelector(".lesson__image08");
 
 const lessonComplete1 = document.querySelector('.lesson__complete1')
 const lessonComplete2 = document.querySelector('.lesson__complete2')
@@ -31,6 +40,8 @@ const lessonComplete3 = document.querySelector('.lesson__complete3')
 const lessonComplete4 = document.querySelector('.lesson__complete4')
 const lessonComplete5 = document.querySelector('.lesson__complete5')
 const lessonComplete6 = document.querySelector('.lesson__complete6')
+const lessonComplete7 = document.querySelector('.lesson__complete7')
+const lessonComplete8 = document.querySelector('.lesson__complete8')
 
 let currentCompleteLessons = 0
 
@@ -88,6 +99,26 @@ if (beginner01 === null) {
     lessonComplete5.style.backgroundColor = '#209c0f'
     lessonImage5.setAttribute("src", "/img/complete.png");
     lessonImage6.setAttribute("src", "/img/start.png");
+  }
+  if (beginner01[5] === 6) {
+    begginerLessonStart7.setAttribute(
+      "href",
+      "/lessons/beginner/lesson1/lessons/07.html"
+    );
+    currentCompleteLessons++
+    lessonComplete6.style.backgroundColor = '#209c0f'
+    lessonImage6.setAttribute("src", "/img/complete.png");
+    lessonImage7.setAttribute("src", "/img/start.png");
+  }
+  if (beginner01[6] === 7) {
+    begginerLessonStart8.setAttribute(
+      "href",
+      "/lessons/beginner/lesson1/lessons/07.html"
+    );
+    currentCompleteLessons++
+    lessonComplete7.style.backgroundColor = '#209c0f'
+    lessonImage7.setAttribute("src", "/img/complete.png");
+    lessonImage8.setAttribute("src", "/img/start.png");
   }
 }
 
