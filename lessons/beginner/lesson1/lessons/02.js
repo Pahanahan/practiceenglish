@@ -164,39 +164,6 @@ function answerCheck(
   }
 }
 
-// function answerCheck11(
-//   index,
-//   checkAnswer,
-//   answerCorrectOrIncorrect,
-//   next,
-//   audio,
-// ) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect.textContent = "Правильно!";
-//       answerCorrectOrIncorrect.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer.style.display = "none";
-//       console.log(checkAnswer);
-//       next.style.display = "block";
-//       console.log(next);
-//       rightAnswers++;
-//       audio.play();
-//     } else {
-//       answerCorrectOrIncorrect.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer.style.display = "none";
-//       next.style.display = "block";
-//       console.log(next);
-//       audio.play();
-//     }
-//   }
-// }
-
 checkAnswer.addEventListener("click", function () {
   answerCheck(
     0,

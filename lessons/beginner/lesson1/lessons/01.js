@@ -111,9 +111,7 @@ let choiceItemCheck = "";
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
 
 if (beginner01 === null) {
-  console.log(beginner01);
   beginner01 = [];
-  console.log(beginner01);
 }
 
 choiceItems.forEach((btn, index) => {
@@ -151,7 +149,6 @@ function answerCheck(
       checkAnswer.style.display = "none";
       next.style.display = "block";
       rightAnswers++;
-      console.log(rightAnswers);
       audio.play();
     } else {
       answerCorrectOrIncorrect.textContent = "Неправильный ответ!";
@@ -186,11 +183,8 @@ function answerCheck11(
         "lesson-learn__box-answer__correct"
       );
       checkAnswer.style.display = "none";
-      console.log(checkAnswer);
       next.style.display = "block";
-      console.log(next);
       rightAnswers++;
-      console.log(rightAnswers);
       audio.play();
     } else {
       answerCorrectOrIncorrect.textContent = "Неправильный ответ!";
@@ -199,7 +193,6 @@ function answerCheck11(
       );
       checkAnswer.style.display = "none";
       next.style.display = "block";
-      console.log(next);
       audio.play();
     }
   }
