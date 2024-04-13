@@ -53,7 +53,7 @@ if (beginner01 === null) {
   if (beginner01[0] === 1) {
     begginerLessonStart2.setAttribute(
       "href",
-      "../../../../lessons/beginner/lesson1/lessons/02.html"
+      "../../../lessons/beginner/lesson1/lessons/02.html"
     );
     currentCompleteLessons++
     lessonComplete1.style.backgroundColor = '#209c0f'
@@ -63,7 +63,7 @@ if (beginner01 === null) {
   if (beginner01[1] === 2) {
     begginerLessonStart3.setAttribute(
       "href",
-      "../../../../lessons/beginner/lesson1/lessons/03.html"
+      "../../../lessons/beginner/lesson1/lessons/03.html"
     );
     currentCompleteLessons++
     lessonComplete2.style.backgroundColor = '#209c0f'
@@ -73,7 +73,7 @@ if (beginner01 === null) {
   if (beginner01[2] === 3) {
     begginerLessonStart4.setAttribute(
       "href",
-      "../../../../lessons/beginner/lesson1/lessons/04.html"
+      "../../../lessons/beginner/lesson1/lessons/04.html"
     );
     currentCompleteLessons++
     lessonComplete3.style.backgroundColor = '#209c0f'
@@ -83,7 +83,7 @@ if (beginner01 === null) {
   if (beginner01[3] === 4) {
     begginerLessonStart5.setAttribute(
       "href",
-      "../../../../lessons/beginner/lesson1/lessons/05.html"
+      "../../../lessons/beginner/lesson1/lessons/05.html"
     );
     currentCompleteLessons++
     lessonComplete4.style.backgroundColor = '#209c0f'
@@ -93,7 +93,7 @@ if (beginner01 === null) {
   if (beginner01[4] === 5) {
     begginerLessonStart6.setAttribute(
       "href",
-      "../../../../lessons/beginner/lesson1/lessons/06.html"
+      "../../../lessons/beginner/lesson1/lessons/06.html"
     );
     currentCompleteLessons++
     lessonComplete5.style.backgroundColor = '#209c0f'
@@ -103,7 +103,7 @@ if (beginner01 === null) {
   if (beginner01[5] === 6) {
     begginerLessonStart7.setAttribute(
       "href",
-      "../../../../lessons/beginner/lesson1/lessons/07.html"
+      "../../../lessons/beginner/lesson1/lessons/07.html"
     );
     currentCompleteLessons++
     lessonComplete6.style.backgroundColor = '#209c0f'
@@ -113,7 +113,7 @@ if (beginner01 === null) {
   if (beginner01[6] === 7) {
     begginerLessonStart8.setAttribute(
       "href",
-      "../../../../lessons/beginner/lesson1/lessons/08.html"
+      "../../../lessons/beginner/lesson1/lessons/08.html"
     );
     currentCompleteLessons++
     lessonComplete7.style.backgroundColor = '#209c0f'
