@@ -113,7 +113,7 @@ if (beginner01 === null) {
   if (beginner01[6] === 7) {
     begginerLessonStart8.setAttribute(
       "href",
-      "/lessons/beginner/lesson1/lessons/07.html"
+      "/lessons/beginner/lesson1/lessons/08.html"
     );
     currentCompleteLessons++
     lessonComplete7.style.backgroundColor = '#209c0f'
