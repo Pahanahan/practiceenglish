@@ -159,7 +159,9 @@ button {
 .lesson__complete5,
 .lesson__complete6,
 .lesson__complete7,
-.lesson__complete8 {
+.lesson__complete8,
+.lesson__complete9,
+.lesson__complete10 {
   background-color: #fab433;
   display: flex;
   justify-content: center;
@@ -332,7 +334,16 @@ button {
   display: flex;
 }
 
-.lesson-learn__choice-item {
+.lesson-learn__choice-item,
+.lesson-learn__choice-item2,
+.lesson-learn__choice-item3,
+.lesson-learn__choice-item4,
+.lesson-learn__choice-item5,
+.lesson-learn__choice-item6,
+.lesson-learn__choice-item7,
+.lesson-learn__choice-item8,
+.lesson-learn__choice-item9,
+.lesson-learn__choice-item10 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -345,11 +356,29 @@ button {
   cursor: pointer;
 }
 
-.lesson-learn__choice-item:hover {
+.lesson-learn__choice-item:hover,
+.lesson-learn__choice-item2:hover,
+.lesson-learn__choice-item3:hover,
+.lesson-learn__choice-item4:hover,
+.lesson-learn__choice-item5:hover,
+.lesson-learn__choice-item6:hover,
+.lesson-learn__choice-item7:hover,
+.lesson-learn__choice-item8:hover,
+.lesson-learn__choice-item9:hover,
+.lesson-learn__choice-item10:hover {
   background-color: #2254f7;
 }
 
-.lesson-learn__choice-item--active {
+.lesson-learn__choice-item--active,
+.lesson-learn__choice-item--active2,
+.lesson-learn__choice-item--active3,
+.lesson-learn__choice-item--active4,
+.lesson-learn__choice-item--active5,
+.lesson-learn__choice-item--active6,
+.lesson-learn__choice-item--active7,
+.lesson-learn__choice-item--active8,
+.lesson-learn__choice-item--active9,
+.lesson-learn__choice-item--active10 {
   background-color: #2254f7;
 }
 
@@ -714,7 +743,6 @@ button {
   background-color: #2671fc;
 }
 
-
 /* [class^="lesson-learn__box-str"]:hover {
   background-color: #2671fc;
 } */
@@ -985,22 +1013,22 @@ button {
 .lesson-learn__block-str68:hover,
 .lesson-learn__block-str69:hover,
 .lesson-learn__block-str71:hover
-.lesson-learn__block-str72:hover
-.lesson-learn__block-str73:hover
-.lesson-learn__block-str74:hover
-.lesson-learn__block-str75:hover
-.lesson-learn__block-str76:hover
-.lesson-learn__block-str77:hover
-.lesson-learn__block-str78:hover
-.lesson-learn__block-str79:hover
-.lesson-learn__block-str80:hover
-.lesson-learn__block-str81:hover
-.lesson-learn__block-str82:hover
-.lesson-learn__block-str83:hover
-.lesson-learn__block-str84:hover
-.lesson-learn__block-str85:hover
-.lesson-learn__block-str86:hover
-.lesson-learn__block-str87:hover {
+  .lesson-learn__block-str72:hover
+  .lesson-learn__block-str73:hover
+  .lesson-learn__block-str74:hover
+  .lesson-learn__block-str75:hover
+  .lesson-learn__block-str76:hover
+  .lesson-learn__block-str77:hover
+  .lesson-learn__block-str78:hover
+  .lesson-learn__block-str79:hover
+  .lesson-learn__block-str80:hover
+  .lesson-learn__block-str81:hover
+  .lesson-learn__block-str82:hover
+  .lesson-learn__block-str83:hover
+  .lesson-learn__block-str84:hover
+  .lesson-learn__block-str85:hover
+  .lesson-learn__block-str86:hover
+  .lesson-learn__block-str87:hover {
   opacity: 0.8;
 }
 
@@ -1027,6 +1055,20 @@ button {
   cursor: pointer;
 }
 
+.lesson-learn__phrase-span,
+.lesson-learn__phrase-span2,
+.lesson-learn__phrase-span3,
+.lesson-learn__phrase-span4,
+.lesson-learn__phrase-span5,
+.lesson-learn__phrase-span6,
+.lesson-learn__phrase-span7,
+.lesson-learn__phrase-span8,
+.lesson-learn__phrase-span9,
+.lesson-learn__phrase-span10 {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 .lesson-learn__color1 {
   background-color: #ee840a;
 }
@@ -1041,6 +1083,10 @@ button {
 }
 .lesson-learn__color5 {
   background-color: #aa52fd;
+}
+
+.width320 {
+  width: 320px;
 }
 
 /* Fading animation */

@@ -24,6 +24,12 @@ const begginerLessonStart7 = document.querySelector(
 const begginerLessonStart8 = document.querySelector(
   ".begginer1-lesson__box8-start"
 );
+const begginerLessonStart9 = document.querySelector(
+  ".begginer1-lesson__box9-start"
+);
+const begginerLessonStart10 = document.querySelector(
+  ".begginer1-lesson__box10-start"
+);
 
 const lessonImage1 = document.querySelector(".lesson__image01");
 const lessonImage2 = document.querySelector(".lesson__image02");
@@ -33,6 +39,8 @@ const lessonImage5 = document.querySelector(".lesson__image05");
 const lessonImage6 = document.querySelector(".lesson__image06");
 const lessonImage7 = document.querySelector(".lesson__image07");
 const lessonImage8 = document.querySelector(".lesson__image08");
+const lessonImage9 = document.querySelector(".lesson__image09");
+const lessonImage10 = document.querySelector(".lesson__image010");
 
 const lessonComplete1 = document.querySelector('.lesson__complete1')
 const lessonComplete2 = document.querySelector('.lesson__complete2')
@@ -42,6 +50,8 @@ const lessonComplete5 = document.querySelector('.lesson__complete5')
 const lessonComplete6 = document.querySelector('.lesson__complete6')
 const lessonComplete7 = document.querySelector('.lesson__complete7')
 const lessonComplete8 = document.querySelector('.lesson__complete8')
+const lessonComplete9 = document.querySelector('.lesson__complete9')
+const lessonComplete10 = document.querySelector('.lesson__complete10')
 
 let currentCompleteLessons = 0
 
@@ -119,6 +129,16 @@ if (beginner01 === null) {
     lessonComplete7.style.backgroundColor = '#209c0f'
     lessonImage7.setAttribute("src", "../../../img/complete.png");
     lessonImage8.setAttribute("src", "../../../img/start.png");
+  }
+  if (beginner01[7] === 8) {
+    begginerLessonStart9.setAttribute(
+      "href",
+      "../../../lessons/beginner/lesson1/lessons/09.html"
+    );
+    currentCompleteLessons++
+    lessonComplete8.style.backgroundColor = '#209c0f'
+    lessonImage8.setAttribute("src", "../../../img/complete.png");
+    lessonImage9.setAttribute("src", "../../../img/start.png");
   }
 }
 
