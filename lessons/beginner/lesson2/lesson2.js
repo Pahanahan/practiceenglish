@@ -82,12 +82,12 @@ const lessonComplete15 = document.querySelector(".lesson__complete15");
 
 let currentCompleteLessons = 0;
 
-let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
+let beginner02 = JSON.parse(localStorage.getItem("beginner02"));
 
-if (beginner01 === null) {
-  beginner01 = [];
-} else if (beginner01 !== null) {
-  if (beginner01[0] === 1) {
+if (beginner02 === null) {
+  beginner02 = [];
+} else if (beginner02 !== null) {
+  if (beginner02[0] === 1) {
     begginerLessonStart2.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/02.html"
@@ -97,7 +97,7 @@ if (beginner01 === null) {
     lessonImage1.setAttribute("src", "../../../img/complete.png");
     lessonImage2.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[1] === 2) {
+  if (beginner02[1] === 2) {
     begginerLessonStart3.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/03.html"
@@ -107,7 +107,7 @@ if (beginner01 === null) {
     lessonImage2.setAttribute("src", "../../../img/complete.png");
     lessonImage3.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[2] === 3) {
+  if (beginner02[2] === 3) {
     begginerLessonStart4.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/04.html"
@@ -117,7 +117,7 @@ if (beginner01 === null) {
     lessonImage3.setAttribute("src", "../../../img/complete.png");
     lessonImage4.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[3] === 4) {
+  if (beginner02[3] === 4) {
     begginerLessonStart5.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/05.html"
@@ -127,7 +127,7 @@ if (beginner01 === null) {
     lessonImage4.setAttribute("src", "../../../img/complete.png");
     lessonImage5.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[4] === 5) {
+  if (beginner02[4] === 5) {
     begginerLessonStart6.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/06.html"
@@ -137,7 +137,7 @@ if (beginner01 === null) {
     lessonImage5.setAttribute("src", "../../../img/complete.png");
     lessonImage6.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[5] === 6) {
+  if (beginner02[5] === 6) {
     begginerLessonStart7.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/07.html"
@@ -147,7 +147,7 @@ if (beginner01 === null) {
     lessonImage6.setAttribute("src", "../../../img/complete.png");
     lessonImage7.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[6] === 7) {
+  if (beginner02[6] === 7) {
     begginerLessonStart8.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/08.html"
@@ -157,7 +157,7 @@ if (beginner01 === null) {
     lessonImage7.setAttribute("src", "../../../img/complete.png");
     lessonImage8.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[7] === 8) {
+  if (beginner02[7] === 8) {
     begginerLessonStart9.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/09.html"
@@ -167,7 +167,7 @@ if (beginner01 === null) {
     lessonImage8.setAttribute("src", "../../../img/complete.png");
     lessonImage9.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[8] === 9) {
+  if (beginner02[8] === 9) {
     begginerLessonStart10.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/10.html"
@@ -177,7 +177,7 @@ if (beginner01 === null) {
     lessonImage9.setAttribute("src", "../../../img/complete.png");
     lessonImage10.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[9] === 10) {
+  if (beginner02[9] === 10) {
     begginerLessonStart11.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/11.html"
@@ -187,7 +187,7 @@ if (beginner01 === null) {
     lessonImage10.setAttribute("src", "../../../img/complete.png");
     lessonImage11.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[10] === 11) {
+  if (beginner02[10] === 11) {
     begginerLessonStart12.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/12.html"
@@ -197,7 +197,7 @@ if (beginner01 === null) {
     lessonImage11.setAttribute("src", "../../../img/complete.png");
     lessonImage12.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[11] === 12) {
+  if (beginner02[11] === 12) {
     begginerLessonStart13.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/13.html"
@@ -207,7 +207,7 @@ if (beginner01 === null) {
     lessonImage12.setAttribute("src", "../../../img/complete.png");
     lessonImage13.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[12] === 13) {
+  if (beginner02[12] === 13) {
     begginerLessonStart14.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/14.html"
@@ -217,7 +217,7 @@ if (beginner01 === null) {
     lessonImage13.setAttribute("src", "../../../img/complete.png");
     lessonImage14.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[13] === 14) {
+  if (beginner02[13] === 14) {
     begginerLessonStart15.setAttribute(
       "href",
       "../../../lessons/beginner/lesson1/lessons/15.html"
@@ -227,21 +227,21 @@ if (beginner01 === null) {
     lessonImage14.setAttribute("src", "../../../img/complete.png");
     lessonImage15.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner01[14] === 15) {
+  if (beginner02[14] === 15) {
     currentCompleteLessons++;
     lessonComplete15.style.backgroundColor = "#209c0f";
     lessonImage15.setAttribute("src", "../../../img/complete.png");
 
-    const saveToLocalStorage = function () {
-        localStorage.setItem("begginerComplete", JSON.stringify(begginerComplete));
-      };
+    // const saveToLocalStorage = function () {
+    //     localStorage.setItem("begginerComplete", JSON.stringify(begginerComplete));
+    //   };
 
-    let begginerComplete = JSON.parse(localStorage.getItem("begginerComplete"));
+    // let begginerComplete = JSON.parse(localStorage.getItem("begginerComplete"));
 
-    if (begginerComplete === null || begginerComplete[0] === undefined) {
-      begginerComplete = [1];
-      saveToLocalStorage();
-    }
+    // if (begginerComplete === null || begginerComplete[0] === undefined) {
+    //   begginerComplete = [1];
+    //   saveToLocalStorage();
+    // }
   }
 }
 

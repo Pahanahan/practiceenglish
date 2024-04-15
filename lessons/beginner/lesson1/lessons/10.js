@@ -79,40 +79,36 @@ const lesson11 = document.querySelector(".lesson11");
 const lesson12 = document.querySelector(".lesson12");
 
 const currentAnswers = [
-  "really",
-  "we",
-  "can",
-  "it",
-  "help",
-  "me",
-  "they",
-  "learn",
-  "you",
-  "work",
-  "English",
+  "читать",
+  "школа",
+  "песня",
+  "купить",
+  "язык",
+  "путешествие",
+  "играть",
+  "думать",
+  "год",
+  "музыка",
+  "день",
 ];
 
-const audio01 = new Audio("audio01/really.wav");
-const audio02 = new Audio("audio01/we.wav");
-const audio03 = new Audio("audio01/can.wav");
-const audio04 = new Audio("audio01/it.wav");
-const audio05 = new Audio("audio01/help.wav");
-const audio06 = new Audio("audio01/me.wav");
-const audio07 = new Audio("audio01/they.wav");
-const audio08 = new Audio("audio01/learn.wav");
-const audio09 = new Audio("audio01/you.wav");
-const audio10 = new Audio("audio01/work.wav");
-const audio11 = new Audio("audio01/english.wav");
+const audio01 = new Audio("audio10/read.wav");
+const audio02 = new Audio("audio10/school.wav");
+const audio03 = new Audio("audio10/song.wav");
+const audio04 = new Audio("audio10/buy.wav");
+const audio05 = new Audio("audio10/language.wav");
+const audio06 = new Audio("audio10/travelling.wav");
+const audio07 = new Audio("audio10/play.wav");
+const audio08 = new Audio("audio10/think.wav");
+const audio09 = new Audio("audio10/year.wav");
+const audio10 = new Audio("audio10/music.wav");
+const audio11 = new Audio("audio10/day.wav");
 
 let rightAnswers = 0;
 
 let choiceItemCheck = "";
 
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
-
-if (beginner01 === null) {
-  beginner01 = [];
-}
 
 choiceItems.forEach((btn, index) => {
   btn.onclick = function () {
@@ -167,36 +163,6 @@ function answerCheck(
     });
   }
 }
-
-// function answerCheck11(
-//   index,
-//   checkAnswer,
-//   answerCorrectOrIncorrect,
-//   next,
-//   audio
-// ) {
-//   if (choiceItemCheck !== "") {
-//     checkAnswer.disabled = true;
-//     if (choiceItemCheck === currentAnswers[index]) {
-//       answerCorrectOrIncorrect.textContent = "Правильно!";
-//       answerCorrectOrIncorrect.classList.add(
-//         "lesson-learn__box-answer__correct"
-//       );
-//       checkAnswer.style.display = "none";
-//       next.style.display = "block";
-//       rightAnswers++;
-//       audio.play();
-//     } else {
-//       answerCorrectOrIncorrect.textContent = "Неправильный ответ!";
-//       answerCorrectOrIncorrect.classList.add(
-//         "lesson-learn__box-answer__incorrect"
-//       );
-//       checkAnswer.style.display = "none";
-//       next.style.display = "block";
-//       audio.play();
-//     }
-//   }
-// }
 
 checkAnswer.addEventListener("click", function () {
   answerCheck(
@@ -318,8 +284,8 @@ checkAnswer11.addEventListener("click", function () {
     audio11
   );
   if (rightAnswers === 11) {
-    if (beginner01.length === 0) {
-      beginner01.push(1);
+    if (beginner01.length === 9) {
+      beginner01.push(10);
       saveToLocalStorage();
     }
   }

@@ -14,7 +14,7 @@ body {
   /* font-family: 'Yeseva One', cursive; */
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   background-color: #00bfff;
   position: relative;
@@ -67,11 +67,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
   margin-right: 20px;
   border-radius: 50%;
   border: 2px solid #0044ff;
+}
+
+.header__progress-main {
+   font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .header__progress-percent {
@@ -103,20 +109,20 @@ button {
 }
 
 .block__number {
-  background-color: #339afa;
+  background-color: #fab433;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
-  margin-right: 20px;
+  min-width: 60px;
+  min-height: 60px;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
 .block__number span {
   font-size: 20px;
   font-weight: 700;
-  color: #d8d8d8;
+  color: #ffffff;
 }
 
 .block__text {
@@ -128,13 +134,14 @@ button {
 
 .block__button {
   background-color: #339afa;
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   padding: 5px;
+  margin-left: 10px;
 }
 
 .lessons__title {
@@ -161,13 +168,18 @@ button {
 .lesson__complete7,
 .lesson__complete8,
 .lesson__complete9,
-.lesson__complete10 {
+.lesson__complete10,
+.lesson__complete11,
+.lesson__complete12,
+.lesson__complete13,
+.lesson__complete14,
+.lesson__complete15 {
   background-color: #fab433;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   margin-right: 20px;
   border-radius: 50%;
 }
@@ -177,26 +189,27 @@ button {
 }
 
 .lesson__text {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
 }
 
 .lesson__description {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
 
 .lesson__button {
   background-color: #339afa;
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   padding: 5px;
+  margin-left: 20px;
 }
 
 .lesson-learn {
@@ -280,12 +293,14 @@ button {
 
 .lesson-learn__text {
   font-size: 24px;
+  text-align: center;
   color: #fff;
   margin-bottom: 20px;
 }
 
 .lesson-learn__text-ask {
   font-size: 18px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -743,10 +758,6 @@ button {
   background-color: #2671fc;
 }
 
-/* [class^="lesson-learn__box-str"]:hover {
-  background-color: #2671fc;
-} */
-
 .lesson-learn__mix,
 .lesson-learn__mix2,
 .lesson-learn__mix3 {
@@ -778,10 +789,6 @@ button {
   color: #fff;
 }
 
-.lesson-learn__back-link {
-  padding-left: 121px;
-}
-
 .lesson-learn__box-explain {
   width: 500px;
   font-size: 16px;
@@ -809,6 +816,7 @@ button {
 
 .lesson-learn__phrase {
   width: auto;
+  text-align: center;
   background-color: #fff;
   border-radius: 15px;
   font-size: 18px;
@@ -832,14 +840,15 @@ button {
 .lesson-learn__block-strings14,
 .lesson-learn__block-strings15 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 20px;
-  height: 50px;
   border-radius: 15px;
   font-size: 18px;
   gap: 20px;
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   max-width: 600px;
 }
 
@@ -1101,5 +1110,253 @@ button {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .lesson-learn__block-strings,
+  .lesson-learn__block-strings2,
+  .lesson-learn__block-strings3,
+  .lesson-learn__block-strings4,
+  .lesson-learn__block-strings5,
+  .lesson-learn__block-strings6,
+  .lesson-learn__block-strings7,
+  .lesson-learn__block-strings8,
+  .lesson-learn__block-strings9,
+  .lesson-learn__block-strings10,
+  .lesson-learn__block-strings11,
+  .lesson-learn__block-strings12,
+  .lesson-learn__block-strings13,
+  .lesson-learn__block-strings14,
+  .lesson-learn__block-strings15 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .block__text {
+    font-size: 14px;
+  }
+  .block__container {
+    padding: 10px;
+  }
+  .lesson__text {
+    font-size: 18px;
+  }
+  .lesson__description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 520px) {
+  .lesson-learn__box-explain {
+    width: 380px;
+  }
+  .lesson-learn__block-strings,
+  .lesson-learn__block-strings2,
+  .lesson-learn__block-strings3,
+  .lesson-learn__block-strings4,
+  .lesson-learn__block-strings5,
+  .lesson-learn__block-strings6,
+  .lesson-learn__block-strings7,
+  .lesson-learn__block-strings8,
+  .lesson-learn__block-strings9,
+  .lesson-learn__block-strings10,
+  .lesson-learn__block-strings11,
+  .lesson-learn__block-strings12,
+  .lesson-learn__block-strings13,
+  .lesson-learn__block-strings14,
+  .lesson-learn__block-strings15 {
+    max-width: 360px;
+    gap: 10px
+  }
+}
+@media (max-width: 480px) {
+  .block__text {
+    font-size: 12px;
+  }
+  .header__progress-text {
+    font-size: 18px;
+  }
+  .lesson__box {
+    padding: 10px;
+  }
+  .lesson__description {
+    font-size: 14px;
+  }
+  .main {
+    margin: 10px 0;
+  }
+  .lesson-learn__grid-item {
+    font-size: 16px;
+    width: 180px;
+  }
+  .lesson-learn__grid-item-past,
+  .lesson-learn__grid-item-past2,
+  .lesson-learn__grid-item-past3,
+  .lesson-learn__grid-item-past4,
+  .lesson-learn__grid-item-past5,
+  .lesson-learn__grid-item-past6,
+  .lesson-learn__grid-item-past7,
+  .lesson-learn__grid-item-past8,
+  .lesson-learn__grid-item-past9,
+  .lesson-learn__grid-item-past10,
+  .lesson-learn__grid-item-past11,
+  .lesson-learn__grid-item-past12,
+  .lesson-learn__grid-item-past13,
+  .lesson-learn__grid-item-past14,
+  .lesson-learn__grid-item-past15 {
+    font-size: 16px;
+    width: 180px;
+  }
+}
+@media (max-width: 400px) {
+  .lesson-learn__text {
+    font-size: 20px;
+  }
+  .lesson-learn__grid,
+  .lesson-learn__grid2,
+  .lesson-learn__grid3,
+  .lesson-learn__grid-unvisible,
+  .lesson-learn__grid-unvisible2,
+  .lesson-learn__grid-unvisible3 {
+    gap: 10px;
+  }
+  .lesson-learn__grid-item {
+    font-size: 14px;
+    width: 150px;
+  }
+  .lesson-learn__box-explain {
+    width: 340px;
+    padding: 10px 10px 20px 10px;
+  }
+  .lesson-learn__str-explain {
+    font-size: 16px;
+  }
+  .lesson-learn__grid-item-past,
+  .lesson-learn__grid-item-past2,
+  .lesson-learn__grid-item-past3,
+  .lesson-learn__grid-item-past4,
+  .lesson-learn__grid-item-past5,
+  .lesson-learn__grid-item-past6,
+  .lesson-learn__grid-item-past7,
+  .lesson-learn__grid-item-past8,
+  .lesson-learn__grid-item-past9,
+  .lesson-learn__grid-item-past10,
+  .lesson-learn__grid-item-past11,
+  .lesson-learn__grid-item-past12,
+  .lesson-learn__grid-item-past13,
+  .lesson-learn__grid-item-past14,
+  .lesson-learn__grid-item-past15 {
+    font-size: 14px;
+    width: 150px;
+  }
+  .lesson-learn__check,
+  .lesson-learn__check2,
+  .lesson-learn__check3,
+  .lesson-learn__check4,
+  .lesson-learn__check5,
+  .lesson-learn__check6,
+  .lesson-learn__check7,
+  .lesson-learn__check8,
+  .lesson-learn__check9,
+  .lesson-learn__check10,
+  .lesson-learn__check11,
+  .lesson-learn__check12,
+  .lesson-learn__check13,
+  .lesson-learn__check14,
+  .lesson-learn__check15 {
+    width: 240px;
+  }
+  .lesson-learn__next,
+  .lesson-learn__next2,
+  .lesson-learn__next3,
+  .lesson-learn__next4,
+  .lesson-learn__next5,
+  .lesson-learn__next6,
+  .lesson-learn__next7,
+  .lesson-learn__next8,
+  .lesson-learn__next9,
+  .lesson-learn__next10,
+  .lesson-learn__next11,
+  .lesson-learn__next12,
+  .lesson-learn__next13,
+  .lesson-learn__next14,
+  .lesson-learn__next15 {
+    width: 240px;
+  }
+  .lesson-learn__box-answer,
+  .lesson-learn__box-answer2,
+  .lesson-learn__box-answer3,
+  .lesson-learn__box-answer4,
+  .lesson-learn__box-answer5,
+  .lesson-learn__box-answer6,
+  .lesson-learn__box-answer7,
+  .lesson-learn__box-answer8,
+  .lesson-learn__box-answer9,
+  .lesson-learn__box-answer10,
+  .lesson-learn__box-answer11,
+  .lesson-learn__box-answer12,
+  .lesson-learn__box-answer13,
+  .lesson-learn__box-answer14,
+  .lesson-learn__box-answer15 {
+    width: 240px;
+  }
+  .lesson-learn__block-strings,
+  .lesson-learn__block-strings2,
+  .lesson-learn__block-strings3,
+  .lesson-learn__block-strings4,
+  .lesson-learn__block-strings5,
+  .lesson-learn__block-strings6,
+  .lesson-learn__block-strings7,
+  .lesson-learn__block-strings8,
+  .lesson-learn__block-strings9,
+  .lesson-learn__block-strings10,
+  .lesson-learn__block-strings11,
+  .lesson-learn__block-strings12,
+  .lesson-learn__block-strings13,
+  .lesson-learn__block-strings14,
+  .lesson-learn__block-strings15 {
+    max-width: 320px;
+  }
+
+  .width320 {
+    width: 280px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    padding: 0px;
+  }
+  .header__progress-text {
+    font-size: 16px;
+  }
+  .header__progress {
+    padding: 20px 10px;
+  }
+  .lesson__description {
+    font-size: 12px;
+  }
+  .lesson__text {
+    font-size: 16px;
+  }
+  .lesson-learn__box-explain {
+width: 300px;
+  }
+  .lesson-learn__block-strings,
+  .lesson-learn__block-strings2,
+  .lesson-learn__block-strings3,
+  .lesson-learn__block-strings4,
+  .lesson-learn__block-strings5,
+  .lesson-learn__block-strings6,
+  .lesson-learn__block-strings7,
+  .lesson-learn__block-strings8,
+  .lesson-learn__block-strings9,
+  .lesson-learn__block-strings10,
+  .lesson-learn__block-strings11,
+  .lesson-learn__block-strings12,
+  .lesson-learn__block-strings13,
+  .lesson-learn__block-strings14,
+  .lesson-learn__block-strings15 {
+    max-width: 300px;
   }
 }
