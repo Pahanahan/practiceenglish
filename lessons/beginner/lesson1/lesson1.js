@@ -231,17 +231,6 @@ if (beginner01 === null) {
     currentCompleteLessons++;
     lessonComplete15.style.backgroundColor = "#209c0f";
     lessonImage15.setAttribute("src", "../../../img/complete.png");
-
-    const saveToLocalStorage = function () {
-        localStorage.setItem("begginerComplete", JSON.stringify(begginerComplete));
-      };
-
-    let begginerComplete = JSON.parse(localStorage.getItem("begginerComplete"));
-
-    if (begginerComplete === null || begginerComplete[0] === undefined) {
-      begginerComplete = [1];
-      saveToLocalStorage();
-    }
   }
 }
 

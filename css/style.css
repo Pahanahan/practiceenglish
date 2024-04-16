@@ -60,6 +60,7 @@ button {
   background-color: #fff;
   border-radius: 20px;
   padding: 20px;
+  /* position: relative; */
 }
 
 .header__progress-block {
@@ -75,7 +76,7 @@ button {
 }
 
 .header__progress-main {
-   font-size: 20px;
+  font-size: 20px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -89,6 +90,22 @@ button {
 .header__progress-text {
   font-size: 20px;
   font-weight: 700;
+}
+
+.header__back {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #0044ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header__img {
+  transform: rotate(180deg)
 }
 
 .main {
@@ -133,6 +150,8 @@ button {
 }
 
 .block__button {
+  font-size: 20px;
+  color: #fff;
   background-color: #339afa;
   min-width: 50px;
   min-height: 50px;
@@ -1167,7 +1186,7 @@ button {
   .lesson-learn__block-strings14,
   .lesson-learn__block-strings15 {
     max-width: 360px;
-    gap: 10px
+    gap: 10px;
   }
 }
 @media (max-width: 480px) {
@@ -1340,7 +1359,7 @@ button {
     font-size: 16px;
   }
   .lesson-learn__box-explain {
-width: 300px;
+    width: 300px;
   }
   .lesson-learn__block-strings,
   .lesson-learn__block-strings2,
