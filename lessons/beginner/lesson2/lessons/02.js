@@ -49,32 +49,28 @@ const lesson06 = document.querySelector(".lesson06");
 const lesson07 = document.querySelector(".lesson07");
 
 const currentAnswers = [
-  'absolutely',
-  'ten',
-  'she',
-'twenty',
-'far',
-'he',
-'near',
+  "ошибка",
+  "доллар",
+  "билет",
+  "стоить",
+  "чувствовать себя",
+  "вместе",
+  "много",
 ];
 
-const audio01 = new Audio("audio01/absolutely.wav");
-const audio02 = new Audio("audio01/ten.wav");
-const audio03 = new Audio("audio01/she.wav");
-const audio04 = new Audio("audio01/twenty.wav");
-const audio05 = new Audio("audio01/far.wav");
-const audio06 = new Audio("audio01/he.wav");
-const audio07 = new Audio("audio01/near.wav");
+const audio01 = new Audio("audio02/mistake.wav");
+const audio02 = new Audio("audio02/dollar.wav");
+const audio03 = new Audio("audio02/ticket.wav");
+const audio04 = new Audio("audio02/cost.wav");
+const audio05 = new Audio("audio02/feel.wav");
+const audio06 = new Audio("audio02/together.wav");
+const audio07 = new Audio("audio02/much.wav");
 
 let rightAnswers = 0;
 
 let choiceItemCheck = "";
 
 let beginner02 = JSON.parse(localStorage.getItem("beginner02"));
-
-if (beginner02 === null) {
-  beginner02 = [];
-}
 
 choiceItems.forEach((btn, index) => {
   btn.onclick = function () {
@@ -202,11 +198,11 @@ checkAnswer7.addEventListener("click", function () {
     checkAnswer7,
     answerCorrectOrIncorrect7,
     nextLessonBack,
-    audio07,
+    audio07
   );
   if (rightAnswers === 7) {
-    if (beginner02.length === 0) {
-      beginner02.push(1);
+    if (beginner02.length === 1) {
+      beginner02.push(2);
       saveToLocalStorage();
     }
   }

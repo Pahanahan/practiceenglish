@@ -90,7 +90,7 @@ if (beginner02 === null) {
   if (beginner02[0] === 1) {
     begginerLessonStart2.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/02.html"
+      "../../../lessons/beginner/lesson2/lessons/02.html"
     );
     currentCompleteLessons++;
     lessonComplete1.style.backgroundColor = "#209c0f";
@@ -100,7 +100,7 @@ if (beginner02 === null) {
   if (beginner02[1] === 2) {
     begginerLessonStart3.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/03.html"
+      "../../../lessons/beginner/lesson2/lessons/03.html"
     );
     currentCompleteLessons++;
     lessonComplete2.style.backgroundColor = "#209c0f";
@@ -110,7 +110,7 @@ if (beginner02 === null) {
   if (beginner02[2] === 3) {
     begginerLessonStart4.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/04.html"
+      "../../../lessons/beginner/lesson2/lessons/04.html"
     );
     currentCompleteLessons++;
     lessonComplete3.style.backgroundColor = "#209c0f";
@@ -120,7 +120,7 @@ if (beginner02 === null) {
   if (beginner02[3] === 4) {
     begginerLessonStart5.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/05.html"
+      "../../../lessons/beginner/lesson2/lessons/05.html"
     );
     currentCompleteLessons++;
     lessonComplete4.style.backgroundColor = "#209c0f";
@@ -130,7 +130,7 @@ if (beginner02 === null) {
   if (beginner02[4] === 5) {
     begginerLessonStart6.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/06.html"
+      "../../../lessons/beginner/lesson2/lessons/06.html"
     );
     currentCompleteLessons++;
     lessonComplete5.style.backgroundColor = "#209c0f";
@@ -140,7 +140,7 @@ if (beginner02 === null) {
   if (beginner02[5] === 6) {
     begginerLessonStart7.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/07.html"
+      "../../../lessons/beginner/lesson2/lessons/07.html"
     );
     currentCompleteLessons++;
     lessonComplete6.style.backgroundColor = "#209c0f";
@@ -150,7 +150,7 @@ if (beginner02 === null) {
   if (beginner02[6] === 7) {
     begginerLessonStart8.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/08.html"
+      "../../../lessons/beginner/lesson2/lessons/08.html"
     );
     currentCompleteLessons++;
     lessonComplete7.style.backgroundColor = "#209c0f";
@@ -160,7 +160,7 @@ if (beginner02 === null) {
   if (beginner02[7] === 8) {
     begginerLessonStart9.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/09.html"
+      "../../../lessons/beginner/lesson2/lessons/09.html"
     );
     currentCompleteLessons++;
     lessonComplete8.style.backgroundColor = "#209c0f";
@@ -170,7 +170,7 @@ if (beginner02 === null) {
   if (beginner02[8] === 9) {
     begginerLessonStart10.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/10.html"
+      "../../../lessons/beginner/lesson2/lessons/10.html"
     );
     currentCompleteLessons++;
     lessonComplete9.style.backgroundColor = "#209c0f";
@@ -180,7 +180,7 @@ if (beginner02 === null) {
   if (beginner02[9] === 10) {
     begginerLessonStart11.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/11.html"
+      "../../../lessons/beginner/lesson2/lessons/11.html"
     );
     currentCompleteLessons++;
     lessonComplete10.style.backgroundColor = "#209c0f";
@@ -190,7 +190,7 @@ if (beginner02 === null) {
   if (beginner02[10] === 11) {
     begginerLessonStart12.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/12.html"
+      "../../../lessons/beginner/lesson2/lessons/12.html"
     );
     currentCompleteLessons++;
     lessonComplete11.style.backgroundColor = "#209c0f";
@@ -200,7 +200,7 @@ if (beginner02 === null) {
   if (beginner02[11] === 12) {
     begginerLessonStart13.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/13.html"
+      "../../../lessons/beginner/lesson2/lessons/13.html"
     );
     currentCompleteLessons++;
     lessonComplete12.style.backgroundColor = "#209c0f";
@@ -210,7 +210,7 @@ if (beginner02 === null) {
   if (beginner02[12] === 13) {
     begginerLessonStart14.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/14.html"
+      "../../../lessons/beginner/lesson2/lessons/14.html"
     );
     currentCompleteLessons++;
     lessonComplete13.style.backgroundColor = "#209c0f";
@@ -220,7 +220,7 @@ if (beginner02 === null) {
   if (beginner02[13] === 14) {
     begginerLessonStart15.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson1/lessons/15.html"
+      "../../../lessons/beginner/lesson2/lessons/15.html"
     );
     currentCompleteLessons++;
     lessonComplete14.style.backgroundColor = "#209c0f";
