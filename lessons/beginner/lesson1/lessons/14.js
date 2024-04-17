@@ -3,11 +3,6 @@ const lesson02 = document.querySelector(".lesson02");
 const lesson03 = document.querySelector(".lesson03");
 const lesson04 = document.querySelector(".lesson04");
 const lesson05 = document.querySelector(".lesson05");
-const lesson06 = document.querySelector(".lesson06");
-const lesson07 = document.querySelector(".lesson07");
-const lesson08 = document.querySelector(".lesson08");
-const lesson09 = document.querySelector(".lesson09");
-const lesson10 = document.querySelector(".lesson10");
 
 const stringChoice = document.querySelector(".lesson-learn__block-str");
 const stringChoice2 = document.querySelector(".lesson-learn__block-str2");
@@ -102,35 +97,18 @@ const checkPhrase2 = document.querySelector(".lesson-learn__check2");
 const checkPhrase3 = document.querySelector(".lesson-learn__check3");
 const checkPhrase4 = document.querySelector(".lesson-learn__check4");
 const checkPhrase5 = document.querySelector(".lesson-learn__check5");
-const checkPhrase6 = document.querySelector(".lesson-learn__check6");
-const checkPhrase7 = document.querySelector(".lesson-learn__check7");
-const checkPhrase8 = document.querySelector(".lesson-learn__check8");
-const checkPhrase9 = document.querySelector(".lesson-learn__check9");
-const checkPhrase10 = document.querySelector(".lesson-learn__check10");
 
 const nextBtn = document.querySelector(".lesson-learn__next");
 const nextBtn2 = document.querySelector(".lesson-learn__next2");
 const nextBtn3 = document.querySelector(".lesson-learn__next3");
 const nextBtn4 = document.querySelector(".lesson-learn__next4");
 const nextBtn5 = document.querySelector(".lesson-learn__next5");
-const nextBtn6 = document.querySelector(".lesson-learn__next6");
-const nextBtn7 = document.querySelector(".lesson-learn__next7");
-const nextBtn8 = document.querySelector(".lesson-learn__next8");
-const nextBtn9 = document.querySelector(".lesson-learn__next9");
-const nextBtn10 = document.querySelector(".lesson-learn__next10");
 
 const answerRightOrNot = document.querySelector(".lesson-learn__box-answer");
 const answerRightOrNot2 = document.querySelector(".lesson-learn__box-answer2");
 const answerRightOrNot3 = document.querySelector(".lesson-learn__box-answer3");
 const answerRightOrNot4 = document.querySelector(".lesson-learn__box-answer4");
 const answerRightOrNot5 = document.querySelector(".lesson-learn__box-answer5");
-const answerRightOrNot6 = document.querySelector(".lesson-learn__box-answer6");
-const answerRightOrNot7 = document.querySelector(".lesson-learn__box-answer7");
-const answerRightOrNot8 = document.querySelector(".lesson-learn__box-answer8");
-const answerRightOrNot9 = document.querySelector(".lesson-learn__box-answer9");
-const answerRightOrNot10 = document.querySelector(
-  ".lesson-learn__box-answer10"
-);
 
 const boxLessonsStrings = document.querySelector(
   ".lesson-learn__block-strings"
@@ -147,21 +125,17 @@ const boxLessonsStrings4 = document.querySelector(
 const boxLessonsStrings5 = document.querySelector(
   ".lesson-learn__block-strings5"
 );
-const boxLessonsStrings6 = document.querySelector(
-  ".lesson-learn__block-strings6"
-);
-const boxLessonsStrings7 = document.querySelector(
-  ".lesson-learn__block-strings7"
-);
-const boxLessonsStrings8 = document.querySelector(
-  ".lesson-learn__block-strings8"
-);
-const boxLessonsStrings9 = document.querySelector(
-  ".lesson-learn__block-strings9"
-);
-const boxLessonsStrings10 = document.querySelector(
-  ".lesson-learn__block-strings10"
-);
+
+const audioItem = document.querySelector(".lesson-learn__audio");
+const audioItem2 = document.querySelector(".lesson-learn__audio2");
+const audioItem3 = document.querySelector(".lesson-learn__audio3");
+const audioItem4 = document.querySelector(".lesson-learn__audio4");
+const audioItem5 = document.querySelector(".lesson-learn__audio5");
+const audioItem6 = document.querySelector(".lesson-learn__audio6");
+const audioItem7 = document.querySelector(".lesson-learn__audio7");
+const audioItem8 = document.querySelector(".lesson-learn__audio8");
+const audioItem9 = document.querySelector(".lesson-learn__audio9");
+const audioItem10 = document.querySelector(".lesson-learn__audio10");
 
 const stringsArray = [
   stringChoice,
@@ -169,78 +143,35 @@ const stringsArray = [
   stringChoice3,
   stringChoice4,
   stringChoice5,
-  stringChoice6,
-  stringChoice7,
 ];
 const stringsArray2 = [
+  stringChoice6,
+  stringChoice7,
   stringChoice8,
   stringChoice9,
   stringChoice10,
   stringChoice11,
-  stringChoice12,
-  stringChoice13,
 ];
 const stringsArray3 = [
+  stringChoice12,
+  stringChoice13,
   stringChoice14,
   stringChoice15,
   stringChoice16,
-  stringChoice17,
-  stringChoice18,
 ];
 const stringsArray4 = [
+  stringChoice17,
+  stringChoice18,
   stringChoice19,
   stringChoice20,
   stringChoice21,
+];
+const stringsArray5 = [
   stringChoice22,
   stringChoice23,
   stringChoice24,
-];
-const stringsArray5 = [
   stringChoice25,
   stringChoice26,
-  stringChoice27,
-  stringChoice28,
-  stringChoice29,
-  stringChoice30,
-];
-const stringsArray6 = [
-  stringChoice31,
-  stringChoice32,
-  stringChoice33,
-  stringChoice34,
-  stringChoice35,
-];
-const stringsArray7 = [
-  stringChoice36,
-  stringChoice37,
-  stringChoice38,
-  stringChoice39,
-  stringChoice40,
-];
-const stringsArray8 = [
-  stringChoice41,
-  stringChoice42,
-  stringChoice43,
-  stringChoice44,
-  stringChoice45,
-  stringChoice46,
-  stringChoice47,
-];
-const stringsArray9 = [
-  stringChoice48,
-  stringChoice49,
-  stringChoice50,
-  stringChoice51,
-  stringChoice52,
-  stringChoice53,
-  stringChoice54,
-];
-const stringsArray10 = [
-  stringChoice55,
-  stringChoice56,
-  stringChoice57,
-  stringChoice58,
-  stringChoice59,
 ];
 
 const stringsArrays = [
@@ -249,11 +180,6 @@ const stringsArrays = [
   stringsArray3,
   stringsArray4,
   stringsArray5,
-  stringsArray6,
-  stringsArray7,
-  stringsArray8,
-  stringsArray9,
-  stringsArray10,
 ];
 
 const boxLessonsStringsArray = [
@@ -262,40 +188,48 @@ const boxLessonsStringsArray = [
   boxLessonsStrings3,
   boxLessonsStrings4,
   boxLessonsStrings5,
-  boxLessonsStrings6,
-  boxLessonsStrings7,
-  boxLessonsStrings8,
-  boxLessonsStrings9,
-  boxLessonsStrings10,
 ];
 
-const audio01 = new Audio("audio12/i_sometimes_think_about_it.wav");
-const audio02 = new Audio("audio12/i_think_about_it.wav");
-const audio03 = new Audio("audio12/i_like_music.wav");
-const audio04 = new Audio("audio12/i_play_this_game.wav");
-const audio05 = new Audio("audio12/i_like_these_things.wav");
-const audio06 = new Audio("audio12/i_go_there.wav");
-const audio07 = new Audio("audio12/i_think_so.wav");
-const audio08 = new Audio("audio12/we_usually_buy_it_there.wav");
-const audio09 = new Audio("audio12/i_often_think_about_it.wav");
-const audio10 = new Audio("audio12/they_live_there.wav");
+const audio01 = new Audio("audio14/i_often_travel.wav");
+const audio02 = new Audio("audio14/i_like_this_music.wav");
+const audio03 = new Audio("audio14/i_love_you.wav");
+const audio04 = new Audio("audio14/we_live_here.wav");
+const audio05 = new Audio("audio14/i_work_there.wav");
+
+const audioArray = [audio01, audio02, audio03, audio04, audio05];
 
 const answersArray = [
-  ["I sometimes think about it", "I think about it sometimes"],
-  ["I think about it", "I think about it"],
-  ["I like music", "I like music"],
-  ["I play this game", "I play this game"],
-  ["I like these things", "I like these things"],
-  ["I go there", "I go there"],
-  ["I think so", "I think so"],
-  ["We usually buy it there", "We usually buy it there"],
-  ["I often think about it", "I often think about it"],
-  ["They live there", "They live there"],
+  ["Я часто путешествую", "Я путешествую часто"],
+  ["Мне нравится эта музыка", "Мне эта музыка нравится"],
+  ["Я люблю тебя", "Я тебя люблю"],
+  ["Мы живем здесь", "Мы здесь живем"],
+  ["Я работаю там", "Я там работаю"],
 ];
 
 let rightAnswers = 0;
 
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
+
+audioItem.addEventListener("click", function () {
+  listenAudio(audio01);
+});
+audioItem2.addEventListener("click", function () {
+  listenAudio(audio02);
+});
+audioItem3.addEventListener("click", function () {
+  listenAudio(audio03);
+});
+audioItem4.addEventListener("click", function () {
+  listenAudio(audio04);
+});
+audioItem5.addEventListener("click", function () {
+  listenAudio(audio05);
+});
+
+function listenAudio(audioItem) {
+  audioItem.play();
+}
+audio01.play();
 
 for (let i = 0; i < stringsArrays.length; i++) {
   const stringsArray = stringsArrays[i];
@@ -320,8 +254,7 @@ function checkPhrases(
   lessonCheck,
   index,
   answerRightOrNot,
-  nextLesson,
-  audio
+  nextLesson
 ) {
   if (boxLessonsStrings.textContent.length > 0) {
     if (
@@ -333,37 +266,29 @@ function checkPhrases(
       answerRightOrNot.style.display = "flex";
       answerRightOrNot.classList.add("lesson-learn__box-answer__correct");
       answerRightOrNot.textContent = "Правильно!";
-      audio.play();
       rightAnswers++;
     } else {
       lessonCheck.style.display = "none";
       nextLesson.style.display = "block";
       answerRightOrNot.style.display = "flex";
       answerRightOrNot.classList.add("lesson-learn__box-answer__incorrect");
-      answerRightOrNot.textContent = `Правильный ответ:\n ${answersArray[index][0]}`;
-      audio.play();
+      answerRightOrNot.textContent = `Правильный ответ:\n ${answersArray[index]}`;
     }
   }
 }
 
-function lessonNext(lesson1, lesson2) {
+function lessonNext(lesson1, lesson2, audio) {
   lesson1.style.display = "none";
   lesson2.style.display = "flex";
+  audio.play();
 }
 
 checkPhrase.addEventListener("click", function () {
-  checkPhrases(
-    boxLessonsStrings,
-    checkPhrase,
-    0,
-    answerRightOrNot,
-    nextBtn,
-    audio01
-  );
+  checkPhrases(boxLessonsStrings, checkPhrase, 0, answerRightOrNot, nextBtn);
 });
 
 nextBtn.addEventListener("click", function () {
-  lessonNext(lesson01, lesson02);
+  lessonNext(lesson01, lesson02, audio02);
 });
 
 checkPhrase2.addEventListener("click", function () {
@@ -372,13 +297,12 @@ checkPhrase2.addEventListener("click", function () {
     checkPhrase2,
     1,
     answerRightOrNot2,
-    nextBtn2,
-    audio02
+    nextBtn2
   );
 });
 
 nextBtn2.addEventListener("click", function () {
-  lessonNext(lesson02, lesson03);
+  lessonNext(lesson02, lesson03, audio03);
 });
 
 checkPhrase3.addEventListener("click", function () {
@@ -387,13 +311,12 @@ checkPhrase3.addEventListener("click", function () {
     checkPhrase3,
     2,
     answerRightOrNot3,
-    nextBtn3,
-    audio03
+    nextBtn3
   );
 });
 
 nextBtn3.addEventListener("click", function () {
-  lessonNext(lesson03, lesson04);
+  lessonNext(lesson03, lesson04, audio04);
 });
 
 checkPhrase4.addEventListener("click", function () {
@@ -402,13 +325,12 @@ checkPhrase4.addEventListener("click", function () {
     checkPhrase4,
     3,
     answerRightOrNot4,
-    nextBtn4,
-    audio04
+    nextBtn4
   );
 });
 
 nextBtn4.addEventListener("click", function () {
-  lessonNext(lesson04, lesson05);
+  lessonNext(lesson04, lesson05, audio05);
 });
 
 checkPhrase5.addEventListener("click", function () {
@@ -418,86 +340,11 @@ checkPhrase5.addEventListener("click", function () {
     4,
     answerRightOrNot5,
     nextBtn5,
-    audio05
+    4
   );
-});
-
-nextBtn5.addEventListener("click", function () {
-  lessonNext(lesson05, lesson06);
-});
-
-checkPhrase6.addEventListener("click", function () {
-  checkPhrases(
-    boxLessonsStrings6,
-    checkPhrase6,
-    5,
-    answerRightOrNot6,
-    nextBtn6,
-    audio06
-  );
-});
-
-nextBtn6.addEventListener("click", function () {
-  lessonNext(lesson06, lesson07);
-});
-
-checkPhrase7.addEventListener("click", function () {
-  checkPhrases(
-    boxLessonsStrings7,
-    checkPhrase7,
-    6,
-    answerRightOrNot7,
-    nextBtn7,
-    audio07
-  );
-});
-
-nextBtn7.addEventListener("click", function () {
-  lessonNext(lesson07, lesson08);
-});
-
-checkPhrase8.addEventListener("click", function () {
-  checkPhrases(
-    boxLessonsStrings8,
-    checkPhrase8,
-    7,
-    answerRightOrNot8,
-    nextBtn8,
-    audio08
-  );
-});
-
-nextBtn8.addEventListener("click", function () {
-  lessonNext(lesson08, lesson09);
-});
-
-checkPhrase9.addEventListener("click", function () {
-  checkPhrases(
-    boxLessonsStrings9,
-    checkPhrase9,
-    8,
-    answerRightOrNot9,
-    nextBtn9,
-    audio09
-  );
-});
-
-nextBtn9.addEventListener("click", function () {
-  lessonNext(lesson09, lesson10);
-});
-
-checkPhrase10.addEventListener("click", function () {
-  checkPhrases(
-    boxLessonsStrings10,
-    checkPhrase10,
-    9,
-    answerRightOrNot10,
-    nextBtn10,
-    audio10
-  );
-  if (rightAnswers === 10) {
-    if (beginner01.length === 11) {
-      beginner01.push(12);
+  if (rightAnswers === 5) {
+    if (beginner01.length === 13) {
+      beginner01.push(14);
       saveToLocalStorage();
     }
   }
