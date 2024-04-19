@@ -105,7 +105,7 @@ button {
 }
 
 .header__img {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 .main {
@@ -957,7 +957,23 @@ button {
 .lesson-learn__block-str84,
 .lesson-learn__block-str85,
 .lesson-learn__block-str86,
-.lesson-learn__block-str87 {
+.lesson-learn__block-str87,
+.lesson-learn__block-str88,
+.lesson-learn__block-str89,
+.lesson-learn__block-str90,
+.lesson-learn__block-str91,
+.lesson-learn__block-str92,
+.lesson-learn__block-str93,
+.lesson-learn__block-str94,
+.lesson-learn__block-str95,
+.lesson-learn__block-str96,
+.lesson-learn__block-str97,
+.lesson-learn__block-str98,
+.lesson-learn__block-str99,
+.lesson-learn__block-str100,
+.lesson-learn__block-str101,
+.lesson-learn__block-str102,
+.lesson-learn__block-str103 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -1056,7 +1072,23 @@ button {
   .lesson-learn__block-str84:hover
   .lesson-learn__block-str85:hover
   .lesson-learn__block-str86:hover
-  .lesson-learn__block-str87:hover {
+  .lesson-learn__block-str87:hover
+  .lesson-learn__block-str88:hover
+  .lesson-learn__block-str89:hover
+  .lesson-learn__block-str90:hover
+  .lesson-learn__block-str91:hover
+  .lesson-learn__block-str92:hover
+  .lesson-learn__block-str93:hover
+  .lesson-learn__block-str94:hover
+  .lesson-learn__block-str95:hover
+  .lesson-learn__block-str96:hover
+  .lesson-learn__block-str97:hover
+  .lesson-learn__block-str98:hover
+  .lesson-learn__block-str99:hover
+  .lesson-learn__block-str100:hover
+  .lesson-learn__block-str101:hover
+  .lesson-learn__block-str102:hover
+  .lesson-learn__block-str103:hover {
   opacity: 0.8;
 }
 
