@@ -53,16 +53,11 @@ const nextBtn2 = document.querySelector(".lesson-learn__next2");
 const helpText = document.querySelector(".lesson-learn__text");
 
 const answersArray = [
-  "делать",
-  "каждый",
-  "игра",
-  "часто",
-  "практика",
-  "иногда",
-  "эти",
-  "вещь",
-  "путешествовать",
-  "обычно",
+  "много",
+  "как",
+  "также, слишком",
+  "смотреть",
+  "почему",
 ];
 
 const stringChoices = [
@@ -72,28 +67,14 @@ const stringChoices = [
   stringChoice4,
   stringChoice5,
 ];
-const stringChoices2 = [
-  stringChoice6,
-  stringChoice7,
-  stringChoice8,
-  stringChoice9,
-  stringChoice10,
-];
 
 const itemsArrayPast = [itemPast, itemPast2, itemPast3, itemPast4, itemPast5];
-const itemsArrayPast2 = [
-  itemPast6,
-  itemPast7,
-  itemPast8,
-  itemPast9,
-  itemPast10,
-];
 
 let rightAnswers = 0;
 
 let currentIndex = 0;
 
-let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
+let beginner02 = JSON.parse(localStorage.getItem("beginner02"));
 
 function mixStrings(gridBlock, gridBlockView, blockStrings, mixBtn, checkStr) {
   gridBlock.style.display = "none";
@@ -222,60 +203,62 @@ mixBtn.addEventListener("click", function () {
       4,
       answerRightOrNot
     );
-    nextBtn.addEventListener("click", function () {
-      nextLesson(lesson01, lesson02);
-      currentIndex = 0;
-    });
-  });
-});
-
-mixBtn2.addEventListener("click", function () {
-  mixStrings(
-    boxLessonsGrid2,
-    boxLessonsGridView2,
-    boxLessonsStrings2,
-    mixBtn2,
-    checkStr2
-  );
-
-  stringChoices2.forEach((stringChoiceItem) => {
-    stringChoiceItem.addEventListener("click", function () {
-      itemsArrayPast2[currentIndex].textContent = stringChoiceItem.innerText;
-      currentIndex++;
-    });
-  });
-  for (const string of stringChoices2) {
-    string.addEventListener("click", function () {
-      string.style.display = "none";
-    });
-  }
-
-  checkStr2.addEventListener("click", function () {
-    checkStringsRightOrNot(
-      itemsArrayPast2,
-      itemPast6,
-      itemPast7,
-      itemPast8,
-      itemPast9,
-      itemPast10,
-      checkStr2,
-      nextBtn2,
-      5,
-      6,
-      7,
-      8,
-      9,
-      answerRightOrNot2
-    );
-    if (rightAnswers === 10) {
-      if (beginner01.length === 10) {
-        beginner01.push(11);
+    if (rightAnswers === 5) {
+      if (beginner02.length === 10) {
+        beginner02.push(11);
         saveToLocalStorage();
       }
     }
   });
 });
 
+// mixBtn2.addEventListener("click", function () {
+//   mixStrings(
+//     boxLessonsGrid2,
+//     boxLessonsGridView2,
+//     boxLessonsStrings2,
+//     mixBtn2,
+//     checkStr2
+//   );
+
+//   stringChoices2.forEach((stringChoiceItem) => {
+//     stringChoiceItem.addEventListener("click", function () {
+//       itemsArrayPast2[currentIndex].textContent = stringChoiceItem.innerText;
+//       currentIndex++;
+//     });
+//   });
+//   for (const string of stringChoices2) {
+//     string.addEventListener("click", function () {
+//       string.style.display = "none";
+//     });
+//   }
+
+//   checkStr2.addEventListener("click", function () {
+//     checkStringsRightOrNot(
+//       itemsArrayPast2,
+//       itemPast6,
+//       itemPast7,
+//       itemPast8,
+//       itemPast9,
+//       itemPast10,
+//       checkStr2,
+//       nextBtn2,
+//       5,
+//       6,
+//       7,
+//       8,
+//       9,
+//       answerRightOrNot2
+//     );
+//     if (rightAnswers === 10) {
+//       if (beginner01.length === 10) {
+//         beginner01.push(11);
+//         saveToLocalStorage();
+//       }
+//     }
+//   });
+// });
+
 const saveToLocalStorage = function () {
-  localStorage.setItem("beginner01", JSON.stringify(beginner01));
+  localStorage.setItem("beginner02", JSON.stringify(beginner02));
 };
