@@ -143,35 +143,51 @@ const stringsArray = [
   stringChoice3,
   stringChoice4,
   stringChoice5,
-];
-const stringsArray2 = [
   stringChoice6,
   stringChoice7,
   stringChoice8,
+];
+const stringsArray2 = [
   stringChoice9,
   stringChoice10,
   stringChoice11,
-];
-const stringsArray3 = [
   stringChoice12,
   stringChoice13,
   stringChoice14,
   stringChoice15,
   stringChoice16,
 ];
-const stringsArray4 = [
+const stringsArray3 = [
   stringChoice17,
   stringChoice18,
   stringChoice19,
   stringChoice20,
   stringChoice21,
-];
-const stringsArray5 = [
   stringChoice22,
   stringChoice23,
   stringChoice24,
   stringChoice25,
   stringChoice26,
+  stringChoice27,
+];
+const stringsArray4 = [  
+  stringChoice28,
+  stringChoice29,
+  stringChoice30,
+  stringChoice31,
+  stringChoice32,
+  stringChoice33,
+  stringChoice34,
+];
+const stringsArray5 = [  
+  stringChoice35,
+  stringChoice36,
+  stringChoice37,
+  stringChoice38,
+  stringChoice39,
+  stringChoice40,
+  stringChoice41,
+  stringChoice42,
 ];
 
 const stringsArrays = [
@@ -190,25 +206,28 @@ const boxLessonsStringsArray = [
   boxLessonsStrings5,
 ];
 
-const audio01 = new Audio("audio14/i_often_travel.wav");
-const audio02 = new Audio("audio14/i_like_this_music.wav");
-const audio03 = new Audio("audio14/i_love_you.wav");
-const audio04 = new Audio("audio14/we_live_here.wav");
-const audio05 = new Audio("audio14/i_work_there.wav");
+const audio01 = new Audio("audio14/i_often_hear_it.wav");
+const audio02 = new Audio("audio14/she_works_too_much.wav");
+const audio03 = new Audio("audio14/i_know_that_it_costs_much_more.wav");
+const audio04 = new Audio("audio14/she_knows_a_lot.wav");
+const audio05 = new Audio("audio14/it_helps_me_a_lot.wav");
 
 const audioArray = [audio01, audio02, audio03, audio04, audio05];
 
 const answersArray = [
-  ["Я часто путешествую", "Я путешествую часто"],
-  ["Мне нравится эта музыка", "Мне эта музыка нравится"],
-  ["Я люблю тебя", "Я тебя люблю"],
-  ["Мы живем здесь", "Мы здесь живем"],
-  ["Я работаю там", "Я там работаю"],
+  ["Я часто слышу это", "Я часто это слышу"],
+  ["Она работает слишком много", "Она слишком много работает"],
+  [
+    "Я знаю, что это стоит намного больше",
+    "Я знаю, что это намного больше стоит",
+  ],
+  ["Она знает много", "Она много знает"],
+  ["Это очень помогает мне", "Это помогает мне очень"],
 ];
 
 let rightAnswers = 0;
 
-let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
+let beginner02 = JSON.parse(localStorage.getItem("beginner02"));
 
 audioItem.addEventListener("click", function () {
   listenAudio(audio01);
@@ -340,16 +359,15 @@ checkPhrase5.addEventListener("click", function () {
     4,
     answerRightOrNot5,
     nextBtn5,
-    // 4
   );
   if (rightAnswers === 5) {
-    if (beginner01.length === 13) {
-      beginner01.push(14);
+    if (beginner02.length === 13) {
+      beginner02.push(14);
       saveToLocalStorage();
     }
   }
 });
 
 const saveToLocalStorage = function () {
-  localStorage.setItem("beginner01", JSON.stringify(beginner01));
+  localStorage.setItem("beginner02", JSON.stringify(beginner02));
 };

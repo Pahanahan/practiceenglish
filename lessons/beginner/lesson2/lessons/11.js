@@ -212,53 +212,6 @@ mixBtn.addEventListener("click", function () {
   });
 });
 
-// mixBtn2.addEventListener("click", function () {
-//   mixStrings(
-//     boxLessonsGrid2,
-//     boxLessonsGridView2,
-//     boxLessonsStrings2,
-//     mixBtn2,
-//     checkStr2
-//   );
-
-//   stringChoices2.forEach((stringChoiceItem) => {
-//     stringChoiceItem.addEventListener("click", function () {
-//       itemsArrayPast2[currentIndex].textContent = stringChoiceItem.innerText;
-//       currentIndex++;
-//     });
-//   });
-//   for (const string of stringChoices2) {
-//     string.addEventListener("click", function () {
-//       string.style.display = "none";
-//     });
-//   }
-
-//   checkStr2.addEventListener("click", function () {
-//     checkStringsRightOrNot(
-//       itemsArrayPast2,
-//       itemPast6,
-//       itemPast7,
-//       itemPast8,
-//       itemPast9,
-//       itemPast10,
-//       checkStr2,
-//       nextBtn2,
-//       5,
-//       6,
-//       7,
-//       8,
-//       9,
-//       answerRightOrNot2
-//     );
-//     if (rightAnswers === 10) {
-//       if (beginner01.length === 10) {
-//         beginner01.push(11);
-//         saveToLocalStorage();
-//       }
-//     }
-//   });
-// });
-
 const saveToLocalStorage = function () {
   localStorage.setItem("beginner02", JSON.stringify(beginner02));
 };
