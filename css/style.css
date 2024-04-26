@@ -825,12 +825,12 @@ button {
 }
 
 .lesson-learn__str-explain-span {
+  display: inline-block;
   font-size: 18px;
   border-radius: 10px;
   width: auto;
-  height: 40px;
   padding: 5px 10px;
-  margin-bottom: 30px;
+  margin: 5px;
 }
 
 .lesson-learn__phrase {
@@ -973,7 +973,8 @@ button {
 .lesson-learn__block-str100,
 .lesson-learn__block-str101,
 .lesson-learn__block-str102,
-.lesson-learn__block-str103 {
+.lesson-learn__block-str103,
+.lesson-learn__block-str104 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -1143,6 +1144,9 @@ button {
 }
 .lesson-learn__color5 {
   background-color: #b469fa;
+}
+.lesson-learn__color6 {
+  background-color: #69fabe;
 }
 
 .width320 {
