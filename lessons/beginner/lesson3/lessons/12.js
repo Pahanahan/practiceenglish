@@ -186,66 +186,68 @@ const stringsArray2 = [
   stringChoice14,
   stringChoice15,
   stringChoice16,
+];
+const stringsArray3 = [
   stringChoice17,
   stringChoice18,
   stringChoice19,
-];
-const stringsArray3 = [
   stringChoice20,
   stringChoice21,
   stringChoice22,
   stringChoice23,
   stringChoice24,
+];
+const stringsArray4 = [
   stringChoice25,
   stringChoice26,
   stringChoice27,
   stringChoice28,
-];
-const stringsArray4 = [
   stringChoice29,
   stringChoice30,
   stringChoice31,
   stringChoice32,
+];
+const stringsArray5 = [
   stringChoice33,
   stringChoice34,
   stringChoice35,
   stringChoice36,
   stringChoice37,
   stringChoice38,
-];
-const stringsArray5 = [
   stringChoice39,
   stringChoice40,
+];
+const stringsArray6 = [
   stringChoice41,
   stringChoice42,
   stringChoice43,
   stringChoice44,
   stringChoice45,
   stringChoice46,
-];
-const stringsArray6 = [
   stringChoice47,
   stringChoice48,
+];
+const stringsArray7 = [
   stringChoice49,
   stringChoice50,
   stringChoice51,
   stringChoice52,
   stringChoice53,
   stringChoice54,
-];
-const stringsArray7 = [
   stringChoice55,
   stringChoice56,
+];
+const stringsArray8 = [
   stringChoice57,
   stringChoice58,
   stringChoice59,
   stringChoice60,
   stringChoice61,
-];
-const stringsArray8 = [
   stringChoice62,
   stringChoice63,
   stringChoice64,
+];
+const stringsArray9 = [
   stringChoice65,
   stringChoice66,
   stringChoice67,
@@ -253,9 +255,9 @@ const stringsArray8 = [
   stringChoice69,
   stringChoice70,
   stringChoice71,
-];
-const stringsArray9 = [
   stringChoice72,
+];
+const stringsArray10 = [
   stringChoice73,
   stringChoice74,
   stringChoice75,
@@ -264,19 +266,6 @@ const stringsArray9 = [
   stringChoice78,
   stringChoice79,
   stringChoice80,
-  stringChoice81,
-];
-const stringsArray10 = [
-  stringChoice82,
-  stringChoice83,
-  stringChoice84,
-  stringChoice85,
-  stringChoice86,
-  stringChoice87,
-  stringChoice88,
-  stringChoice89,
-  stringChoice90,
-  stringChoice91,
 ];
 
 const stringsArrays = [
@@ -305,33 +294,33 @@ const boxLessonsStringsArray = [
   boxLessonsStrings10,
 ];
 
-const audio01 = new Audio("audio12/he_knows_a_lot.wav");
-const audio02 = new Audio("audio12/i_think_he_speaks_english_very_well.wav");
-const audio03 = new Audio("audio12/i_know_how_it_works.wav");
-const audio04 = new Audio("audio12/i_know_that_it_costs_more.wav");
-const audio05 = new Audio("audio12/he_often_says_it.wav");
-const audio06 = new Audio("audio12/he_understands_that_person.wav");
-const audio07 = new Audio("audio12/he_likes_it.wav");
-const audio08 = new Audio("audio12/we_often_hear_it_on_tv.wav");
-const audio09 = new Audio("audio12/i_think_he_does_it_better.wav");
-const audio10 = new Audio("audio12/i_think_it_works_very_well.wav");
+const audio01 = new Audio("audio12/i_really_love_music.wav");
+const audio02 = new Audio("audio12/i_have_a_family.wav");
+const audio03 = new Audio("audio12/i_see_a_student.wav");
+const audio04 = new Audio("audio12/we_see_a_bank.wav");
+const audio05 = new Audio("audio12/they_often_drink_water.wav");
+const audio06 = new Audio("audio12/i_see_two_students.wav");
+const audio07 = new Audio("audio12/i_like_this_book.wav");
+const audio08 = new Audio("audio12/i_have_a_computer.wav");
+const audio09 = new Audio("audio12/i_understand_these_things.wav");
+const audio10 = new Audio("audio12/they_have_a_computer.wav");
 
 const answersArray = [
-  "He knows a lot",
-  "I think he speaks English very well",
-  "I know how it works",
-  "I know that it costs more",
-  "He often says it",
-  "He understands that person",
-  "He likes it",
-  "We often hear it on TV",
-  "I think he does it better",
-  "I think it works very well",
+'I really love music',
+'I have a family',
+'I see a student',
+'We see a bank',
+'They often drink water',
+'I see two students',
+'I like this book',
+'I have a computer',
+'I understand these things',
+'They have a computer'
 ];
 
 let rightAnswers = 0;
 
-let beginner02 = JSON.parse(localStorage.getItem("beginner02"));
+let beginner03 = JSON.parse(localStorage.getItem("beginner03"));
 
 for (let i = 0; i < stringsArrays.length; i++) {
   const stringsArray = stringsArrays[i];
@@ -529,13 +518,13 @@ checkPhrase10.addEventListener("click", function () {
     audio10
   );
   if (rightAnswers === 10) {
-    if (beginner02.length === 11) {
-      beginner02.push(12);
+    if (beginner03.length === 11) {
+      beginner03.push(12);
       saveToLocalStorage();
     }
   }
 });
 
 const saveToLocalStorage = function () {
-  localStorage.setItem("beginner02", JSON.stringify(beginner02));
+  localStorage.setItem("beginner03", JSON.stringify(beginner03));
 };
