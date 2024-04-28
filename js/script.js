@@ -98,6 +98,16 @@ if (begginerComplete === null) {
     lessonImage4.setAttribute("src", "img/complete.png");
     lessonImage5.setAttribute("src", "img/start.png");
   }
+  if (begginerComplete[4] === 5) {
+    begginerLessonStart6.setAttribute(
+      "href",
+      "lessons/beginner/lesson6/lesson6.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete5.style.backgroundColor = "#209c0f";
+    lessonImage5.setAttribute("src", "img/complete.png");
+    lessonImage6.setAttribute("src", "img/start.png");
+  }
 }
 
 const printPersent = Math.round((currentCompleteLessons / 50) * 100);
