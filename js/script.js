@@ -5,18 +5,33 @@ const begginerLessonStart2 = document.querySelector(".begginer__lesson02");
 const begginerLessonStart3 = document.querySelector(".begginer__lesson03");
 const begginerLessonStart4 = document.querySelector(".begginer__lesson04");
 const begginerLessonStart5 = document.querySelector(".begginer__lesson05");
+const begginerLessonStart6 = document.querySelector(".begginer__lesson06");
+const begginerLessonStart7 = document.querySelector(".begginer__lesson07");
+const begginerLessonStart8 = document.querySelector(".begginer__lesson08");
+const begginerLessonStart9 = document.querySelector(".begginer__lesson09");
+const begginerLessonStart10 = document.querySelector(".begginer__lesson010");
 
 const lessonComplete1 = document.querySelector(".lesson__complete1");
 const lessonComplete2 = document.querySelector(".lesson__complete2");
 const lessonComplete3 = document.querySelector(".lesson__complete3");
 const lessonComplete4 = document.querySelector(".lesson__complete4");
 const lessonComplete5 = document.querySelector(".lesson__complete5");
+const lessonComplete6 = document.querySelector(".lesson__complete6");
+const lessonComplete7 = document.querySelector(".lesson__complete7");
+const lessonComplete8 = document.querySelector(".lesson__complete8");
+const lessonComplete9 = document.querySelector(".lesson__complete9");
+const lessonComplete10 = document.querySelector(".lesson__complete10");
 
 const lessonImage1 = document.querySelector(".lesson__image01");
 const lessonImage2 = document.querySelector(".lesson__image02");
 const lessonImage3 = document.querySelector(".lesson__image03");
 const lessonImage4 = document.querySelector(".lesson__image04");
 const lessonImage5 = document.querySelector(".lesson__image05");
+const lessonImage6 = document.querySelector(".lesson__image06");
+const lessonImage7 = document.querySelector(".lesson__image07");
+const lessonImage8 = document.querySelector(".lesson__image08");
+const lessonImage9 = document.querySelector(".lesson__image09");
+const lessonImage10 = document.querySelector(".lesson__image010");
 
 let currentCompleteLessons = 0;
 
@@ -45,7 +60,7 @@ if (begginer03 !== null && begginer03.length === 15) {
   begginerComplete.push(3)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
-if (begginer04 !== null && begginer04.length === 15) {
+if (begginer04 !== null && begginer04.length === 12) {
   begginerComplete.push(4)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }

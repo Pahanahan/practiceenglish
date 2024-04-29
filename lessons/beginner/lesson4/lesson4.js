@@ -202,31 +202,6 @@ if (beginner04 === null) {
     lessonComplete12.style.backgroundColor = "#209c0f";
     lessonImage12.setAttribute("src", "../../../img/complete.png");
   }
-  // if (beginner04[12] === 13) {
-  //   begginerLessonStart14.setAttribute(
-  //     "href",
-  //     "../../../lessons/beginner/lesson4/lessons/14.html"
-  //   );
-  //   currentCompleteLessons++;
-  //   lessonComplete13.style.backgroundColor = "#209c0f";
-  //   lessonImage13.setAttribute("src", "../../../img/complete.png");
-  //   lessonImage14.setAttribute("src", "../../../img/start.png");
-  // }
-  // if (beginner04[13] === 14) {
-  //   begginerLessonStart15.setAttribute(
-  //     "href",
-  //     "../../../lessons/beginner/lesson4/lessons/15.html"
-  //   );
-  //   currentCompleteLessons++;
-  //   lessonComplete14.style.backgroundColor = "#209c0f";
-  //   lessonImage14.setAttribute("src", "../../../img/complete.png");
-  //   lessonImage15.setAttribute("src", "../../../img/start.png");
-  // }
-  // if (beginner04[14] === 15) {
-  //   currentCompleteLessons++;
-  //   lessonComplete15.style.backgroundColor = "#209c0f";
-  //   lessonImage15.setAttribute("src", "../../../img/complete.png");
-  // }
 }
 
 const printPersent = Math.round((currentCompleteLessons / 12) * 100);
