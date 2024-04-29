@@ -82,157 +82,152 @@ const lessonComplete15 = document.querySelector(".lesson__complete15");
 
 let currentCompleteLessons = 0;
 
-let beginner03 = JSON.parse(localStorage.getItem("beginner03"));
+let beginner04 = JSON.parse(localStorage.getItem("beginner04"));
 
-if (beginner03 === null) {
-  beginner03 = [];
-} else if (beginner03 !== null) {
-  if (beginner03[0] === 1) {
+if (beginner04 === null) {
+  beginner04 = [];
+} else if (beginner04 !== null) {
+  if (beginner04[0] === 1) {
     begginerLessonStart2.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/02.html"
+      "../../../lessons/beginner/lesson4/lessons/02.html"
     );
     currentCompleteLessons++;
     lessonComplete1.style.backgroundColor = "#209c0f";
     lessonImage1.setAttribute("src", "../../../img/complete.png");
     lessonImage2.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[1] === 2) {
+  if (beginner04[1] === 2) {
     begginerLessonStart3.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/03.html"
+      "../../../lessons/beginner/lesson4/lessons/03.html"
     );
     currentCompleteLessons++;
     lessonComplete2.style.backgroundColor = "#209c0f";
     lessonImage2.setAttribute("src", "../../../img/complete.png");
     lessonImage3.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[2] === 3) {
+  if (beginner04[2] === 3) {
     begginerLessonStart4.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/04.html"
+      "../../../lessons/beginner/lesson4/lessons/04.html"
     );
     currentCompleteLessons++;
     lessonComplete3.style.backgroundColor = "#209c0f";
     lessonImage3.setAttribute("src", "../../../img/complete.png");
     lessonImage4.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[3] === 4) {
+  if (beginner04[3] === 4) {
     begginerLessonStart5.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/05.html"
+      "../../../lessons/beginner/lesson4/lessons/05.html"
     );
     currentCompleteLessons++;
     lessonComplete4.style.backgroundColor = "#209c0f";
     lessonImage4.setAttribute("src", "../../../img/complete.png");
     lessonImage5.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[4] === 5) {
+  if (beginner04[4] === 5) {
     begginerLessonStart6.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/06.html"
+      "../../../lessons/beginner/lesson4/lessons/06.html"
     );
     currentCompleteLessons++;
     lessonComplete5.style.backgroundColor = "#209c0f";
     lessonImage5.setAttribute("src", "../../../img/complete.png");
     lessonImage6.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[5] === 6) {
+  if (beginner04[5] === 6) {
     begginerLessonStart7.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/07.html"
+      "../../../lessons/beginner/lesson4/lessons/07.html"
     );
     currentCompleteLessons++;
     lessonComplete6.style.backgroundColor = "#209c0f";
     lessonImage6.setAttribute("src", "../../../img/complete.png");
     lessonImage7.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[6] === 7) {
+  if (beginner04[6] === 7) {
     begginerLessonStart8.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/08.html"
+      "../../../lessons/beginner/lesson4/lessons/08.html"
     );
     currentCompleteLessons++;
     lessonComplete7.style.backgroundColor = "#209c0f";
     lessonImage7.setAttribute("src", "../../../img/complete.png");
     lessonImage8.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[7] === 8) {
+  if (beginner04[7] === 8) {
     begginerLessonStart9.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/09.html"
+      "../../../lessons/beginner/lesson4/lessons/09.html"
     );
     currentCompleteLessons++;
     lessonComplete8.style.backgroundColor = "#209c0f";
     lessonImage8.setAttribute("src", "../../../img/complete.png");
     lessonImage9.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[8] === 9) {
+  if (beginner04[8] === 9) {
     begginerLessonStart10.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/10.html"
+      "../../../lessons/beginner/lesson4/lessons/10.html"
     );
     currentCompleteLessons++;
     lessonComplete9.style.backgroundColor = "#209c0f";
     lessonImage9.setAttribute("src", "../../../img/complete.png");
     lessonImage10.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[9] === 10) {
+  if (beginner04[9] === 10) {
     begginerLessonStart11.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/11.html"
+      "../../../lessons/beginner/lesson4/lessons/11.html"
     );
     currentCompleteLessons++;
     lessonComplete10.style.backgroundColor = "#209c0f";
     lessonImage10.setAttribute("src", "../../../img/complete.png");
     lessonImage11.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[10] === 11) {
+  if (beginner04[10] === 11) {
     begginerLessonStart12.setAttribute(
       "href",
-      "../../../lessons/beginner/lesson3/lessons/12.html"
+      "../../../lessons/beginner/lesson4/lessons/12.html"
     );
     currentCompleteLessons++;
     lessonComplete11.style.backgroundColor = "#209c0f";
     lessonImage11.setAttribute("src", "../../../img/complete.png");
     lessonImage12.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[11] === 12) {
-    begginerLessonStart13.setAttribute(
-      "href",
-      "../../../lessons/beginner/lesson3/lessons/13.html"
-    );
+  if (beginner04[11] === 12) {
     currentCompleteLessons++;
     lessonComplete12.style.backgroundColor = "#209c0f";
     lessonImage12.setAttribute("src", "../../../img/complete.png");
-    lessonImage13.setAttribute("src", "../../../img/start.png");
   }
-  if (beginner03[12] === 13) {
-    begginerLessonStart14.setAttribute(
-      "href",
-      "../../../lessons/beginner/lesson3/lessons/14.html"
-    );
-    currentCompleteLessons++;
-    lessonComplete13.style.backgroundColor = "#209c0f";
-    lessonImage13.setAttribute("src", "../../../img/complete.png");
-    lessonImage14.setAttribute("src", "../../../img/start.png");
-  }
-  if (beginner03[13] === 14) {
-    begginerLessonStart15.setAttribute(
-      "href",
-      "../../../lessons/beginner/lesson3/lessons/15.html"
-    );
-    currentCompleteLessons++;
-    lessonComplete14.style.backgroundColor = "#209c0f";
-    lessonImage14.setAttribute("src", "../../../img/complete.png");
-    lessonImage15.setAttribute("src", "../../../img/start.png");
-  }
-  if (beginner03[14] === 15) {
-    currentCompleteLessons++;
-    lessonComplete15.style.backgroundColor = "#209c0f";
-    lessonImage15.setAttribute("src", "../../../img/complete.png");
-  }
+  // if (beginner04[12] === 13) {
+  //   begginerLessonStart14.setAttribute(
+  //     "href",
+  //     "../../../lessons/beginner/lesson4/lessons/14.html"
+  //   );
+  //   currentCompleteLessons++;
+  //   lessonComplete13.style.backgroundColor = "#209c0f";
+  //   lessonImage13.setAttribute("src", "../../../img/complete.png");
+  //   lessonImage14.setAttribute("src", "../../../img/start.png");
+  // }
+  // if (beginner04[13] === 14) {
+  //   begginerLessonStart15.setAttribute(
+  //     "href",
+  //     "../../../lessons/beginner/lesson4/lessons/15.html"
+  //   );
+  //   currentCompleteLessons++;
+  //   lessonComplete14.style.backgroundColor = "#209c0f";
+  //   lessonImage14.setAttribute("src", "../../../img/complete.png");
+  //   lessonImage15.setAttribute("src", "../../../img/start.png");
+  // }
+  // if (beginner04[14] === 15) {
+  //   currentCompleteLessons++;
+  //   lessonComplete15.style.backgroundColor = "#209c0f";
+  //   lessonImage15.setAttribute("src", "../../../img/complete.png");
+  // }
 }
 
-const printPersent = Math.round((currentCompleteLessons / 15) * 100);
+const printPersent = Math.round((currentCompleteLessons / 12) * 100);
 headerProgressPersent.textContent = `${printPersent}%`;
