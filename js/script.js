@@ -64,7 +64,7 @@ if (begginer04 !== null && begginer04.length === 12) {
   begginerComplete.push(4)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
-if (begginer05 !== null && begginer05.length === 15) {
+if (begginer05 !== null && begginer05.length === 12) {
   begginerComplete.push(5)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }

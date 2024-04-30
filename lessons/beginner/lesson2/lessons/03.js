@@ -75,6 +75,7 @@ const nextBtn2 = document.querySelector(".lesson-learn__next2");
 const nextBtn3 = document.querySelector(".lesson-learn__next3");
 
 const helpText = document.querySelector(".lesson-learn__text");
+const helpText2 = document.querySelector(".lesson-learn__text2");
 
 const answersArray = [
   "соглашаться",
@@ -82,16 +83,12 @@ const answersArray = [
   "евро",
   "пятьдесят",
   "меньше",
+
   "делать",
   "фунт",
   "проблема",
   "тот, что",
   "с",
-  // "и",
-  // "страна",
-  // "знать",
-  // "урок",
-  // "жить",
 ];
 
 const stringChoices = [
@@ -108,13 +105,6 @@ const stringChoices2 = [
   stringChoice9,
   stringChoice10,
 ];
-// const stringChoices3 = [
-//   stringChoice11,
-//   stringChoice12,
-//   stringChoice13,
-//   stringChoice14,
-//   stringChoice15,
-// ];
 
 const itemsArrayPast = [itemPast, itemPast2, itemPast3, itemPast4, itemPast5];
 const itemsArrayPast2 = [
@@ -124,13 +114,6 @@ const itemsArrayPast2 = [
   itemPast9,
   itemPast10,
 ];
-// const itemsArrayPast3 = [
-//   itemPast11,
-//   itemPast12,
-//   itemPast13,
-//   itemPast14,
-//   itemPast15,
-// ];
 
 let rightAnswers = 0;
 
@@ -138,7 +121,7 @@ let currentIndex = 0;
 
 let beginner02 = JSON.parse(localStorage.getItem("beginner02"));
 
-function mixStrings(gridBlock, gridBlockView, blockStrings, mixBtn, checkStr) {
+function mixStrings(gridBlock, gridBlockView, blockStrings, mixBtn, checkStr, helpText) {
   gridBlock.style.display = "none";
   gridBlockView.style.display = "grid";
   blockStrings.style.display = "flex";
@@ -233,7 +216,8 @@ mixBtn.addEventListener("click", function () {
     boxLessonsGridView,
     boxLessonsStrings,
     mixBtn,
-    checkStr
+    checkStr,
+    helpText
   );
 
   stringChoices.forEach((stringChoiceItem) => {
@@ -278,7 +262,8 @@ mixBtn2.addEventListener("click", function () {
     boxLessonsGridView2,
     boxLessonsStrings2,
     mixBtn2,
-    checkStr2
+    checkStr2,
+    helpText2
   );
 
   stringChoices2.forEach((stringChoiceItem) => {
@@ -310,10 +295,6 @@ mixBtn2.addEventListener("click", function () {
       9,
       answerRightOrNot2
     );
-    // nextBtn2.addEventListener("click", function () {
-    //   nextLesson(lesson02, lesson03);
-    //   currentIndex = 0;
-    // });
     if (rightAnswers === 10) {
       if (beginner02.length === 2) {
         beginner02.push(3);

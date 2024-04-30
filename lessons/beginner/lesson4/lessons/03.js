@@ -75,6 +75,7 @@ const nextBtn2 = document.querySelector(".lesson-learn__next2");
 const nextBtn3 = document.querySelector(".lesson-learn__next3");
 
 const helpText = document.querySelector(".lesson-learn__text");
+const helpText2 = document.querySelector(".lesson-learn__text2");
 
 const answersArray = [
   "парень",
@@ -120,7 +121,7 @@ let currentIndex = 0;
 
 let beginner04 = JSON.parse(localStorage.getItem("beginner04"));
 
-function mixStrings(gridBlock, gridBlockView, blockStrings, mixBtn, checkStr) {
+function mixStrings(gridBlock, gridBlockView, blockStrings, mixBtn, checkStr, helpText) {
   gridBlock.style.display = "none";
   gridBlockView.style.display = "grid";
   blockStrings.style.display = "flex";
@@ -215,7 +216,8 @@ mixBtn.addEventListener("click", function () {
     boxLessonsGridView,
     boxLessonsStrings,
     mixBtn,
-    checkStr
+    checkStr,
+    helpText
   );
 
   stringChoices.forEach((stringChoiceItem) => {
@@ -260,7 +262,8 @@ mixBtn2.addEventListener("click", function () {
     boxLessonsGridView2,
     boxLessonsStrings2,
     mixBtn2,
-    checkStr2
+    checkStr2,
+    helpText2
   );
 
   stringChoices2.forEach((stringChoiceItem) => {

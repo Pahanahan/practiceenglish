@@ -310,7 +310,11 @@ button {
   align-items: center;
 }
 
-.lesson-learn__text {
+.lesson-learn__text,
+.lesson-learn__text2,
+.lesson-learn__text3,
+.lesson-learn__text4,
+.lesson-learn__text5 {
   font-size: 24px;
   text-align: center;
   color: #fff;
@@ -385,6 +389,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 10px 0;
   margin-bottom: 8px;
   cursor: pointer;
@@ -974,14 +979,38 @@ button {
 .lesson-learn__block-str101,
 .lesson-learn__block-str102,
 .lesson-learn__block-str103,
-.lesson-learn__block-str104, 
-.lesson-learn__block-str105, 
-.lesson-learn__block-str106, 
-.lesson-learn__block-str107, 
-.lesson-learn__block-str108, 
-.lesson-learn__block-str109, 
-.lesson-learn__block-str110, 
-.lesson-learn__block-str111 {
+.lesson-learn__block-str104,
+.lesson-learn__block-str105,
+.lesson-learn__block-str106,
+.lesson-learn__block-str107,
+.lesson-learn__block-str108,
+.lesson-learn__block-str109,
+.lesson-learn__block-str110,
+.lesson-learn__block-str111,
+.lesson-learn__block-str112,
+.lesson-learn__block-str113,
+.lesson-learn__block-str114,
+.lesson-learn__block-str115,
+.lesson-learn__block-str116,
+.lesson-learn__block-str117,
+.lesson-learn__block-str118,
+.lesson-learn__block-str119,
+.lesson-learn__block-str120,
+.lesson-learn__block-str121,
+.lesson-learn__block-str122,
+.lesson-learn__block-str123,
+.lesson-learn__block-str124,
+.lesson-learn__block-str125,
+.lesson-learn__block-str126,
+.lesson-learn__block-str127,
+.lesson-learn__block-str128,
+.lesson-learn__block-str129,
+.lesson-learn__block-str130,
+.lesson-learn__block-str131,
+.lesson-learn__block-str132,
+.lesson-learn__block-str133,
+.lesson-learn__block-str134,
+.lesson-learn__block-str135 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -1064,39 +1093,71 @@ button {
 .lesson-learn__block-str67:hover,
 .lesson-learn__block-str68:hover,
 .lesson-learn__block-str69:hover,
-.lesson-learn__block-str71:hover
-  .lesson-learn__block-str72:hover
-  .lesson-learn__block-str73:hover
-  .lesson-learn__block-str74:hover
-  .lesson-learn__block-str75:hover
-  .lesson-learn__block-str76:hover
-  .lesson-learn__block-str77:hover
-  .lesson-learn__block-str78:hover
-  .lesson-learn__block-str79:hover
-  .lesson-learn__block-str80:hover
-  .lesson-learn__block-str81:hover
-  .lesson-learn__block-str82:hover
-  .lesson-learn__block-str83:hover
-  .lesson-learn__block-str84:hover
-  .lesson-learn__block-str85:hover
-  .lesson-learn__block-str86:hover
-  .lesson-learn__block-str87:hover
-  .lesson-learn__block-str88:hover
-  .lesson-learn__block-str89:hover
-  .lesson-learn__block-str90:hover
-  .lesson-learn__block-str91:hover
-  .lesson-learn__block-str92:hover
-  .lesson-learn__block-str93:hover
-  .lesson-learn__block-str94:hover
-  .lesson-learn__block-str95:hover
-  .lesson-learn__block-str96:hover
-  .lesson-learn__block-str97:hover
-  .lesson-learn__block-str98:hover
-  .lesson-learn__block-str99:hover
-  .lesson-learn__block-str100:hover
-  .lesson-learn__block-str101:hover
-  .lesson-learn__block-str102:hover
-  .lesson-learn__block-str103:hover {
+.lesson-learn__block-str71:hover,
+.lesson-learn__block-str72:hover,
+  .lesson-learn__block-str73:hover,
+  .lesson-learn__block-str74:hover,
+  .lesson-learn__block-str75:hover,
+  .lesson-learn__block-str76:hover,
+  .lesson-learn__block-str77:hover,
+  .lesson-learn__block-str78:hover,
+  .lesson-learn__block-str79:hover,
+  .lesson-learn__block-str80:hover,
+  .lesson-learn__block-str81:hover,
+  .lesson-learn__block-str82:hover,
+  .lesson-learn__block-str83:hover,
+  .lesson-learn__block-str84:hover,
+  .lesson-learn__block-str85:hover,
+  .lesson-learn__block-str86:hover,
+  .lesson-learn__block-str87:hover,
+  .lesson-learn__block-str88:hover,
+  .lesson-learn__block-str89:hover,
+  .lesson-learn__block-str90:hover,
+  .lesson-learn__block-str91:hover,
+  .lesson-learn__block-str92:hover,
+  .lesson-learn__block-str93:hover,
+  .lesson-learn__block-str94:hover,
+  .lesson-learn__block-str95:hover,
+  .lesson-learn__block-str96:hover,
+  .lesson-learn__block-str97:hover,
+  .lesson-learn__block-str98:hover,
+  .lesson-learn__block-str99:hover,
+  .lesson-learn__block-str100:hover,
+  .lesson-learn__block-str101:hover,
+  .lesson-learn__block-str102:hover,
+  .lesson-learn__block-str103:hover,
+  .lesson-learn__block-str104:hover,
+  .lesson-learn__block-str105:hover,
+  .lesson-learn__block-str106:hover,
+  .lesson-learn__block-str107:hover,
+  .lesson-learn__block-str108:hover,
+  .lesson-learn__block-str109:hover,
+  .lesson-learn__block-str110:hover,
+  .lesson-learn__block-str111:hover,
+  .lesson-learn__block-str112:hover,
+  .lesson-learn__block-str113:hover,
+  .lesson-learn__block-str114:hover,
+  .lesson-learn__block-str115:hover,
+  .lesson-learn__block-str116:hover,
+  .lesson-learn__block-str117:hover,
+  .lesson-learn__block-str118:hover,
+  .lesson-learn__block-str119:hover,
+  .lesson-learn__block-str120:hover,
+  .lesson-learn__block-str121:hover,
+  .lesson-learn__block-str122:hover,
+  .lesson-learn__block-str123:hover,
+  .lesson-learn__block-str124:hover,
+  .lesson-learn__block-str125:hover,
+  .lesson-learn__block-str126:hover,
+  .lesson-learn__block-str127:hover,
+  .lesson-learn__block-str128:hover,
+  .lesson-learn__block-str129:hover,
+  .lesson-learn__block-str130:hover,
+  .lesson-learn__block-str131:hover,
+  .lesson-learn__block-str132:hover,
+  .lesson-learn__block-str133:hover,
+  .lesson-learn__block-str134:hover,
+  .lesson-learn__block-str135:hover {
   opacity: 0.8;
 }
 
@@ -1154,6 +1215,9 @@ button {
 }
 .lesson-learn__color6 {
   background-color: #69fabe;
+}
+.lesson-learn__color7 {
+  background-color: #2e703f;
 }
 
 .width320 {
@@ -1272,7 +1336,11 @@ button {
   }
 }
 @media (max-width: 400px) {
-  .lesson-learn__text {
+  .lesson-learn__text,
+  .lesson-learn__text2,
+  .lesson-learn__text3,
+  .lesson-learn__text4,
+  .lesson-learn__text5 {
     font-size: 20px;
   }
   .lesson-learn__grid,
