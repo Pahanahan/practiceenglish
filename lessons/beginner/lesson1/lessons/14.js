@@ -126,6 +126,22 @@ const boxLessonsStrings5 = document.querySelector(
   ".lesson-learn__block-strings5"
 );
 
+const lessonBoxStringsAnswer1 = document.querySelector(
+  ".lesson-learn__block-strings-answer1"
+);
+const lessonBoxStringsAnswer2 = document.querySelector(
+  ".lesson-learn__block-strings-answer2"
+);
+const lessonBoxStringsAnswer3 = document.querySelector(
+  ".lesson-learn__block-strings-answer3"
+);
+const lessonBoxStringsAnswer4 = document.querySelector(
+  ".lesson-learn__block-strings-answer4"
+);
+const lessonBoxStringsAnswer5 = document.querySelector(
+  ".lesson-learn__block-strings-answer5"
+);
+
 const audioItem = document.querySelector(".lesson-learn__audio");
 const audioItem2 = document.querySelector(".lesson-learn__audio2");
 const audioItem3 = document.querySelector(".lesson-learn__audio3");
@@ -190,6 +206,14 @@ const boxLessonsStringsArray = [
   boxLessonsStrings5,
 ];
 
+const lessonBoxStringsAnswersArray = [
+  lessonBoxStringsAnswer1,
+  lessonBoxStringsAnswer2,
+  lessonBoxStringsAnswer3,
+  lessonBoxStringsAnswer4,
+  lessonBoxStringsAnswer5,
+];
+
 const audio01 = new Audio("audio14/i_often_travel.wav");
 const audio02 = new Audio("audio14/i_like_this_music.wav");
 const audio03 = new Audio("audio14/i_love_you.wav");
@@ -207,6 +231,8 @@ const answersArray = [
 ];
 
 let rightAnswers = 0;
+
+let joinedText;
 
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
 
@@ -234,32 +260,49 @@ audio01.play();
 for (let i = 0; i < stringsArrays.length; i++) {
   const stringsArray = stringsArrays[i];
   const boxLessonsStrings = boxLessonsStringsArray[i];
+  const lessonBoxStringsAnswer = lessonBoxStringsAnswersArray[i];
 
   stringsArray.forEach((stringChoice) => {
     stringChoice.addEventListener("click", function () {
-      pasteInPhrase(boxLessonsStrings, stringChoice);
+      pasteInPhrase(stringChoice, boxLessonsStrings, lessonBoxStringsAnswer);
     });
   });
 }
 
-function pasteInPhrase(boxLessonsStrings, stringChoice) {
-  boxLessonsStrings.textContent += " ";
-  boxLessonsStrings.textContent += stringChoice.innerText;
-  boxLessonsStrings.style.backgroundColor = "#fff";
-  stringChoice.style.display = "none";
+function pasteInPhrase(
+  stringChoice,
+  boxLessonsStrings,
+  lessonBoxStringsAnswer
+) {
+  if (stringChoice.classList.contains("str__answer")) {
+    boxLessonsStrings.appendChild(stringChoice);
+    stringChoice.classList.remove("str__answer");
+  } else {
+    lessonBoxStringsAnswer.appendChild(stringChoice);
+    stringChoice.classList.add("str__answer");
+  }
 }
 
 function checkPhrases(
-  boxLessonsStrings,
+  lessonBoxStringsAnswer,
   lessonCheck,
   index,
   answerRightOrNot,
-  nextLesson
+  nextLesson,
+  audio
 ) {
-  if (boxLessonsStrings.textContent.length > 0) {
+  const divElements = document.querySelectorAll(
+    `.lesson-learn__block-strings-answer${
+      index + 1
+    } [class^="lesson-learn__block-str"]`
+  );
+  const texts = Array.from(divElements).map((element) => element.textContent);
+  joinedText = texts.join(" ");
+
+  if (lessonBoxStringsAnswer.textContent.length > 0) {
     if (
-      boxLessonsStrings.textContent.trim() === answersArray[index][0] ||
-      boxLessonsStrings.textContent.trim() === answersArray[index][1]
+      joinedText === answersArray[index][0] ||
+      joinedText === answersArray[index][1]
     ) {
       lessonCheck.style.display = "none";
       nextLesson.style.display = "block";
@@ -284,7 +327,7 @@ function lessonNext(lesson1, lesson2, audio) {
 }
 
 checkPhrase.addEventListener("click", function () {
-  checkPhrases(boxLessonsStrings, checkPhrase, 0, answerRightOrNot, nextBtn);
+  checkPhrases(lessonBoxStringsAnswer1, checkPhrase, 0, answerRightOrNot, nextBtn);
 });
 
 nextBtn.addEventListener("click", function () {
@@ -293,7 +336,7 @@ nextBtn.addEventListener("click", function () {
 
 checkPhrase2.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings2,
+    lessonBoxStringsAnswer2,
     checkPhrase2,
     1,
     answerRightOrNot2,
@@ -307,7 +350,7 @@ nextBtn2.addEventListener("click", function () {
 
 checkPhrase3.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings3,
+    lessonBoxStringsAnswer3,
     checkPhrase3,
     2,
     answerRightOrNot3,
@@ -321,7 +364,7 @@ nextBtn3.addEventListener("click", function () {
 
 checkPhrase4.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings4,
+    lessonBoxStringsAnswer4,
     checkPhrase4,
     3,
     answerRightOrNot4,
@@ -335,7 +378,7 @@ nextBtn4.addEventListener("click", function () {
 
 checkPhrase5.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings5,
+    lessonBoxStringsAnswer5,
     checkPhrase5,
     4,
     answerRightOrNot5,

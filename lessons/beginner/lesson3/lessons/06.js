@@ -208,6 +208,37 @@ const boxLessonsStrings15 = document.querySelector(
   ".lesson-learn__block-strings15"
 );
 
+const lessonBoxStringsAnswer1 = document.querySelector(
+  ".lesson-learn__block-strings-answer1"
+);
+const lessonBoxStringsAnswer2 = document.querySelector(
+  ".lesson-learn__block-strings-answer2"
+);
+const lessonBoxStringsAnswer3 = document.querySelector(
+  ".lesson-learn__block-strings-answer3"
+);
+const lessonBoxStringsAnswer4 = document.querySelector(
+  ".lesson-learn__block-strings-answer4"
+);
+const lessonBoxStringsAnswer5 = document.querySelector(
+  ".lesson-learn__block-strings-answer5"
+);
+const lessonBoxStringsAnswer6 = document.querySelector(
+  ".lesson-learn__block-strings-answer6"
+);
+const lessonBoxStringsAnswer7 = document.querySelector(
+  ".lesson-learn__block-strings-answer7"
+);
+const lessonBoxStringsAnswer8 = document.querySelector(
+  ".lesson-learn__block-strings-answer8"
+);
+const lessonBoxStringsAnswer9 = document.querySelector(
+  ".lesson-learn__block-strings-answer9"
+);
+const lessonBoxStringsAnswer10 = document.querySelector(
+  ".lesson-learn__block-strings-answer10"
+);
+
 const stringsArray = [
   stringChoice,
   stringChoice2,
@@ -323,6 +354,19 @@ const boxLessonsStringsArray = [
   boxLessonsStrings10,
 ];
 
+const lessonBoxStringsAnswersArray = [
+  lessonBoxStringsAnswer1,
+  lessonBoxStringsAnswer2,
+  lessonBoxStringsAnswer3,
+  lessonBoxStringsAnswer4,
+  lessonBoxStringsAnswer5,
+  lessonBoxStringsAnswer6,
+  lessonBoxStringsAnswer7,
+  lessonBoxStringsAnswer8,
+  lessonBoxStringsAnswer9,
+  lessonBoxStringsAnswer10,
+];
+
 const audio01 = new Audio("audio06/i_see_one_person.wav");
 const audio02 = new Audio("audio06/i_have_a_question.wav");
 const audio03 = new Audio("audio06/they_have_a_problem.wav");
@@ -349,38 +393,56 @@ const answersArray = [
 
 let rightAnswers = 0;
 
+let joinedText;
+
 let beginner03 = JSON.parse(localStorage.getItem("beginner03"));
 
 for (let i = 0; i < stringsArrays.length; i++) {
   const stringsArray = stringsArrays[i];
   const boxLessonsStrings = boxLessonsStringsArray[i];
+  const lessonBoxStringsAnswer = lessonBoxStringsAnswersArray[i];
 
   stringsArray.forEach((stringChoice) => {
     stringChoice.addEventListener("click", function () {
-      pasteInPhrase(boxLessonsStrings, stringChoice);
+      pasteInPhrase(stringChoice, boxLessonsStrings, lessonBoxStringsAnswer);
     });
   });
 }
 
-function pasteInPhrase(boxLessonsStrings, stringChoice) {
-  boxLessonsStrings.textContent += " ";
-  boxLessonsStrings.textContent += stringChoice.innerText;
-  boxLessonsStrings.style.backgroundColor = "#fff";
-  stringChoice.style.display = "none";
+function pasteInPhrase(
+  stringChoice,
+  boxLessonsStrings,
+  lessonBoxStringsAnswer
+) {
+  if (stringChoice.classList.contains("str__answer")) {
+    boxLessonsStrings.appendChild(stringChoice);
+    stringChoice.classList.remove("str__answer");
+  } else {
+    lessonBoxStringsAnswer.appendChild(stringChoice);
+    stringChoice.classList.add("str__answer");
+  }
 }
 
 function checkPhrases(
-  boxLessonsStrings,
+  lessonBoxStringsAnswer,
   lessonCheck,
   index,
   answerRightOrNot,
   nextLesson,
   audio
 ) {
-  if (boxLessonsStrings.textContent.length > 0) {
+  const divElements = document.querySelectorAll(
+    `.lesson-learn__block-strings-answer${
+      index + 1
+    } [class^="lesson-learn__block-str"]`
+  );
+  const texts = Array.from(divElements).map((element) => element.textContent);
+  joinedText = texts.join(" ");
+
+  if (lessonBoxStringsAnswer.textContent.length > 0) {
     if (
-      boxLessonsStrings.textContent.trim() === answersArray[index][0] ||
-      boxLessonsStrings.textContent.trim() === answersArray[index][1]
+      joinedText === answersArray[index][0] ||
+      joinedText === answersArray[index][1]
     ) {
       lessonCheck.style.display = "none";
       nextLesson.style.display = "block";
@@ -407,7 +469,7 @@ function lessonNext(lesson1, lesson2) {
 
 checkPhrase.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings,
+    lessonBoxStringsAnswer1,
     checkPhrase,
     0,
     answerRightOrNot,
@@ -422,7 +484,7 @@ nextBtn.addEventListener("click", function () {
 
 checkPhrase2.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings2,
+    lessonBoxStringsAnswer2,
     checkPhrase2,
     1,
     answerRightOrNot2,
@@ -437,7 +499,7 @@ nextBtn2.addEventListener("click", function () {
 
 checkPhrase3.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings3,
+    lessonBoxStringsAnswer3,
     checkPhrase3,
     2,
     answerRightOrNot3,
@@ -452,7 +514,7 @@ nextBtn3.addEventListener("click", function () {
 
 checkPhrase4.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings4,
+    lessonBoxStringsAnswer4,
     checkPhrase4,
     3,
     answerRightOrNot4,
@@ -467,7 +529,7 @@ nextBtn4.addEventListener("click", function () {
 
 checkPhrase5.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings5,
+    lessonBoxStringsAnswer5,
     checkPhrase5,
     4,
     answerRightOrNot5,
@@ -482,7 +544,7 @@ nextBtn5.addEventListener("click", function () {
 
 checkPhrase6.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings6,
+    lessonBoxStringsAnswer6,
     checkPhrase6,
     5,
     answerRightOrNot6,
@@ -497,7 +559,7 @@ nextBtn6.addEventListener("click", function () {
 
 checkPhrase7.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings7,
+    lessonBoxStringsAnswer7,
     checkPhrase7,
     6,
     answerRightOrNot7,
@@ -512,7 +574,7 @@ nextBtn7.addEventListener("click", function () {
 
 checkPhrase8.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings8,
+    lessonBoxStringsAnswer8,
     checkPhrase8,
     7,
     answerRightOrNot8,
@@ -527,7 +589,7 @@ nextBtn8.addEventListener("click", function () {
 
 checkPhrase9.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings9,
+    lessonBoxStringsAnswer9,
     checkPhrase9,
     8,
     answerRightOrNot9,
@@ -542,7 +604,7 @@ nextBtn9.addEventListener("click", function () {
 
 checkPhrase10.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings10,
+    lessonBoxStringsAnswer10,
     checkPhrase10,
     9,
     answerRightOrNot10,

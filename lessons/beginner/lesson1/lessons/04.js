@@ -83,6 +83,28 @@ const boxLessonsStrings7 = document.querySelector(
   ".lesson-learn__block-strings7"
 );
 
+const lessonBoxStringsAnswer1 = document.querySelector(
+  ".lesson-learn__block-strings-answer1"
+);
+const lessonBoxStringsAnswer2 = document.querySelector(
+  ".lesson-learn__block-strings-answer2"
+);
+const lessonBoxStringsAnswer3 = document.querySelector(
+  ".lesson-learn__block-strings-answer3"
+);
+const lessonBoxStringsAnswer4 = document.querySelector(
+  ".lesson-learn__block-strings-answer4"
+);
+const lessonBoxStringsAnswer5 = document.querySelector(
+  ".lesson-learn__block-strings-answer5"
+);
+const lessonBoxStringsAnswer6 = document.querySelector(
+  ".lesson-learn__block-strings-answer6"
+);
+const lessonBoxStringsAnswer7 = document.querySelector(
+  ".lesson-learn__block-strings-answer7"
+);
+
 const stringsArray = [stringChoice, stringChoice2, stringChoice3];
 const stringsArray2 = [
   stringChoice4,
@@ -117,9 +139,35 @@ const stringsArray7 = [
   stringChoice27,
 ];
 
-const stringsArrays = [stringsArray, stringsArray2, stringsArray3, stringsArray4, stringsArray5, stringsArray6, stringsArray7];
+const stringsArrays = [
+  stringsArray,
+  stringsArray2,
+  stringsArray3,
+  stringsArray4,
+  stringsArray5,
+  stringsArray6,
+  stringsArray7,
+];
 
-const boxLessonsStringsArray = [boxLessonsStrings, boxLessonsStrings2, boxLessonsStrings3, boxLessonsStrings4, boxLessonsStrings5, boxLessonsStrings6, boxLessonsStrings7];
+const boxLessonsStringsArray = [
+  boxLessonsStrings,
+  boxLessonsStrings2,
+  boxLessonsStrings3,
+  boxLessonsStrings4,
+  boxLessonsStrings5,
+  boxLessonsStrings6,
+  boxLessonsStrings7,
+];
+
+const lessonBoxStringsAnswersArray = [
+  lessonBoxStringsAnswer1,
+  lessonBoxStringsAnswer2,
+  lessonBoxStringsAnswer3,
+  lessonBoxStringsAnswer4,
+  lessonBoxStringsAnswer5,
+  lessonBoxStringsAnswer6,
+  lessonBoxStringsAnswer7,
+];
 
 const audio01 = new Audio("audio04/i_understand_you.wav");
 const audio02 = new Audio("audio04/they_live_in_this_country.wav");
@@ -141,43 +189,53 @@ const answersArray = [
 
 let rightAnswers = 0;
 
+let joinedText;
+
 let beginner01 = JSON.parse(localStorage.getItem("beginner01"));
 
 for (let i = 0; i < stringsArrays.length; i++) {
   const stringsArray = stringsArrays[i];
   const boxLessonsStrings = boxLessonsStringsArray[i];
+  const lessonBoxStringsAnswer = lessonBoxStringsAnswersArray[i];
 
   stringsArray.forEach((stringChoice) => {
     stringChoice.addEventListener("click", function () {
-      pasteInPhrase(boxLessonsStrings, stringChoice);
+      pasteInPhrase(stringChoice, boxLessonsStrings, lessonBoxStringsAnswer);
     });
   });
 }
 
-
-function pasteInPhrase(boxLessonsStrings, stringChoice) {
-  boxLessonsStrings.textContent += " ";
-  boxLessonsStrings.textContent += stringChoice.innerText;
-  boxLessonsStrings.style.backgroundColor = "#fff";
-  stringChoice.style.display = "none";
+function pasteInPhrase(
+  stringChoice,
+  boxLessonsStrings,
+  lessonBoxStringsAnswer
+) {
+  if (stringChoice.classList.contains("str__answer")) {
+    boxLessonsStrings.appendChild(stringChoice);
+    stringChoice.classList.remove("str__answer");
+  } else {
+    lessonBoxStringsAnswer.appendChild(stringChoice);
+    stringChoice.classList.add("str__answer");
+  }
 }
 
 function checkPhrases(
-  boxLessonsStrings,
+  lessonBoxStringsAnswer,
   lessonCheck,
   index,
   answerRightOrNot,
   nextLesson,
-  audio,
+  audio
 ) {
-  if (boxLessonsStrings.textContent.length > 0) {
-  //   lessonCheck.disabled = true;
-  //   // нужно доработать не всегда работает кнопка
-  // } else {
-  //   lessonCheck.disabled = false;
-  //   // надо доработать не убирается disabled
-
-    if (boxLessonsStrings.textContent.trim() === answersArray[index]) {
+  const divElements = document.querySelectorAll(
+    `.lesson-learn__block-strings-answer${
+      index + 1
+    } [class^="lesson-learn__block-str"]`
+  );
+  const texts = Array.from(divElements).map((element) => element.textContent);
+  joinedText = texts.join(" ");
+  if (lessonBoxStringsAnswer.textContent.length > 0) {
+    if (joinedText === answersArray[index]) {
       lessonCheck.style.display = "none";
       nextLesson.style.display = "block";
       answerRightOrNot.style.display = "flex";
@@ -203,12 +261,12 @@ function lessonNext(lesson1, lesson2) {
 
 checkPhrase.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings,
+    lessonBoxStringsAnswer1,
     checkPhrase,
     0,
     answerRightOrNot,
     nextBtn,
-    audio01,
+    audio01
   );
 });
 
@@ -218,12 +276,12 @@ nextBtn.addEventListener("click", function () {
 
 checkPhrase2.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings2,
+    lessonBoxStringsAnswer2,
     checkPhrase2,
     1,
     answerRightOrNot2,
     nextBtn2,
-    audio02,
+    audio02
   );
 });
 
@@ -233,7 +291,7 @@ nextBtn2.addEventListener("click", function () {
 
 checkPhrase3.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings3,
+    lessonBoxStringsAnswer3,
     checkPhrase3,
     2,
     answerRightOrNot3,
@@ -248,7 +306,7 @@ nextBtn3.addEventListener("click", function () {
 
 checkPhrase4.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings4,
+    lessonBoxStringsAnswer4,
     checkPhrase4,
     3,
     answerRightOrNot4,
@@ -263,7 +321,7 @@ nextBtn4.addEventListener("click", function () {
 
 checkPhrase5.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings5,
+    lessonBoxStringsAnswer5,
     checkPhrase5,
     4,
     answerRightOrNot5,
@@ -278,7 +336,7 @@ nextBtn5.addEventListener("click", function () {
 
 checkPhrase6.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings6,
+    lessonBoxStringsAnswer6,
     checkPhrase6,
     5,
     answerRightOrNot6,
@@ -293,7 +351,7 @@ nextBtn6.addEventListener("click", function () {
 
 checkPhrase7.addEventListener("click", function () {
   checkPhrases(
-    boxLessonsStrings7,
+    lessonBoxStringsAnswer7,
     checkPhrase7,
     6,
     answerRightOrNot7,
