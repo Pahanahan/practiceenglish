@@ -46,6 +46,7 @@ let begginer02 = JSON.parse(localStorage.getItem("beginner02"));
 let begginer03 = JSON.parse(localStorage.getItem("beginner03"));
 let begginer04 = JSON.parse(localStorage.getItem("beginner04"));
 let begginer05 = JSON.parse(localStorage.getItem("beginner05"));
+let begginer06 = JSON.parse(localStorage.getItem("beginner06"));
 
 if (begginer01 !== null && begginer01.length === 15) {
   begginerComplete = []
@@ -66,6 +67,10 @@ if (begginer04 !== null && begginer04.length === 12) {
 }
 if (begginer05 !== null && begginer05.length === 12) {
   begginerComplete.push(5)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer06 !== null && begginer06.length === 13) {
+  begginerComplete.push(6)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
 
@@ -122,6 +127,16 @@ if (begginerComplete === null) {
     lessonComplete5.style.backgroundColor = "#209c0f";
     lessonImage5.setAttribute("src", "img/complete.png");
     lessonImage6.setAttribute("src", "img/start.png");
+  }
+  if (begginerComplete[5] === 6) {
+    begginerLessonStart7.setAttribute(
+      "href",
+      "lessons/beginner/lesson7/lesson7.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete6.style.backgroundColor = "#209c0f";
+    lessonImage6.setAttribute("src", "img/complete.png");
+    lessonImage7.setAttribute("src", "img/start.png");
   }
 }
 

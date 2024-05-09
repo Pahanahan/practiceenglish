@@ -214,6 +214,6 @@ if (beginner06 === null) {
   }
 }
 
-const printPersent = Math.round((currentCompleteLessons / 12) * 100);
+const printPersent = Math.round((currentCompleteLessons / 13) * 100);
 headerProgressPersent.textContent = `${printPersent}%`;
 
