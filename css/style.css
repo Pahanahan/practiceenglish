@@ -16,7 +16,10 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
-  background-color: #00bfff;
+  /* background-color: #00bfff; */
+/* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+background: linear-gradient(180deg, #abd9f1 0%, #b4f365 100%);
+min-height: 100vh;
   position: relative;
 }
 
@@ -60,7 +63,7 @@ button {
   background-color: #fff;
   border-radius: 20px;
   padding: 20px;
-  /* position: relative; */
+  /* margin-bottom: 5px; */
 }
 
 .header__progress-block {
@@ -106,6 +109,31 @@ button {
 
 .header__img {
   transform: rotate(180deg);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  gap: 30px;
+  padding: 20px;
+}
+
+.nav__words {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #0044ff;
+  border-radius: 5px;
+}
+
+.nav__achievements {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #0044ff;
+  border-radius: 5px;
 }
 
 .main {
@@ -232,16 +260,13 @@ button {
 }
 
 .lesson-learn {
-  /* position: absolute; */
   width: 100%;
   height: 100%;
-  background-color: #00bfff;
   padding: 20px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* display: none; */
   justify-content: center;
 }
 
