@@ -102,28 +102,28 @@ const choiceItems8 = document.querySelectorAll(".lesson-learn__choice-item8");
 const choiceItems9 = document.querySelectorAll(".lesson-learn__choice-item9");
 const choiceItems10 = document.querySelectorAll(".lesson-learn__choice-item10");
 
-const audio01 = new Audio("audio08/we_don't_pay.wav");
-const audio02 = new Audio("audio08/we_don't_play_tennis.wav");
-const audio03 = new Audio("audio08/we_don't_control_this_situation.wav");
-const audio04 = new Audio("audio08/i_don't_know_it.wav");
-const audio05 = new Audio("audio08/i_don't_go_there.wav");
-const audio06 = new Audio("audio08/i_don't_work.wav");
-const audio07 = new Audio("audio08/they_don't_see_this_problem.wav");
-const audio08 = new Audio("audio08/i_don't_understand_it.wav");
-const audio09 = new Audio("audio08/they_do_business.wav");
-const audio10 = new Audio("audio08/i_don't_pay_for_this_course.wav");
+const audio01 = new Audio("audio08/i_don't_have_any_questions.wav");
+const audio02 = new Audio("audio08/it_doesn't_interest_his_friend.wav");
+const audio03 = new Audio("audio08/he_doesn't_use_this_sevice.wav");
+const audio04 = new Audio("audio08/i_often_use_the_internet.wav");
+const audio05 = new Audio("audio08/he_doesn't_want_it.wav");
+const audio06 = new Audio("audio08/i_don't_have_any_ideas.wav");
+const audio07 = new Audio("audio08/he_doesn't_use_the_internet_so_often.wav");
+const audio08 = new Audio("audio08/i_think_so.wav");
+const audio09 = new Audio("audio08/he_doesn't_say_these_things.wav");
+const audio10 = new Audio("audio08/he_doesn't_think_so.wav");
 
 const answersArray = [
-  "don't",
-  "tennis",
-  "this",
-  "don't",
-  "there",
-  "don't",
-  "see",
-  "understand",
-  "do",
-  "don't pay",
+  "any",
+  "his",
+"use",
+"the",
+"want it",
+"any",
+"doesn't",
+"think",
+"say",
+"doesn't"
 ];
 
 let rightAnswers = 0;
@@ -139,7 +139,7 @@ let choiceItemCheck8 = "";
 let choiceItemCheck9 = "";
 let choiceItemCheck10 = "";
 
-let beginner06 = JSON.parse(localStorage.getItem("beginner06"));
+let beginner07 = JSON.parse(localStorage.getItem("beginner07"));
 
 choiceItems.forEach((btn, index) => {
   btn.onclick = function () {
@@ -458,13 +458,13 @@ checkPhrase10.addEventListener("click", function () {
     audio10
   );
   if (rightAnswers === 10) {
-    if (beginner06.length === 7) {
-      beginner06.push(8);
+    if (beginner07.length === 7) {
+      beginner07.push(8);
       saveToLocalStorage();
     }
   }
 });
 
 const saveToLocalStorage = function () {
-  localStorage.setItem("beginner06", JSON.stringify(beginner06));
+  localStorage.setItem("beginner07", JSON.stringify(beginner07));
 };
