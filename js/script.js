@@ -47,6 +47,10 @@ let begginer03 = JSON.parse(localStorage.getItem("beginner03"));
 let begginer04 = JSON.parse(localStorage.getItem("beginner04"));
 let begginer05 = JSON.parse(localStorage.getItem("beginner05"));
 let begginer06 = JSON.parse(localStorage.getItem("beginner06"));
+let begginer07 = JSON.parse(localStorage.getItem("beginner07"));
+let begginer08 = JSON.parse(localStorage.getItem("beginner08"));
+let begginer09 = JSON.parse(localStorage.getItem("beginner09"));
+let begginer10 = JSON.parse(localStorage.getItem("beginner10"));
 
 if (begginer01 !== null && begginer01.length === 15) {
   begginerComplete = []
@@ -71,6 +75,10 @@ if (begginer05 !== null && begginer05.length === 12) {
 }
 if (begginer06 !== null && begginer06.length === 13) {
   begginerComplete.push(6)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer07 !== null && begginer06.length === 13) {
+  begginerComplete.push(7)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
 
@@ -137,6 +145,16 @@ if (begginerComplete === null) {
     lessonComplete6.style.backgroundColor = "#209c0f";
     lessonImage6.setAttribute("src", "img/complete.png");
     lessonImage7.setAttribute("src", "img/start.png");
+  }
+  if (begginerComplete[6] === 7) {
+    begginerLessonStart7.setAttribute(
+      "href",
+      "lessons/beginner/lesson8/lesson8.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete7.style.backgroundColor = "#209c0f";
+    lessonImage7.setAttribute("src", "img/complete.png");
+    lessonImage8.setAttribute("src", "img/start.png");
   }
 }
 
