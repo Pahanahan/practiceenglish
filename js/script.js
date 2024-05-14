@@ -147,7 +147,7 @@ if (begginerComplete === null) {
     lessonImage7.setAttribute("src", "img/start.png");
   }
   if (begginerComplete[6] === 7) {
-    begginerLessonStart7.setAttribute(
+    begginerLessonStart8.setAttribute(
       "href",
       "lessons/beginner/lesson8/lesson8.html"
     );
