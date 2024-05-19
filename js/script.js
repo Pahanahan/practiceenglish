@@ -81,6 +81,10 @@ if (begginer07 !== null && begginer06.length === 13) {
   begginerComplete.push(7)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
+if (begginer08 !== null && begginer07.length === 13) {
+  begginerComplete.push(8)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
 
 
 if (begginerComplete === null) {
@@ -155,6 +159,16 @@ if (begginerComplete === null) {
     lessonComplete7.style.backgroundColor = "#209c0f";
     lessonImage7.setAttribute("src", "img/complete.png");
     lessonImage8.setAttribute("src", "img/start.png");
+  }
+  if (begginerComplete[7] === 8) {
+    begginerLessonStart9.setAttribute(
+      "href",
+      "lessons/beginner/lesson9/lesson9.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete8.style.backgroundColor = "#209c0f";
+    lessonImage8.setAttribute("src", "img/complete.png");
+    lessonImage9.setAttribute("src", "img/start.png");
   }
 }
 
