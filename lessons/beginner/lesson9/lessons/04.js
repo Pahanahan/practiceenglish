@@ -423,6 +423,3 @@ checkPhrase6.addEventListener("click", function () {
 const saveToLocalStorage = function () {
   localStorage.setItem("beginner09", JSON.stringify(beginner09));
 };
-
-const link = 'href="../../../../lessons/beginner/lesson9/lesson9.html'
-console.log(link);
