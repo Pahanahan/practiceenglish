@@ -141,6 +141,10 @@ button {
   margin: 10px;
 }
 
+.footer {
+  margin-bottom: 140px;
+}
+
 .block {
   background-color: #fff;
   border-radius: 20px;

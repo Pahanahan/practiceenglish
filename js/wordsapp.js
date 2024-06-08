@@ -1,6 +1,7 @@
 import arr from "../js/words.js";
 
 // const lessonTop = document.querySelector(".lesson-top");
+const body = document.querySelector('body');
 const lessonBox = document.querySelector(".lesson-learn__box");
 const lessonTab = document.querySelector(".lesson-learn__tab");
 const progressPercent = document.querySelector(".header__progress-percent");
