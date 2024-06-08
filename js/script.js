@@ -9,7 +9,7 @@ const begginerLessonStart6 = document.querySelector(".begginer__lesson06");
 const begginerLessonStart7 = document.querySelector(".begginer__lesson07");
 const begginerLessonStart8 = document.querySelector(".begginer__lesson08");
 const begginerLessonStart9 = document.querySelector(".begginer__lesson09");
-const begginerLessonStart10 = document.querySelector(".begginer__lesson010");
+const begginerLessonStart10 = document.querySelector(".begginer__lesson10");
 
 const lessonComplete1 = document.querySelector(".lesson__complete1");
 const lessonComplete2 = document.querySelector(".lesson__complete2");
@@ -31,7 +31,7 @@ const lessonImage6 = document.querySelector(".lesson__image06");
 const lessonImage7 = document.querySelector(".lesson__image07");
 const lessonImage8 = document.querySelector(".lesson__image08");
 const lessonImage9 = document.querySelector(".lesson__image09");
-const lessonImage10 = document.querySelector(".lesson__image010");
+const lessonImage10 = document.querySelector(".lesson__image10");
 
 let currentCompleteLessons = 0;
 
@@ -77,12 +77,16 @@ if (begginer06 !== null && begginer06.length === 13) {
   begginerComplete.push(6)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
-if (begginer07 !== null && begginer06.length === 13) {
+if (begginer07 !== null && begginer07.length === 13) {
   begginerComplete.push(7)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
-if (begginer08 !== null && begginer07.length === 13) {
+if (begginer08 !== null && begginer08.length === 13) {
   begginerComplete.push(8)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer09 !== null && begginer09.length === 13) {
+  begginerComplete.push(9)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
 
@@ -169,6 +173,16 @@ if (begginerComplete === null) {
     lessonComplete8.style.backgroundColor = "#209c0f";
     lessonImage8.setAttribute("src", "img/complete.png");
     lessonImage9.setAttribute("src", "img/start.png");
+  }
+  if (begginerComplete[8] === 9) {
+    begginerLessonStart10.setAttribute(
+      "href",
+      "lessons/beginner/lesson10/lesson10.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete9.style.backgroundColor = "#209c0f";
+    lessonImage9.setAttribute("src", "img/complete.png");
+    lessonImage10.setAttribute("src", "img/start.png");
   }
 }
 
