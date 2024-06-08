@@ -1050,7 +1050,7 @@ function eleventhLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1144,7 +1144,7 @@ function twelfthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1238,7 +1238,7 @@ function thirteenthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1332,7 +1332,7 @@ function fourteenthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1426,7 +1426,7 @@ function fifteenthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1520,7 +1520,7 @@ function sixteenthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1614,7 +1614,7 @@ function seventeenthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1708,7 +1708,7 @@ function eighteenthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1802,7 +1802,7 @@ function nineteenthLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
@@ -1896,7 +1896,7 @@ function twentiethLesson() {
   const lessonHTML = `<div class="lesson-learn__text">Выберите услышанное</div>
   <div class="lesson-learn__audio-box">
     <div class="lesson-learn__audio">
-      <img src="../../../../img/microphone.png" alt="microphone" />
+      <img src="img/microphone.png" alt="microphone" />
     </div>
   </div>
   <div class="lesson-learn__box-choice">
