@@ -2773,4 +2773,5 @@ function checkAudio(arr, first, second) {
   playNext(); // Запускаем первую итерацию
 }
 
-// checkAudio(arr, 51, 71); tell
+// checkAudio(arr, 200, 210);
+// wall
