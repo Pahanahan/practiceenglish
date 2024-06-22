@@ -29,7 +29,7 @@ console.log(sum);
 let newWords;
 
 if (sum < arr.length) {
-  newWords = arr.slice(sum, arr.length);
+  newWords = arr.slice(sum + 1, arr.length);
   words1000.push(newWords);
   words1000 = words1000.flat();
   saveToLocalStorage();
@@ -2773,5 +2773,5 @@ function checkAudio(arr, first, second) {
   playNext(); // Запускаем первую итерацию
 }
 
-// checkAudio(arr, 469, 550);
-// except possible
+// checkAudio(arr, 1134, 1140);
+//  fold president
