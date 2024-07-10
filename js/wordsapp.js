@@ -2775,3 +2775,4 @@ function checkAudio(arr, first, second) {
 
 // checkAudio(arr, 1179, 1200);
 //  bell lucky
+console.log('loh')
