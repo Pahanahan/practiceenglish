@@ -2773,5 +2773,5 @@ function checkAudio(arr, first, second) {
   playNext(); // Запускаем первую итерацию
 }
 
-// checkAudio(arr, 1134, 1140);
-//  fold president
+// checkAudio(arr, 1179, 1200);
+//  bell lucky
