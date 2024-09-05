@@ -10,6 +10,11 @@ const begginerLessonStart7 = document.querySelector(".begginer__lesson07");
 const begginerLessonStart8 = document.querySelector(".begginer__lesson08");
 const begginerLessonStart9 = document.querySelector(".begginer__lesson09");
 const begginerLessonStart10 = document.querySelector(".begginer__lesson10");
+const begginerLessonStart11 = document.querySelector(".begginer__lesson11");
+const begginerLessonStart12 = document.querySelector(".begginer__lesson12");
+const begginerLessonStart13 = document.querySelector(".begginer__lesson13");
+const begginerLessonStart14 = document.querySelector(".begginer__lesson14");
+const begginerLessonStart15 = document.querySelector(".begginer__lesson15");
 
 const lessonComplete1 = document.querySelector(".lesson__complete1");
 const lessonComplete2 = document.querySelector(".lesson__complete2");
@@ -21,6 +26,11 @@ const lessonComplete7 = document.querySelector(".lesson__complete7");
 const lessonComplete8 = document.querySelector(".lesson__complete8");
 const lessonComplete9 = document.querySelector(".lesson__complete9");
 const lessonComplete10 = document.querySelector(".lesson__complete10");
+const lessonComplete11 = document.querySelector(".lesson__complete11");
+const lessonComplete12 = document.querySelector(".lesson__complete12");
+const lessonComplete13 = document.querySelector(".lesson__complete13");
+const lessonComplete14 = document.querySelector(".lesson__complete14");
+const lessonComplete15 = document.querySelector(".lesson__complete15");
 
 const lessonImage1 = document.querySelector(".lesson__image01");
 const lessonImage2 = document.querySelector(".lesson__image02");
@@ -32,6 +42,11 @@ const lessonImage7 = document.querySelector(".lesson__image07");
 const lessonImage8 = document.querySelector(".lesson__image08");
 const lessonImage9 = document.querySelector(".lesson__image09");
 const lessonImage10 = document.querySelector(".lesson__image10");
+const lessonImage11 = document.querySelector(".lesson__image11");
+const lessonImage12 = document.querySelector(".lesson__image12");
+const lessonImage13 = document.querySelector(".lesson__image13");
+const lessonImage14 = document.querySelector(".lesson__image14");
+const lessonImage15 = document.querySelector(".lesson__image15");
 
 let currentCompleteLessons = 0;
 
@@ -51,6 +66,11 @@ let begginer07 = JSON.parse(localStorage.getItem("beginner07"));
 let begginer08 = JSON.parse(localStorage.getItem("beginner08"));
 let begginer09 = JSON.parse(localStorage.getItem("beginner09"));
 let begginer10 = JSON.parse(localStorage.getItem("beginner10"));
+let begginer11 = JSON.parse(localStorage.getItem("beginner11"));
+let begginer12 = JSON.parse(localStorage.getItem("beginner12"));
+let begginer13 = JSON.parse(localStorage.getItem("beginner13"));
+let begginer14 = JSON.parse(localStorage.getItem("beginner14"));
+let begginer15 = JSON.parse(localStorage.getItem("beginner15"));
 
 if (begginer01 !== null && begginer01.length === 15) {
   begginerComplete = []
@@ -91,6 +111,26 @@ if (begginer09 !== null && begginer09.length === 13) {
 }
 if (begginer10 !== null && begginer10.length === 13) {
   begginerComplete.push(10)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer11 !== null && begginer11.length === 13) {
+  begginerComplete.push(11)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer12 !== null && begginer12.length === 13) {
+  begginerComplete.push(12)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer13 !== null && begginer13.length === 13) {
+  begginerComplete.push(13)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer14 !== null && begginer14.length === 13) {
+  begginerComplete.push(14)
+  saveToLocalStorage('begginerComplete', begginerComplete);
+}
+if (begginer15 !== null && begginer15.length === 13) {
+  begginerComplete.push(15)
   saveToLocalStorage('begginerComplete', begginerComplete);
 }
 
@@ -189,7 +229,7 @@ if (begginerComplete === null) {
     lessonImage10.setAttribute("src", "img/start.png");
   }
   if (begginerComplete[9] === 10) {
-    begginerLessonStart10.setAttribute(
+    begginerLessonStart11.setAttribute(
       "href",
       "lessons/beginner/lesson11/lesson11.html"
     );
@@ -197,6 +237,26 @@ if (begginerComplete === null) {
     lessonComplete10.style.backgroundColor = "#209c0f";
     lessonImage10.setAttribute("src", "img/complete.png");
     lessonImage11.setAttribute("src", "img/start.png");
+  }
+  if (begginerComplete[10] === 11) {
+    begginerLessonStart12.setAttribute(
+      "href",
+      "lessons/beginner/lesson12/lesson12.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete11.style.backgroundColor = "#209c0f";
+    lessonImage11.setAttribute("src", "img/complete.png");
+    lessonImage12.setAttribute("src", "img/start.png");
+  }
+  if (begginerComplete[11] === 12) {
+    begginerLessonStart13.setAttribute(
+      "href",
+      "lessons/beginner/lesson13/lesson13.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete12.style.backgroundColor = "#209c0f";
+    lessonImage12.setAttribute("src", "img/complete.png");
+    lessonImage13.setAttribute("src", "img/start.png");
   }
 }
 

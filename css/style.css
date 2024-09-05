@@ -300,6 +300,9 @@ button {
 .lesson-learn__line60px {
   width: 60px;
 }
+.lesson-learn__line70px {
+  width: 70px;
+}
 .lesson-learn__line80px {
   width: 80px;
 }
@@ -309,17 +312,26 @@ button {
 .lesson-learn__line100px {
   width: 100px;
 }
+.lesson-learn__line110px {
+  width: 110px;
+}
 .lesson-learn__line120px {
   width: 120px;
+}
+.lesson-learn__line130px {
+  width: 130px;
 }
 .lesson-learn__line140px {
   width: 140px;
 }
 .lesson-learn__line150px {
-  width: 160px;
+  width: 150px;
 }
 .lesson-learn__line160px {
   width: 160px;
+}
+.lesson-learn__line170px {
+  width: 170px;
 }
 .lesson-learn__line180px {
   width: 180px;
@@ -329,6 +341,9 @@ button {
 }
 .lesson-learn__line200px {
   width: 200px;
+}
+.lesson-learn__line210px {
+  width: 210px;
 }
 .lesson-learn__line220px {
   width: 220px;
