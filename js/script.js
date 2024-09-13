@@ -258,6 +258,16 @@ if (begginerComplete === null) {
     lessonImage12.setAttribute("src", "img/complete.png");
     lessonImage13.setAttribute("src", "img/start.png");
   }
+  if (begginerComplete[12] === 13) {
+    begginerLessonStart14.setAttribute(
+      "href",
+      "lessons/beginner/lesson14/lesson14.html"
+    );
+    currentCompleteLessons++;
+    lessonComplete13.style.backgroundColor = "#209c0f";
+    lessonImage13.setAttribute("src", "img/complete.png");
+    lessonImage14.setAttribute("src", "img/start.png");
+  }
 }
 
 const printPersent = Math.round((currentCompleteLessons / 50) * 100);
