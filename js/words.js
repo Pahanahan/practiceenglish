@@ -18066,4 +18066,17 @@ let arr = [
   },
 ];
 
+// let item = "l";
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (item.length > arr[i].word.name.length) {
+//     item = item;
+//   } else {
+//     item = arr[i].word.name;
+//     console.log(arr[i].word.name);
+//   }
+// }
+// console.log(item);
+// console.log('conversation'.length);
+
 export default arr;

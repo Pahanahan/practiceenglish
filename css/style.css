@@ -137,6 +137,13 @@ button {
   background-color: #ac2626;
 }
 
+.nav__game {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #0044ff;
+  border-radius: 5px;
+}
+
 .main {
   margin: 10px;
 }
@@ -574,7 +581,8 @@ button {
 
 .lesson-learn__grid,
 .lesson-learn__grid2,
-.lesson-learn__grid3 {
+.lesson-learn__grid3,
+.lesson-learn__grid4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -583,7 +591,8 @@ button {
 
 .lesson-learn__grid-unvisible,
 .lesson-learn__grid-unvisible2,
-.lesson-learn__grid-unvisible3 {
+.lesson-learn__grid-unvisible3,
+.lesson-learn__grid-unvisible4 {
   display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -617,7 +626,12 @@ button {
 .lesson-learn__grid-item-past12,
 .lesson-learn__grid-item-past13,
 .lesson-learn__grid-item-past14,
-.lesson-learn__grid-item-past15 {
+.lesson-learn__grid-item-past15,
+.lesson-learn__grid-item-past16,
+.lesson-learn__grid-item-past17,
+.lesson-learn__grid-item-past18,
+.lesson-learn__grid-item-past19,
+.lesson-learn__grid-item-past20 {
   font-size: 18px;
   background-color: #fff;
   border-radius: 10px;
@@ -632,7 +646,8 @@ button {
 
 .lesson-learn__box-strings,
 .lesson-learn__box-strings2,
-.lesson-learn__box-strings3 {
+.lesson-learn__box-strings3,
+.lesson-learn__box-strings4 {
   display: none;
   justify-content: center;
   flex-wrap: wrap;
@@ -833,7 +848,8 @@ button {
 
 .lesson-learn__mix,
 .lesson-learn__mix2,
-.lesson-learn__mix3 {
+.lesson-learn__mix3,
+.lesson-learn__mix4 {
   width: 300px;
   background-color: #0555e9;
   border: none;
@@ -845,13 +861,15 @@ button {
 
 .lesson-learn__mix:hover,
 .lesson-learn__mix2:hover,
-.lesson-learn__mix3:hover {
+.lesson-learn__mix3:hover,
+.lesson-learn__mix4:hover {
   background-color: #2c72f5;
 }
 
 .lesson-learn__check-str,
 .lesson-learn__check-str2,
-.lesson-learn__check-str3 {
+.lesson-learn__check-str3,
+.lesson-learn__check-str4 {
   display: none;
   width: 300px;
   background-color: #0555e9;
@@ -1380,6 +1398,85 @@ button {
   border-radius: 10px;
 }
 
+.header__level {
+  font-size: 20px;
+  background-color: #f4f76d;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.helper__word {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.helper__word-english {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.helper__word-russian {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  cursor: pointer;
+}
+.helper__word-russian:hover {
+  background-color: #7df88d;
+}
+
+.game__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+}
+
+.game__box-english {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* display: grid; */
+   gap: 8px;
+  /* grid-template-columns: repeat(4, 200px); */
+}
+.game__box-russian {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* display: grid; */
+  gap: 8px;
+   /* grid-template-columns: repeat(4, 200px);  */
+}
+.game__box-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.game__box-item--active {
+  background-color: #7df88d;
+}
+.game__box-item:hover {
+  background-color: #7df88d;
+  padding: 10px;
+}
+
 .lesson-learn__color1 {
   background-color: #ee840a;
 }
@@ -1401,6 +1498,9 @@ button {
 .lesson-learn__color7 {
   background-color: #2e703f;
 }
+.lesson-learn__color8 {
+  background-color: #f36a6a;
+}
 
 .width320 {
   width: 320px;
@@ -1418,6 +1518,34 @@ button {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-10px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@media (max-width: 850px) {
+  .game__box-english {
+    grid-template-columns: repeat(3, 180px);
+  }
+  .game__box-russian {
+    grid-template-columns: repeat(3, 180px);
   }
 }
 
@@ -1471,6 +1599,18 @@ button {
   }
   .lesson__description {
     font-size: 15px;
+  }
+  @media (max-width: 600px) {
+    .game__box-english {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .game__box-russian {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 }
 @media (max-width: 520px) {
@@ -1549,7 +1689,12 @@ button {
   .lesson-learn__grid-item-past12,
   .lesson-learn__grid-item-past13,
   .lesson-learn__grid-item-past14,
-  .lesson-learn__grid-item-past15 {
+  .lesson-learn__grid-item-past15,
+  .lesson-learn__grid-item-past16,
+  .lesson-learn__grid-item-past17,
+  .lesson-learn__grid-item-past18,
+  .lesson-learn__grid-item-past19,
+  .lesson-learn__grid-item-past20 {
     font-size: 16px;
     width: 180px;
   }
@@ -1564,6 +1709,10 @@ button {
   }
 
   .nav__achievements {
+    font-size: 18px;
+  }
+
+  .nav__game {
     font-size: 18px;
   }
 }
@@ -1614,7 +1763,12 @@ button {
   .lesson-learn__grid-item-past12,
   .lesson-learn__grid-item-past13,
   .lesson-learn__grid-item-past14,
-  .lesson-learn__grid-item-past15 {
+  .lesson-learn__grid-item-past15,
+  .lesson-learn__grid-item-past16,
+  .lesson-learn__grid-item-past17,
+  .lesson-learn__grid-item-past18,
+  .lesson-learn__grid-item-past19,
+  .lesson-learn__grid-item-past20 {
     font-size: 14px;
     width: 150px;
   }
